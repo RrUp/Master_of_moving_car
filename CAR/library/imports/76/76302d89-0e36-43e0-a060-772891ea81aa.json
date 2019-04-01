@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "gamepass_nextbtn_bg",
+    "texture": "23909c70-1ea0-479c-8dcd-df7305f4b06d",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      260,
+      88
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      260,
+      88
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

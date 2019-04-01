@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "0ba14bf2-92dd-401a-9a67-f53bb3b01e0f",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "20190321汽车华容道切图1.30": {
+      "ver": "1.0.3",
+      "uuid": "cab7cd85-9db4-424c-8c80-f15c39ad110b",
+      "rawTextureUuid": "0ba14bf2-92dd-401a-9a67-f53bb3b01e0f",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 28,
+      "height": 27,
+      "rawWidth": 28,
+      "rawHeight": 27,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

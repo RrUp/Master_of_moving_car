@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "retry_btn_bg",
+    "texture": "bc5d2bda-f874-4a28-acd7-87a29e8fe76a",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      92,
+      76
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      92,
+      76
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

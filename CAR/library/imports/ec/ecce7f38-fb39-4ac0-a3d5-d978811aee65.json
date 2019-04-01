@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "20190321汽车华容道切图1",
+    "texture": "82098335-8691-48a1-812e-09ced7766177",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      569,
+      795
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      569,
+      795
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

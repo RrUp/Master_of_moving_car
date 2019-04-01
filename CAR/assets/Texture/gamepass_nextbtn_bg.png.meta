@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "23909c70-1ea0-479c-8dcd-df7305f4b06d",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "gamepass_nextbtn_bg": {
+      "ver": "1.0.3",
+      "uuid": "76302d89-0e36-43e0-a060-772891ea81aa",
+      "rawTextureUuid": "23909c70-1ea0-479c-8dcd-df7305f4b06d",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 260,
+      "height": 88,
+      "rawWidth": 260,
+      "rawHeight": 88,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

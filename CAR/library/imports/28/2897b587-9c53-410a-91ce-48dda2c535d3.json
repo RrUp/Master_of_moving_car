@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "title_hard",
+    "texture": "672487c3-c2e7-49b3-88f3-a071e5a359b7",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      89,
+      48
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      89,
+      48
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

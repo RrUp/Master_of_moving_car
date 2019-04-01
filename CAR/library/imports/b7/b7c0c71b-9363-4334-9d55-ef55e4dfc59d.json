@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "title_expert",
+    "texture": "59b09a96-cd54-49b3-a2da-f376ae34bdc6",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      91,
+      50
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      91,
+      50
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

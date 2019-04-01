@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "gamepass_graybg",
+    "texture": "e7e99957-4f80-4151-8999-7033ae6d1dbf",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      478,
+      309
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      478,
+      309
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

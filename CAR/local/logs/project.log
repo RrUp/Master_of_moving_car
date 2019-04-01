@@ -1,0 +1,1188 @@
+2019-04-01T00:39:02.049Z - normal: Load ~/.CocosCreator/settings.json
+2019-04-01T00:39:02.101Z - normal: Initializing Asset Database
+2019-04-01T00:39:02.128Z - normal: checking language setting...
+2019-04-01T00:39:02.128Z - normal: Language: zh
+2019-04-01T00:39:02.787Z - success: preview server running at http://localhost:7457
+2019-04-01T00:39:02.793Z - success: protocol editor-framework registered
+2019-04-01T00:39:02.793Z - success: protocol app registered
+2019-04-01T00:39:02.793Z - success: protocol theme registered
+2019-04-01T00:39:02.793Z - success: protocol packages registered
+2019-04-01T00:39:02.794Z - success: protocol uuid registerred
+2019-04-01T00:39:02.794Z - success: protocol db registerred
+2019-04-01T00:39:02.794Z - success: protocol thumbnail registerred
+2019-04-01T00:39:02.794Z - success: protocol unpack registerred
+2019-04-01T00:39:02.794Z - success: protocol disable-commonjs registerred
+2019-04-01T00:39:02.929Z - normal: connected!
+2019-04-01T00:39:02.930Z - normal: Check project /Users/7cgames/Desktop/Master_of_moving_car/CAR
+2019-04-01T00:39:02.931Z - normal: Initializing project /Users/7cgames/Desktop/Master_of_moving_car/CAR
+2019-04-01T00:39:03.347Z - normal: Initializing Cocos2d
+2019-04-01T00:39:04.092Z - normal: Initializing engine extends
+2019-04-01T00:39:04.111Z - success: asset-db-debugger loaded
+2019-04-01T00:39:04.112Z - success: baidu-adapter loaded
+2019-04-01T00:39:04.113Z - success: color-picker loaded
+2019-04-01T00:39:04.195Z - success: fb-audience-network loaded
+2019-04-01T00:39:04.240Z - success: fb-live-stream loaded
+2019-04-01T00:39:04.243Z - success: google-play-instant loaded
+2019-04-01T00:39:04.248Z - success: huawei-runtime loaded
+2019-04-01T00:39:04.249Z - success: jsb-adapter loaded
+2019-04-01T00:39:04.252Z - success: oppo-runtime loaded
+2019-04-01T00:39:04.257Z - success: package-manager loaded
+2019-04-01T00:39:04.373Z - success: qqplay-adapter loaded
+2019-04-01T00:39:04.375Z - success: runtime-dev-tools loaded
+2019-04-01T00:39:04.379Z - success: sdkbox loaded
+2019-04-01T00:39:04.383Z - success: tester loaded
+2019-04-01T00:39:04.388Z - success: ui-grid loaded
+2019-04-01T00:39:04.391Z - success: ui-kit-preview-extra loaded
+2019-04-01T00:39:04.393Z - success: ui-kit-preview loaded
+2019-04-01T00:39:04.396Z - success: ui-kit loaded
+2019-04-01T00:39:04.399Z - success: ui-tree loaded
+2019-04-01T00:39:04.403Z - success: vivo-runtime loaded
+2019-04-01T00:39:04.404Z - success: weapp-adapter loaded
+2019-04-01T00:39:04.445Z - success: assets loaded
+2019-04-01T00:39:04.449Z - success: builder loaded
+2019-04-01T00:39:04.689Z - success: cocos-services loaded
+2019-04-01T00:39:04.694Z - success: console loaded
+2019-04-01T00:39:04.727Z - success: fb-instant-games loaded
+2019-04-01T00:39:04.730Z - success: google-instant-games loaded
+2019-04-01T00:39:04.736Z - success: hierarchy loaded
+2019-04-01T00:39:04.740Z - success: inspector loaded
+2019-04-01T00:39:04.741Z - success: keystore loaded
+2019-04-01T00:39:04.746Z - success: node-library loaded
+2019-04-01T00:39:04.747Z - success: package-asset loaded
+2019-04-01T00:39:04.749Z - success: preferences loaded
+2019-04-01T00:39:04.752Z - success: project-exporter loaded
+2019-04-01T00:39:04.757Z - success: project-importer loaded
+2019-04-01T00:39:04.763Z - success: project-settings loaded
+2019-04-01T00:39:04.768Z - success: scene loaded
+2019-04-01T00:39:04.770Z - success: simulator-debugger loaded
+2019-04-01T00:39:04.771Z - success: sprite-editor loaded
+2019-04-01T00:39:04.776Z - success: store loaded
+2019-04-01T00:39:04.781Z - success: timeline loaded
+2019-04-01T00:39:07.867Z - normal: Loading packages
+2019-04-01T00:39:07.893Z - normal: Watching packages
+2019-04-01T00:39:07.986Z - info: Cocos Services load base data!
+2019-04-01T00:39:07.999Z - normal: Run Application
+2019-04-01T00:39:13.701Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-01T00:39:13.702Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-01T00:39:13.703Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-01T00:39:13.703Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-01T00:39:13.708Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-01T00:39:13.717Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-01T00:39:13.718Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-01T02:13:46.582Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-01T02:13:46.583Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-01T02:13:46.583Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-01T02:13:46.583Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-01T02:13:46.586Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-01T02:13:46.591Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-01T02:13:46.592Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-01T02:13:58.576Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-01T02:13:58.576Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-01T02:13:58.577Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-01T02:13:58.577Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-01T02:13:58.581Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-01T02:13:58.585Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-01T02:13:58.586Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-01T02:14:22.932Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-01T02:14:22.933Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-01T02:14:22.933Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-01T02:14:22.933Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-01T02:14:22.939Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-01T02:14:22.944Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-01T02:14:22.946Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-01T02:14:27.484Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-01T02:14:27.485Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-01T02:14:27.485Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-01T02:14:27.486Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-01T02:14:27.489Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-01T02:14:27.492Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-01T02:14:27.493Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-01T02:14:36.880Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-01T02:14:36.880Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-01T02:14:36.880Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-01T02:14:36.881Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-01T02:14:36.883Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-01T02:14:36.888Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-01T02:14:36.889Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-01T02:19:05.111Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-01T02:19:05.114Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-01T02:19:05.115Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-01T02:19:05.115Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-01T02:19:05.120Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-01T02:19:05.125Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-01T02:19:05.126Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-01T02:25:39.201Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-01T02:25:39.203Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-01T02:25:39.203Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-01T02:25:39.203Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-01T02:25:39.208Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-01T02:25:39.213Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-01T02:25:39.213Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-01T02:28:27.083Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-01T02:28:27.085Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-01T02:28:27.086Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-01T02:28:27.087Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-01T02:28:27.093Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-01T02:28:27.096Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-01T02:28:27.097Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-01T02:53:39.222Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-01T02:53:39.224Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-01T02:53:39.224Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-01T02:53:39.224Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-01T02:53:39.244Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-01T02:53:39.264Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-01T02:53:39.266Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-01T02:54:11.391Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-01T02:54:11.392Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-01T02:54:11.392Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-01T02:54:11.393Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-01T02:54:11.410Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-01T02:54:11.427Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-01T02:54:11.428Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-01T03:05:35.364Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-01T03:05:35.383Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-01T03:05:35.384Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-01T03:05:35.384Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-01T03:05:35.561Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-01T03:05:35.691Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-01T03:05:35.691Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-01T03:10:51.572Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-01T03:10:51.584Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-01T03:10:51.584Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-01T03:10:51.585Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-01T03:10:51.612Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-01T03:10:51.648Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-01T03:10:51.649Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-01T03:11:46.151Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-01T03:11:46.152Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-01T03:11:46.154Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-01T03:11:46.154Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-01T03:11:46.161Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-01T03:11:46.170Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-01T03:11:46.170Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-01T03:13:18.103Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-01T03:13:18.103Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-01T03:13:18.104Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-01T03:13:18.104Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-01T03:13:18.115Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-01T03:13:18.125Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-01T03:13:18.126Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-01T03:19:12.940Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-01T03:19:12.943Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-01T03:19:12.943Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-01T03:19:12.943Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-01T03:19:13.101Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-01T03:19:13.104Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-01T03:19:13.104Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-01T03:19:29.741Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-01T03:19:29.759Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-01T03:19:29.759Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-01T03:19:29.760Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-01T03:19:29.760Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-01T03:19:29.760Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-01T03:19:29.760Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-01T03:34:14.770Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-01T03:34:14.772Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-01T03:34:14.791Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-01T03:34:14.792Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-01T03:34:14.792Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-01T03:34:14.792Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-01T03:34:14.792Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-01T03:35:54.589Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-01T03:35:54.591Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-01T03:35:54.606Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-01T03:35:54.607Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-01T03:35:54.766Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-01T03:35:54.767Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-01T03:35:54.767Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-01T03:37:49.368Z - normal: Start building with options : {
+  "actualPlatform": "wechatgame",
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "apiLevel": "",
+  "appABIs": [],
+  "appBundle": false,
+  "baidugame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "testappid",
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "buildPath": "/Users/7cgames/Desktop/Master_of_moving_car",
+  "debug": false,
+  "dest": "/Users/7cgames/Desktop/Master_of_moving_car/wechatgame",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.CAR",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait",
+    "zip": false
+  },
+  "scenes": [
+    "0d9abb2f-8a01-4c5a-b0fb-453c4cc2170e",
+    "ced5f993-1674-4443-9160-26b7059d628e",
+    "bfbf8a0c-6a55-43d2-86b8-c436ab5c50c3",
+    "cec502e6-6932-4ae0-bac4-6d742f717410",
+    "a43eae38-e844-4285-86b0-6dfaf3cdc003"
+  ],
+  "sourceMaps": false,
+  "startScene": "0d9abb2f-8a01-4c5a-b0fb-453c4cc2170e",
+  "template": "link",
+  "title": "CAR",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "5396257e-6229-4e",
+  "zipCompressJs": true,
+  "project": "/Users/7cgames/Desktop/Master_of_moving_car/CAR",
+  "projectName": "CAR",
+  "debugBuildWorker": false
+}
+2019-04-01T03:37:49.391Z - normal: Building /Users/7cgames/Desktop/Master_of_moving_car/CAR
+2019-04-01T03:37:49.391Z - normal: Destination /Users/7cgames/Desktop/Master_of_moving_car/wechatgame
+2019-04-01T03:37:49.847Z - normal: Delete /Users/7cgames/Desktop/Master_of_moving_car/wechatgame/subpackages/**/*,/Users/7cgames/Desktop/Master_of_moving_car/wechatgame/**/*
+2019-04-01T03:37:54.266Z - normal: Start building assets
+2019-04-01T03:37:54.266Z - normal: Start spawn build-worker
+2019-04-01T03:37:54.902Z - normal: Finish spawn build-worker
+2019-04-01T03:37:54.903Z - normal: Start init build-worker
+2019-04-01T03:37:59.590Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-01T03:37:59.600Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-01T03:37:59.600Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-01T03:37:59.600Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-01T03:37:59.666Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-01T03:37:59.673Z - normal: Finish init build-worker
+2019-04-01T03:37:59.673Z - normal: Start build-assets in worker
+2019-04-01T03:38:02.980Z - normal: Finish build-assets in worker
+2019-04-01T03:38:02.982Z - normal: Finish building assets
+2019-04-01T03:38:03.028Z - normal: Start building plugin scripts
+2019-04-01T03:38:03.081Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2019-04-01T03:38:04.450Z - normal: Built to "/Users/7cgames/Desktop/Master_of_moving_car/wechatgame" successfully
+2019-04-01T03:38:20.714Z - normal: Initializing...
+
+2019-04-01T03:38:20.796Z - normal: idePortFile: /Users/7cgames/Library/Application Support/微信web开发者工具/Default/.ide
+
+2019-04-01T03:38:20.825Z - normal: starting ide...
+
+2019-04-01T03:38:35.675Z - normal: IDE server has started, listening on http://127.0.0.1:42359
+initialization finished
+
+2019-04-01T03:38:36.696Z - normal: open IDE success
+
+2019-04-01T03:50:22.521Z - error: TypeError: Cannot read property 'parent' of null
+    at Object.exports.remove (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/builtin/assets/panel/utils/cache.js:1:1888)
+    at Object.exports.remove (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/builtin/assets/panel/utils/operation.js:1:2749)
+    at t.forEach.e (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/builtin/assets/panel/index.js:1:4240)
+    at Array.forEach (native)
+    at HTMLElement.asset-db:assets-deleted (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/builtin/assets/panel/index.js:1:4226)
+    at EventEmitter.i.function.t.on.e (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/panel/frame.js:1:3303)
+    at emitTwo (events.js:111:20)
+    at EventEmitter.emit (events.js:194:7)
+2019-04-01T03:50:38.760Z - normal: Initializing...
+
+2019-04-01T03:50:38.785Z - normal: idePortFile: /Users/7cgames/Library/Application Support/微信web开发者工具/Default/.ide
+
+2019-04-01T03:50:38.852Z - normal: IDE server has started, listening on http://127.0.0.1:42359
+initialization finished
+
+2019-04-01T03:50:39.098Z - normal: open IDE success
+
+2019-04-01T03:53:01.281Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:47027
+2019-04-01T03:53:01.283Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:47030
+2019-04-01T03:53:01.284Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:47031
+2019-04-01T03:53:01.284Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:47032
+2019-04-01T03:53:01.284Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:47033
+2019-04-01T03:53:01.286Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:47034
+2019-04-01T03:53:01.286Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:47035
+2019-04-01T03:53:01.287Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:47036
+2019-04-01T03:53:01.287Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:47037
+2019-04-01T03:53:01.287Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:47038
+2019-04-01T03:53:01.288Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:47039
+2019-04-01T03:53:01.289Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:47040
+2019-04-01T03:53:40.122Z - warn: Cannot place directory into itself - 0f4d990d-4e01-4ae2-85ae-b25061964e01
+2019-04-01T03:54:24.250Z - failed: [db-task][import] Can not import file /Users/7cgames/Desktop/Master_of_moving_car/CAR/assets/resources/mute.png, already in the database
+2019-04-01T03:56:19.605Z - normal: Start building with options : {
+  "actualPlatform": "wechatgame",
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "apiLevel": "",
+  "appABIs": [],
+  "appBundle": false,
+  "baidugame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "testappid",
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "buildPath": "/Users/7cgames/Desktop/Master_of_moving_car",
+  "debug": false,
+  "dest": "/Users/7cgames/Desktop/Master_of_moving_car/wechatgame",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.CAR",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait",
+    "zip": false
+  },
+  "scenes": [
+    "0d9abb2f-8a01-4c5a-b0fb-453c4cc2170e",
+    "ced5f993-1674-4443-9160-26b7059d628e",
+    "bfbf8a0c-6a55-43d2-86b8-c436ab5c50c3",
+    "cec502e6-6932-4ae0-bac4-6d742f717410",
+    "a43eae38-e844-4285-86b0-6dfaf3cdc003"
+  ],
+  "sourceMaps": false,
+  "startScene": "0d9abb2f-8a01-4c5a-b0fb-453c4cc2170e",
+  "template": "link",
+  "title": "CAR",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "5396257e-6229-4e",
+  "zipCompressJs": true,
+  "project": "/Users/7cgames/Desktop/Master_of_moving_car/CAR",
+  "projectName": "CAR",
+  "debugBuildWorker": false
+}
+2019-04-01T03:56:19.608Z - normal: Building /Users/7cgames/Desktop/Master_of_moving_car/CAR
+2019-04-01T03:56:19.608Z - normal: Destination /Users/7cgames/Desktop/Master_of_moving_car/wechatgame
+2019-04-01T03:56:19.609Z - normal: Delete /Users/7cgames/Desktop/Master_of_moving_car/wechatgame/subpackages/**/*,/Users/7cgames/Desktop/Master_of_moving_car/wechatgame/**/*
+2019-04-01T03:56:23.508Z - normal: Start building assets
+2019-04-01T03:56:23.508Z - normal: Start spawn build-worker
+2019-04-01T03:56:24.127Z - normal: Finish spawn build-worker
+2019-04-01T03:56:24.127Z - normal: Start init build-worker
+2019-04-01T03:56:27.093Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-01T03:56:27.093Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-01T03:56:27.094Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-01T03:56:27.095Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-01T03:56:27.182Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-01T03:56:27.188Z - normal: Finish init build-worker
+2019-04-01T03:56:27.188Z - normal: Start build-assets in worker
+2019-04-01T03:56:28.460Z - warn: The referenced asset used in "db://assets/Scene/game.fire" is not found, it may have been deleted. Detailed information:
+Node path: "Canvas/gameplay/sub_game_title"
+Used in Component: "cc.Sprite"
+uuid: "068b312d-eb1a-4561-86a1-5ed724a2b45b"
+2019-04-01T03:56:29.135Z - normal: Finish build-assets in worker
+2019-04-01T03:56:29.140Z - normal: Finish building assets
+2019-04-01T03:56:29.197Z - normal: Start building plugin scripts
+2019-04-01T03:56:29.240Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2019-04-01T03:56:30.297Z - normal: Built to "/Users/7cgames/Desktop/Master_of_moving_car/wechatgame" successfully
+2019-04-01T03:56:43.707Z - normal: Initializing...
+
+2019-04-01T03:56:43.712Z - normal: idePortFile: /Users/7cgames/Library/Application Support/微信web开发者工具/Default/.ide
+
+2019-04-01T03:56:43.729Z - normal: IDE server has started, listening on http://127.0.0.1:42359
+
+2019-04-01T03:56:43.730Z - normal: initialization finished
+
+2019-04-01T03:56:43.856Z - normal: open IDE success
+
+2019-04-01T04:40:36.538Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-01T04:40:36.540Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-01T04:40:36.540Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-01T04:40:36.540Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-01T04:40:36.540Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-01T04:40:36.541Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-01T04:40:36.541Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-01T05:39:30.839Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-01T05:39:30.841Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-01T05:39:30.843Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-01T05:39:30.844Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-01T05:39:30.947Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-01T05:39:31.009Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-01T05:39:31.010Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-01T05:47:15.841Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-01T05:47:15.844Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-01T05:47:15.844Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-01T05:47:15.844Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-01T05:47:15.845Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-01T05:47:15.906Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-01T05:47:15.906Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-01T05:50:19.195Z - error: TypeError: Cannot read property 'parent' of null
+    at Object.exports.remove (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/builtin/assets/panel/utils/cache.js:1:1888)
+    at Object.exports.remove (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/builtin/assets/panel/utils/operation.js:1:2749)
+    at t.forEach.e (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/builtin/assets/panel/index.js:1:4240)
+    at Array.forEach (native)
+    at HTMLElement.asset-db:assets-deleted (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/builtin/assets/panel/index.js:1:4226)
+    at EventEmitter.i.function.t.on.e (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/panel/frame.js:1:3303)
+    at emitTwo (events.js:111:20)
+    at EventEmitter.emit (events.js:194:7)
+2019-04-01T05:50:24.236Z - warn: The Asset used by component "cc.Sprite" in scene "game.fire" is missing. Detailed information:
+Node path: "Canvas/gameplay/sub_game_title"
+Asset url: "db://assets/Scene/game.fire"
+Missing uuid: "068b312d-eb1a-4561-86a1-5ed724a2b45b"
+
+2019-04-01T07:17:50.172Z - failed: load script [commonData] failed : Error: Cannot find module 'commonData'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:1:353
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:9:11)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:250:13
+2019-04-01T07:17:50.173Z - failed: load script [numberData] failed : Error: Cannot find module 'numberData'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:1:353
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:10:11)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:250:13
+2019-04-01T07:17:50.173Z - failed: load script [controller] failed : Error: Cannot find module 'controller'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:1:353
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:11:11)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:250:13
+2019-04-01T07:17:50.175Z - failed: load script [commonData] failed : Error: Cannot find module 'commonData'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:1:350
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:8:11)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:551:13
+2019-04-01T07:17:50.175Z - failed: load script [numberData] failed : Error: Cannot find module 'numberData'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:1:350
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:9:11)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:551:13
+2019-04-01T07:17:50.212Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-01T07:17:50.312Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-01T07:17:50.312Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-01T07:17:50.313Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-01T07:17:50.313Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-01T07:17:50.405Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-01T07:17:50.479Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-01T07:17:50.481Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-01T07:23:35.162Z - failed: load script [commonData] failed : Error: Cannot find module 'commonData'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:1:353
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:9:11)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:250:13
+2019-04-01T07:23:35.163Z - failed: load script [numberData] failed : Error: Cannot find module 'numberData'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:1:353
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:10:11)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:250:13
+2019-04-01T07:23:35.163Z - failed: load script [controller] failed : Error: Cannot find module 'controller'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:1:353
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:11:11)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:250:13
+2019-04-01T07:23:35.165Z - failed: load script [commonData] failed : Error: Cannot find module 'commonData'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:1:350
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:8:11)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:551:13
+2019-04-01T07:23:35.165Z - failed: load script [numberData] failed : Error: Cannot find module 'numberData'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:1:350
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:9:11)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:551:13
+2019-04-01T07:23:35.190Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-01T07:23:35.289Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-01T07:23:35.289Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-01T07:23:35.290Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-01T07:23:35.290Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-01T07:23:35.290Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-01T07:23:35.290Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-01T07:23:35.290Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-01T07:39:23.291Z - failed: load script [commonData] failed : Error: Cannot find module 'commonData'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:1:353
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:9:11)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:250:13
+2019-04-01T07:39:23.292Z - failed: load script [numberData] failed : Error: Cannot find module 'numberData'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:1:353
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:10:11)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:250:13
+2019-04-01T07:39:23.293Z - failed: load script [controller] failed : Error: Cannot find module 'controller'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:1:353
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:11:11)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:250:13
+2019-04-01T07:39:23.306Z - failed: load script [commonData] failed : Error: Cannot find module 'commonData'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:1:350
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:8:11)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:551:13
+2019-04-01T07:39:23.307Z - failed: load script [numberData] failed : Error: Cannot find module 'numberData'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:1:350
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:9:11)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:551:13
+2019-04-01T07:39:23.347Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-01T07:39:23.376Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-01T07:39:23.376Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-01T07:39:23.377Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-01T07:39:23.377Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-01T07:39:23.383Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-01T07:39:23.386Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-01T07:39:23.387Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-01T08:01:13.186Z - failed: load script [commonData] failed : Error: Cannot find module 'commonData'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:1:353
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:9:11)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:250:13
+2019-04-01T08:01:13.199Z - failed: load script [numberData] failed : Error: Cannot find module 'numberData'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:1:353
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:10:11)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:250:13
+2019-04-01T08:01:13.199Z - failed: load script [controller] failed : Error: Cannot find module 'controller'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:1:353
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:11:11)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:250:13
+2019-04-01T08:01:13.199Z - failed: load script [commonData] failed : Error: Cannot find module 'commonData'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:1:350
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:8:11)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:551:13
+2019-04-01T08:01:13.199Z - failed: load script [numberData] failed : Error: Cannot find module 'numberData'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:1:350
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:9:11)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:551:13
+2019-04-01T08:01:13.252Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-01T08:01:13.321Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-01T08:01:13.322Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-01T08:01:13.322Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-01T08:01:13.322Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-01T08:01:13.365Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-01T08:01:13.387Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-01T08:01:13.388Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-01T08:01:21.454Z - failed: load script [commonData] failed : Error: Cannot find module 'commonData'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:1:353
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:9:11)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:250:13
+2019-04-01T08:01:21.454Z - failed: load script [numberData] failed : Error: Cannot find module 'numberData'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:1:353
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:10:11)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:250:13
+2019-04-01T08:01:21.455Z - failed: load script [controller] failed : Error: Cannot find module 'controller'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:1:353
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:11:11)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:250:13
+2019-04-01T08:01:21.455Z - failed: load script [commonData] failed : Error: Cannot find module 'commonData'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:1:350
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:8:11)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:551:13
+2019-04-01T08:01:21.456Z - failed: load script [numberData] failed : Error: Cannot find module 'numberData'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:1:350
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:9:11)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:551:13
+2019-04-01T08:01:21.457Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-01T08:01:21.463Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-01T08:01:21.464Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-01T08:01:21.464Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-01T08:01:21.464Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-01T08:01:21.470Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-01T08:01:21.473Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-01T08:01:21.474Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-01T08:06:15.622Z - failed: load script [commonData] failed : Error: Cannot find module 'commonData'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:1:353
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:9:11)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:250:13
+2019-04-01T08:06:15.635Z - failed: load script [numberData] failed : Error: Cannot find module 'numberData'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:1:353
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:10:11)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:250:13
+2019-04-01T08:06:15.635Z - failed: load script [controller] failed : Error: Cannot find module 'controller'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:1:353
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:11:11)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:250:13
+2019-04-01T08:06:15.635Z - failed: load script [commonData] failed : Error: Cannot find module 'commonData'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:1:350
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:8:11)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:551:13
+2019-04-01T08:06:15.636Z - failed: load script [numberData] failed : Error: Cannot find module 'numberData'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:1:350
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:9:11)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:551:13
+2019-04-01T08:06:15.636Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-01T08:06:15.697Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-01T08:06:15.697Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-01T08:06:15.698Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-01T08:06:15.698Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-01T08:06:15.704Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-01T08:06:15.717Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-01T08:06:15.718Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-01T08:19:47.208Z - failed: load script [commonData] failed : Error: Cannot find module 'commonData'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:1:353
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:9:11)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:250:13
+2019-04-01T08:19:47.210Z - failed: load script [numberData] failed : Error: Cannot find module 'numberData'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:1:353
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:10:11)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:250:13
+2019-04-01T08:19:47.211Z - failed: load script [controller] failed : Error: Cannot find module 'controller'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:1:353
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:11:11)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:250:13
+2019-04-01T08:19:47.211Z - failed: load script [commonData] failed : Error: Cannot find module 'commonData'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:1:350
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:8:11)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:551:13
+2019-04-01T08:19:47.211Z - failed: load script [numberData] failed : Error: Cannot find module 'numberData'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:1:350
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:9:11)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:551:13
+2019-04-01T08:19:47.212Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-01T08:19:47.216Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-01T08:19:47.216Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-01T08:19:47.217Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-01T08:19:47.217Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-01T08:19:47.222Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-01T08:19:47.224Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-01T08:19:47.225Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-01T08:22:12.829Z - failed: load script [commonData] failed : Error: Cannot find module 'commonData'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:1:353
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:9:11)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:250:13
+2019-04-01T08:22:12.831Z - failed: load script [numberData] failed : Error: Cannot find module 'numberData'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:1:353
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:10:11)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:250:13
+2019-04-01T08:22:12.831Z - failed: load script [controller] failed : Error: Cannot find module 'controller'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:1:353
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:11:11)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:250:13
+2019-04-01T08:22:12.832Z - failed: load script [commonData] failed : Error: Cannot find module 'commonData'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:1:350
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:8:11)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:551:13
+2019-04-01T08:22:12.832Z - failed: load script [numberData] failed : Error: Cannot find module 'numberData'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:1:350
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:9:11)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:551:13
+2019-04-01T08:22:12.834Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-01T08:22:12.841Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-01T08:22:12.841Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-01T08:22:12.842Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-01T08:22:12.842Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-01T08:22:12.849Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-01T08:22:12.851Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-01T08:22:12.852Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-01T08:22:47.963Z - failed: load script [commonData] failed : Error: Cannot find module 'commonData'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:1:353
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:9:11)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:250:13
+2019-04-01T08:22:47.963Z - failed: load script [numberData] failed : Error: Cannot find module 'numberData'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:1:353
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:10:11)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:250:13
+2019-04-01T08:22:47.964Z - failed: load script [controller] failed : Error: Cannot find module 'controller'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:1:353
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:11:11)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/CCSocket.js:250:13
+2019-04-01T08:22:47.966Z - failed: load script [commonData] failed : Error: Cannot find module 'commonData'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:1:350
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:8:11)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:551:13
+2019-04-01T08:22:47.966Z - failed: load script [numberData] failed : Error: Cannot find module 'numberData'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:1:350
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:9:11)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:551:13
+2019-04-01T08:22:47.995Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-01T08:22:48.011Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-01T08:22:48.011Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-01T08:22:48.014Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-01T08:22:48.015Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-01T08:22:48.026Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-01T08:22:48.038Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-01T08:22:48.039Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-01T08:25:12.443Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-01T08:25:12.445Z - failed: load script [commonData] failed : Error: Cannot find module 'commonData'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:1:350
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:8:11)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:551:13
+2019-04-01T08:25:12.446Z - failed: load script [numberData] failed : Error: Cannot find module 'numberData'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:1:350
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:9:11)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:551:13
+2019-04-01T08:25:12.452Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-01T08:25:12.453Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-01T08:25:12.453Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-01T08:25:12.454Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-01T08:25:12.463Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-01T08:25:12.467Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-01T08:25:12.467Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-01T08:25:17.403Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-01T08:25:17.405Z - failed: load script [commonData] failed : Error: Cannot find module 'commonData'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:1:350
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:8:11)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:551:13
+2019-04-01T08:25:17.406Z - failed: load script [numberData] failed : Error: Cannot find module 'numberData'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:1:350
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:9:11)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/NewScript/share.js:551:13
+2019-04-01T08:25:17.410Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-01T08:25:17.410Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-01T08:25:17.411Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-01T08:25:17.411Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-01T08:25:17.420Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-01T08:25:17.422Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-01T08:25:17.422Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-01T08:26:50.179Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-01T08:26:50.181Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-01T08:26:50.181Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-01T08:26:50.181Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-01T08:26:50.186Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-01T08:26:50.188Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-01T08:26:50.189Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-01T08:26:50.194Z - failed: load script [websocketJS] failed : Error: Cannot find module 'websocketJS'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/Scripts/wxlogin.js:1:350
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/Scripts/wxlogin.js:7:19)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/Scripts/wxlogin.js:56:13
+2019-04-01T08:27:10.322Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-01T08:27:10.322Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-01T08:27:10.323Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-01T08:27:10.323Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-01T08:27:10.334Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-01T08:27:10.337Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-01T08:27:10.339Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-01T08:27:10.345Z - failed: load script [websocketJS] failed : Error: Cannot find module 'websocketJS'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:589)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/Scripts/wxlogin.js:1:350
+    at __define (/Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/Scripts/wxlogin.js:7:19)
+    at /Users/7cgames/Desktop/Master_of_moving_car/CAR/temp/quick-scripts/assets/Scripts/wxlogin.js:56:13
+2019-04-01T08:27:39.420Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-01T08:27:39.421Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-01T08:27:39.421Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-01T08:27:39.421Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-01T08:27:39.429Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-01T08:27:39.432Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-01T08:27:39.433Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-01T08:27:46.393Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-01T08:27:46.393Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-01T08:27:46.394Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-01T08:27:46.394Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-01T08:27:46.402Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-01T08:27:46.406Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-01T08:27:46.406Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-01T08:31:43.960Z - warn: The Asset used by component "cc.Sprite" in scene "game.fire" is missing. Detailed information:
+Node path: "Canvas/gameplay/sub_game_title"
+Asset url: "db://assets/Scene/game.fire"
+Missing uuid: "068b312d-eb1a-4561-86a1-5ed724a2b45b"
+
+2019-04-01T08:46:31.203Z - warn: The Asset used by component "cc.Sprite" in scene "game.fire" is missing. Detailed information:
+Node path: "Canvas/gameplay/sub_game_title"
+Asset url: "db://assets/Scene/game.fire"
+Missing uuid: "068b312d-eb1a-4561-86a1-5ed724a2b45b"
+
+2019-04-01T08:52:14.150Z - warn: object already destroyed
+2019-04-01T08:52:14.152Z - warn: object already destroyed
+2019-04-01T08:58:52.014Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-01T08:58:52.016Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-01T08:58:52.016Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-01T08:58:52.016Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-01T08:58:52.033Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-01T08:58:52.040Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-01T08:58:52.041Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-01T09:01:13.592Z - warn: The Asset used by component "cc.Sprite" in scene "game.fire" is missing. Detailed information:
+Node path: "Canvas/gameplay/sub_game_title"
+Asset url: "db://assets/Scene/game.fire"
+Missing uuid: "068b312d-eb1a-4561-86a1-5ed724a2b45b"
+
+2019-04-01T09:03:39.239Z - warn: The Asset used by component "cc.Sprite" in scene "game.fire" is missing. Detailed information:
+Node path: "Canvas/gameplay/sub_game_title"
+Asset url: "db://assets/Scene/game.fire"
+Missing uuid: "068b312d-eb1a-4561-86a1-5ed724a2b45b"
+
+2019-04-01T09:19:08.994Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-01T09:19:08.996Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-01T09:19:09.002Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-01T09:19:09.003Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-01T09:19:09.003Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-01T09:19:09.003Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-01T09:19:09.003Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script

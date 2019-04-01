@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "m_pVideoHint_bg",
+    "texture": "40ada94f-d9b3-4867-a637-52420a8ba70c",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      140,
+      76
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      140,
+      76
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

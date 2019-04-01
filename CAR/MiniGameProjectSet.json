@@ -1,0 +1,10 @@
+{
+  "project_name": "CAR",
+  "developer": "yjr",
+  "assets_path": "assets/",
+  "scanning_assets_image": true,
+  "res_path": "build/wechatgame/res/",
+  "upload_res": false,
+  "none_key": "",
+  "version": 5
+}

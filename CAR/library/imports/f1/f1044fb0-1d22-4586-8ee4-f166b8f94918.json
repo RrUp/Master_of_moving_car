@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "guesslike_bg",
+    "texture": "ea9029fc-9cd0-4377-9b92-5c8e765381b6",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      459,
+      158
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      459,
+      158
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

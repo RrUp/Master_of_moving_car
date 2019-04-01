@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "loadinglab",
+    "texture": "9b170e09-8e37-4a80-94ab-b2541814e68f",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      89,
+      17
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      89,
+      17
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

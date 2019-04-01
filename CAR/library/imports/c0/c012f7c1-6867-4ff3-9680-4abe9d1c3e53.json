@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "loadingwxlog",
+    "texture": "4413c971-a762-4a93-93d7-c655092abb0d",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      260,
+      88
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      260,
+      88
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

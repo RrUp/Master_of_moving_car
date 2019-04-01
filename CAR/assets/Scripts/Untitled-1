@@ -1,0 +1,24 @@
+
+ 600x600
+500*500
+main页面  gold和福利btn一样的弹窗
+cc.AudioSource:audioClick,audioMove,audioComplete
+node === gamelayout
+
+    bg
+
+    car[8]
+
+
+orign+ smallNode.w*5
+
+ node.w  node.h 
+ Block.getCurrentTouchedBlock()
+
+setBlockPosition
+getAbsolutePosition
+getGPosition
+getTouchBeganGPosition
+getOrientation
+getId
+unshift
