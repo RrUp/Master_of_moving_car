@@ -5,8 +5,8 @@
       "main": true,
       "url": "app://editor/index.html",
       "windowType": "dockable",
-      "x": 310,
-      "y": 33,
+      "x": 345,
+      "y": 77,
       "width": 1385,
       "height": 962,
       "layout": {
@@ -18,23 +18,23 @@
                 "children": [
                   "hierarchy"
                 ],
-                "height": 409.109375,
+                "height": 409.640625,
                 "type": "panel",
-                "width": 276
+                "width": 223
               },
               {
                 "active": 0,
                 "children": [
                   "assets"
                 ],
-                "height": 467.109375,
+                "height": 466.578125,
                 "type": "panel",
-                "width": 276
+                "width": 223
               }
             ],
             "height": 878.21875,
             "type": "dock-v",
-            "width": 276
+            "width": 223
           },
           {
             "children": [
@@ -44,9 +44,9 @@
                   "node-library",
                   "scene"
                 ],
-                "height": 466.109375,
+                "height": 466.578125,
                 "type": "panel",
-                "width": 584
+                "width": 504
               },
               {
                 "active": 0,
@@ -54,24 +54,25 @@
                   "console",
                   "timeline"
                 ],
-                "height": 410.109375,
+                "height": 409.640625,
                 "type": "panel",
-                "width": 584
+                "width": 504
               }
             ],
             "height": 878.21875,
             "type": "dock-v",
-            "width": 584
+            "width": 504
           },
           {
-            "active": 0,
+            "active": 2,
             "children": [
               "inspector",
-              "cocos-services"
+              "cocos-services",
+              "builder"
             ],
             "height": 878.21875,
             "type": "panel",
-            "width": 521
+            "width": 654
           }
         ],
         "type": "dock-h"
@@ -84,7 +85,8 @@
         "timeline",
         "inspector",
         "cocos-services",
-        "scene"
+        "scene",
+        "builder"
       ]
     }
   },
@@ -96,8 +98,8 @@
       "height": 570
     },
     "builder": {
-      "x": 297,
-      "y": 127,
+      "x": 653,
+      "y": 175,
       "width": 654,
       "height": 722
     },

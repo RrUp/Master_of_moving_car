@@ -7,7 +7,11 @@
   ],
   "design-resolution-height": 640,
   "design-resolution-width": 960,
-  "excluded-modules": [],
+  "excluded-modules": [
+    "ParticleSystem",
+    "TiledMap",
+    "Physics"
+  ],
   "facebook": {
     "appID": "",
     "audience": {
@@ -23,13 +27,12 @@
   "group-list": [
     "default"
   ],
-  "last-module-event-record-time": 1553507196658,
+  "last-module-event-record-time": 1554115105488,
   "simulator-orientation": false,
   "simulator-resolution": {
     "height": 640,
     "width": 960
   },
-  "start-scene": "current",
-  "use-customize-simulator": false,
+  "use-customize-simulator": true,
   "use-project-simulator-setting": false
 }

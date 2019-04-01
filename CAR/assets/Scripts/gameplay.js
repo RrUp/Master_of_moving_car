@@ -960,6 +960,10 @@ cc.Class({
         this.playClick();
         //去看视频
         // AdsManager.getInstance().showRewardedGold();
+        define.money += 50;
+        // cc.sys.localStorage.setItem("gold",define.money)
+        GameDataManager.getInstance().savegold(define.money);
+        this.node.emit("updatemoney");
     },
     gold_btnCallback(){
         define.money += 50;
@@ -971,6 +975,9 @@ cc.Class({
         this.playClick();
         //去看视频
         // AdsManager.getInstance().showRewardedVideo();
+        this.scheduleOnce(function () {
+            this.startFindSolution();
+        }, 0);
     },
    videohint_btnCallback(){
         this.scheduleOnce(function () {

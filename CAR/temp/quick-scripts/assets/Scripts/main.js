@@ -106,6 +106,9 @@ cc.Class({
     this.playClick();
     //去看视频
     // AdsManager.getInstance().showmainRewardedGold();
+    define.money += 50;
+    GameDataManager.getInstance().savegold(define.money);
+    this.node.emit("updatemoney");
   },
   gold_btnCallback: function gold_btnCallback() {
     define.money += 50;
@@ -163,7 +166,7 @@ cc.Class({
     this.playClick();
     cc.log("share");
     this.main = cc.find('Canvas/main');
-    this.main.active = false;
+    // this.main.active = false;
     var text = GameDataManager.getInstance().getTextById(17);
     ShareManager.getInstance().onShareGame("sharePic");
   },
