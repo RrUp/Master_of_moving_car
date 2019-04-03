@@ -36,26 +36,17 @@ var AudioSourceControl = cc.Class({
             return AudioSourceControl._instance;
         }
     },
-    // LIFE-CYCLE CALLBACKS:
 
     onLoad() {
-        cc.game.addPersistRootNode(this.node);//将myNode成为常驻节点，场景切换时不会清除这个节点的内存 
+        cc.game.addPersistRootNode(this.node);
         console.log('AudioSourceControl onLoad  ');
     },
 
     start() {
 
     },
-    // setdata(json){
-    //     this.data=json
-    // },
-    // getdata(json){
-    //     return this.data
-    // },
     playAudio: function () {
-        console.log("--------audio---->>", this.audio, define.music);
         if (this.audio&&define.music==true) {
-            console.log("--------------play");
             this.audio.play();
         }
     },

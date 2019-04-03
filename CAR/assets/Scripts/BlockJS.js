@@ -1,15 +1,5 @@
-// Learn cc.Class:
-//  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/class.html
-//  - [English] http://docs.cocos2d-x.org/creator/manual/en/scripting/class.html
-// Learn Attribute:
-//  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/reference/attributes.html
-//  - [English] http://docs.cocos2d-x.org/creator/manual/en/scripting/reference/attributes.html
-// Learn life-cycle callbacks:
-//  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
-//  - [English] https://www.cocos2d-x.org/docs/creator/manual/en/scripting/life-cycle-callbacks.html
 var define = require("define");
 var MyLayoutManager = require("MyLayoutManagerJS");
-
 var TILES = [["car0_0-", "car0_1-", "car1", "car0_2-", "car0_3-"],
 ["car1_0-", "car1_1-", "car2", "car1_2-", "car1_3-"],
 ["car2_0-", "car2_1-", "car3", "car2_2-", "car2_3-"],
@@ -88,7 +78,6 @@ var Block = cc.Class({
         }
         else
             this.m_Tile = (length == 2 ? (panda ? -1 : 1) : (length == 3 ? 4 : -1));
-        //相应图片
 
         var buf;
         if (this.m_Tile == 2) {
@@ -100,7 +89,6 @@ var Block = cc.Class({
         if (this.m_Tile >= 0) {
             var urlPath = cc.url.raw("resources/" + buf);
             var sp = this.getComponent(cc.Sprite);
-            //sp.spriteFrame = new cc.SpriteFrame(urlPath);
 
             var self = this;
             urlPath =( buf);
@@ -201,7 +189,6 @@ var Block = cc.Class({
     getId: function () {
         return this.m_Id;
     },
-    // LIFE-CYCLE CALLBACKS:
 
     onLoad() {
         this.add_touch_listeners();
@@ -219,8 +206,7 @@ var Block = cc.Class({
     add_touch_listeners: function () {
         var carSprite = this.getComponent(cc.Sprite);
         var self = this;
-        var canvas = carSprite.node // cc.find("Canvas");
-        //canvas.on(cc.Node.EventType.TOUCH_START, this.touch_begin() ,self.node);
+        var canvas = carSprite.node 
 
         canvas.on(cc.Node.EventType.TOUCH_START, function (event) {
 

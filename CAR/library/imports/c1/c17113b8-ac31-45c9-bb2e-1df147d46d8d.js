@@ -32,8 +32,8 @@ var HintNode = cc.Class({
 cc.Class({
     extends: cc.Component,
     properties: {
-        m_Gridiron: [0], //car数组
-        m_pPanda: cc.Node, //目标车
+        m_Gridiron: [0],
+        m_pPanda: cc.Node,
         m_pBlocks: [cc.Node],
         m_History: [0],
 
@@ -56,14 +56,14 @@ cc.Class({
             default: null,
             type: cc.Block
         },
-        bg_sprite: cc.Sprite, //一层背景图
+        bg_sprite: cc.Sprite,
         menu_btn: cc.Button,
         back_menu_btn: cc.Button,
         stage_btn: cc.Button,
         main_btn: cc.Button,
-        sub_gameTitle: cc.Sprite, //上面两个挂载节点
-        stageIdLab: cc.Label, //关卡id
-        stageTitleLab: cc.Label, //第   关
+        sub_gameTitle: cc.Sprite,
+        stageIdLab: cc.Label,
+        stageTitleLab: cc.Label,
         gold_btn: cc.Button,
 
         time: cc.node,
@@ -72,7 +72,7 @@ cc.Class({
         gamepass: cc.Node,
         gameCenter: cc.Node,
 
-        gameBtnNode: cc.Node, //底部btn
+        gameBtnNode: cc.Node,
         m_pHint: cc.Button,
         m_pVideoHint: cc.Button,
         m_pRetry: cc.Button,
@@ -100,11 +100,6 @@ cc.Class({
         audioControl: {
             default: null
         },
-        // gameLayout: {
-
-        //     default: null,
-        // },
-        // 缩放系数
         m_kOffsetScale: 1,
 
         m_DraggedMinX: 0.0,
@@ -122,131 +117,36 @@ cc.Class({
         var _this = this;
 
         this.curDate = new Date();
-        // this.gamepass.active = false;
         this.audioControl = cc.find('AudioControlNode').getComponent('AudioSourceControl');
         this.init();
-        cc.log("+++++", define.money);
         this.node.on("updatemoney", function () {
             _this.updatemoney();
         });
-        cc.log("*********", GameDataManager.getInstance().getGoals());
     },
     init: function init() {
-        //  cc.director.loadScene("game");
-
-        cc.log("===========GAME INIT============");
         for (var i = 0; i < 8; ++i) {
             this.m_Gridiron[i] = 0;
         }
-        // this.gold = GameDataManager.getInstance().getgold();
         this.gold_lab.string = define.money;
-        this.m_Package = GameDataManager.getInstance().getLatestPackage(); //1
-        this.m_stage = GameDataManager.getInstance().getGameCurLevelNum(); //0
+        this.m_Package = GameDataManager.getInstance().getLatestPackage();
+        this.m_stage = GameDataManager.getInstance().getGameCurLevelNum();
         this.stageIdLab.string = GameDataManager.getInstance().getTextById(12) + (this.m_stage + 1); //关卡1
-        this.m_GridironSize = MyLayoutManager.getInstance().getGridironSize(); // width 6   height 6
-
-        // this.stageTitleLab.string = GameDataManager.getInstance().getTextById(12);//' LEVEL ';// GameDataManager.getInstance().getTextById(12);
-
-        var visibleRect = MyLayoutManager.getInstance().getVisibleRect(); //{x: 0, y: 0, width: 750, height: 1334}
-        var visibleCenter = visibleRect.origin + visibleRect.size / 2; //(0.00, 0.00)NaN
-        var kWH = visibleRect.size.width / visibleRect.size.height; //0.5622188905547226
-        var kHW = visibleRect.size.height / visibleRect.size.width; //1.778666666666666
-        var scaleY = visibleRect.size.height / 1334; //1
-        //==========
-        var kOffsetHW = kHW / (1334 / 750.0); //1
-        //MyLayoutManager.getInstance().getHorizontalGridironPadding()是8
+        this.m_GridironSize = MyLayoutManager.getInstance().getGridironSize();
+        var visibleRect = MyLayoutManager.getInstance().getVisibleRect();
+        var visibleCenter = visibleRect.origin + visibleRect.size / 2;
+        var kWH = visibleRect.size.width / visibleRect.size.height;
+        var kHW = visibleRect.size.height / visibleRect.size.width;
+        var scaleY = visibleRect.size.height / 1334;
+        var kOffsetHW = kHW / (1334 / 750.0);
         var gameRectWidth = visibleRect.size.width - MyLayoutManager.getInstance().getHorizontalGridironPadding() * 2; // visibleRect.size.width - MyLayoutManager.getInstance().getHorizontalGridironPadding() * 2;
-        var gameRectHeight = gameRectWidth; //734
-        {
-            // var gameRectHeight = visibleRect.size.height - MyLayoutManager.getInstance().getHorizontalGridironPadding() * 10 * 2;
-            // var gameRectWidth = this.gameCenter.width - MyLayoutManager.getInstance().getHorizontalGridironPadding() * 2;// visibleRect.size.width - MyLayoutManager.getInstance().getHorizontalGridironPadding() * 2;
-            // var gameRectHeight = this.gameCenter.height - MyLayoutManager.getInstance().getHorizontalGridironPadding() * 10 * 2;
-            //gameRectWidth:24,gameRectHeight:-124
-            //高宽比 较小的
-            // if (kOffsetHW < 0.75) {
-            //     //pad
-            //     var kOffsetRedress = 1.3
-            //     this.m_kOffsetScale = kOffsetHW * kOffsetRedress
-            //     gameRectWidth = gameRectWidth * (this.m_kOffsetScale);
-            //     gameRectHeight *= (this.m_kOffsetScale);
-            //     this.gameCenter.node.setScale(this.m_kOffsetScale);
-            // } else
-            //     if (kOffsetHW < 0.9) {
-            //         //pad
-            //         var kOffsetRedress = 1.10
-            //         this.m_kOffsetScale = kOffsetHW * kOffsetRedress
-            //         gameRectWidth = gameRectWidth * (this.m_kOffsetScale);
-            //         gameRectHeight *= (this.m_kOffsetScale);
-            //         this.gameCenter.setScale(this.m_kOffsetScale);
-            //     } else if (kOffsetHW < 0.95) {
-            //         //pad
-            //         var kOffsetRedress = 1.04
-            //         this.m_kOffsetScale = kOffsetHW * kOffsetRedress
-            //         gameRectWidth = gameRectWidth * (this.m_kOffsetScale);
-            //         gameRectHeight *= (this.m_kOffsetScale);
-            //         this.gameCenter.node.setScale(this.m_kOffsetScale);
-            //     }
-
-            // console.log(" gameRect  " + gameRectWidth + " " + gameRectHeight);
-        }
+        var gameRectHeight = gameRectWidth;
         this.m_GridironSize.width = this.m_GridironSize.height = define.GRIDIRON_WIDTH;
         this.m_GridSize.width = gameRectWidth / this.m_GridironSize.width;
         this.m_GridSize.height = gameRectHeight / this.m_GridironSize.height;
-        MyLayoutManager.getInstance().setGridSize(this.m_GridSize); //设置一个格子大小
-
-        // var gameCenterBox = this.gameCenter.getBoundingBox();//返回父节坐标系下的轴向对齐的包围盒//0000
+        MyLayoutManager.getInstance().setGridSize(this.m_GridSize);
         var rectX = visibleRect.origin.x + visibleRect.size.width * 0.5 + this.gameCenter.getPosition().x - gameRectWidth * 0.5;
         var rectY = visibleRect.origin.y + visibleRect.size.height * 0.5 + this.gameCenter.getPosition().y - gameRectHeight * 0.5 - 10;
         this.m_GameRect = new cc.Rect(rectX, rectY, gameRectWidth, gameRectHeight);
-        {
-            //             var kMoveHight = (kWH - 750 / 1334)
-            //             console.log("  k= " + 750 / 1334 + " kWH= " + kWH);
-            //             if (kMoveHight > 0) {
-            //                 //<1.778的屏幕 eg  pad
-            //                 var offsetk = 700;
-            //                 var title_pos = this.sub_gameTitle.node.getPosition();
-            //                 title_pos.y -= kMoveHight * offsetk;
-
-            //                 //移动到top位置
-            //                 //title_pos.y = (visibleRect.size.height - this.sub_gameTitle.node.getContentSize().height * this.m_kOffsetScale) / 2
-
-            //                 //移动到中心区域上方
-            //                 var topOffset = this.sub_gameTitle.node.height * this.m_kOffsetScale * 0.5
-            //                 title_pos.y = this.gameCenter.node.getPosition().y + (gameCenterBox.height) / 2 + topOffset;
-            //                 if (title_pos.y > visibleRect.size.height / 2 + topOffset * 0.3) {
-            //                     console.log(" sub_gameTitle up 超过top区域  固定在top区域 ");
-            //                     title_pos.y = (visibleRect.size.height - topOffset * 0.2) / 2
-            //                 }
-
-            //                 this.sub_gameTitle.node.setPosition(title_pos);
-
-            //                 var bg_title = this.sub_gameTitle.node.getChildByName("bgSprite");
-            //                 bg_title.setScale(visibleRect.size.width / 750, kOffsetHW);
-            //                 console.log(" pad  this  k  " + kOffsetHW);
-
-            //                 //底部按钮 挨着中间区域底部
-            //                 var funBtn_pos = this.gameBtnNode.getPosition();
-            //                 funBtn_pos.y = this.gameCenter.node.getPosition().y - (this.gameBtnNode.height + gameCenterBox.height) / 2
-
-            //                 if (funBtn_pos.y < -visibleRect.size.height / 2) {
-            //                     funBtn_pos.y = -visibleRect.size.height / 2 + this.gameBtnNode.height * (1 / 3)
-            //                 }
-            //                 this.gameBtnNode.setPosition(funBtn_pos);
-
-            //                 console.log(" sub_gameTitle down ");
-            //             } else {
-            //                 var offsetk = 1000;
-            //                 var title_pos = this.sub_gameTitle.node.getPosition();
-            //                 title_pos.y += (-kMoveHight) * offsetk;
-
-            //                 title_pos.y = (visibleRect.size.height - this.sub_gameTitle.node.getContentSize().height * this.m_kOffsetScale) / 2
-            //                 this.sub_gameTitle.node.setPosition(title_pos);
-
-            //                 console.log(" sub_gameTitle up ");
-            //             }
-
-            //             console.log(" m_CurrentHintIndex " + this.m_CurrentHintIndex);
-        }
         var curLevelData = GameDataManager.getInstance().getStageData(this.m_Package, this.m_stage);
         this.m_MinSteps = curLevelData.minmove;
         for (var i = 0; i < curLevelData.m_BlockData.length; i++) {
@@ -258,7 +158,6 @@ cc.Class({
     addBlock: function addBlock(x, y, orientation, length, panda) {
         var id = 0;
         if (orientation == define.kOrientation_Horizontal) {
-            //方向是水平的
             y = this.m_GridironSize.height - 1 - y;
         } else if (orientation == define.kOrientation_Vertical) {
             y = this.m_GridironSize.height - length - y;
@@ -266,9 +165,9 @@ cc.Class({
         if (id <= 0) {
             id = this.m_pBlocks.length + 1;
         }
-        var urlPath = "resources/playGamePic/car0.png";
+        var urlPath = "resources/car1.png";
         var blockNode = new cc.Node('Sprite');
-        var blockSp = blockNode.addComponent(cc.Sprite);
+        blockNode.addComponent(cc.Sprite);
         var gameLayout = cc.find("Canvas/gameplay/gameCenterNode");
         gameLayout.addChild(blockNode);
 
@@ -278,8 +177,8 @@ cc.Class({
         data.length = length;
         data.panda = panda;
 
-        blockNode.getComponent('BlockJS').init(data); //设置方向长度panda
-        blockNode.getComponent('BlockJS').setId(id); //传id
+        blockNode.getComponent('BlockJS').init(data);
+        blockNode.getComponent('BlockJS').setId(id);
         var gPosition = new cc.Vec2(x, y);
         if (!this.isOccupiedBlock(pBlock, gPosition)) {
             this.m_pBlocks.push(blockNode);
@@ -362,7 +261,6 @@ cc.Class({
                 for (var j = 0; j < this.m_GridironSize.width; j++) {
                     temp += res[j];
                 }
-                //    console.log(" "+res);
                 console.log(i + " " + temp);
             }
             console.log("*************end print*************\n");
@@ -487,9 +385,6 @@ cc.Class({
                 console.log(" getId=  " + pBlock.getId() + " x= " + diff.x + " y= " + diff.y + " m_CurrentHintIndex=" + this.m_CurrentHintIndex);
                 console.log(" temp=  " + temp);
             }
-            // m_pUndo.setEnabled(true);
-            // m_pRetry.setEnabled(true);
-
             if (this.m_pHintBlock && this.m_pHintBlock == pBlock) {
                 var coordinate = this.m_pHintBlock.getOrientation() == define.kOrientation_Horizontal ? this.m_pHintBlock.getGPosition().x : this.m_pHintBlock.getGPosition().y;
                 if (coordinate == this.m_HintBlockDestCoordinate) {
@@ -504,9 +399,7 @@ cc.Class({
 
         // AudioManager::getInstance()->playEffect(MOVE_EFFECT_FILE);
         if (this.m_pPanda && pBlock == this.m_pPanda) {
-            console.log(" checkComplete  ");
             if (this.checkComplete()) {
-                console.log(" on Complete  ");
                 this.playComplete();
                 this.onGameComplete();
             }
@@ -592,10 +485,8 @@ cc.Class({
             cc.log("第一次玩");
             if (GameDataManager.getInstance().getGamePlaySceneReload() == false) {
                 GameDataManager.getInstance().setGamePlaySceneReload(true);
-                console.log("  Reload game");
                 cc.director.loadScene("game");
             } else {
-                cc.log("第一次玩,开始提示");
                 this.scheduleOnce(function () {
                     this.startFindSolution();
                 }, 0.5);
@@ -603,12 +494,9 @@ cc.Class({
         }
     },
     startFindSolution: function startFindSolution() {
-        console.log("  findSolutionProc  ");
-
         var queue = new Array();
         var record = new Set();
         this.m_SolutionMoves = new Array();
-
         var gridironW = this.m_GridironSize.width;
         var gridironH = this.m_GridironSize.height;
         var current = 0;
@@ -760,9 +648,7 @@ cc.Class({
             }
 
             tempArr.length;
-            for (var i = 0; i < this.m_SolutionMoves.length; ++i) {
-                console.log(" " + this.m_SolutionMoves[i]);
-            }
+            for (var i = 0; i < this.m_SolutionMoves.length; ++i) {}
 
             if (this.m_SolutionMoves.length > 0) {
 
@@ -782,13 +668,10 @@ cc.Class({
     },
 
     startShowHints: function startShowHints(index) {
-        cc.log("startShowHints");
         this.showHint(0);
-        // m_pHint->setEnabled(true);
     },
 
     showHint: function showHint(index) {
-        cc.log("showHint");
         if (index < 0) {
             this.m_HintMode = false;
             if (this.m_pGuideHintDest) {
@@ -855,7 +738,6 @@ cc.Class({
     },
     //展现提示框图片
     getHintDestFrameName: function getHintDestFrameName(orientation, length) {
-        cc.log("调用getHintDestFrameName");
         if (orientation == define.kOrientation_Horizontal) {
             return length == 2 ? "bk_hint_dest2h" : "bk_hint_dest3h";
         } else {
@@ -864,7 +746,6 @@ cc.Class({
     },
 
     updateHint: function updateHint() {
-        cc.log("调用updateHint");
         var step = parseInt(this.m_pHintBlock.getOrientation() == define.kOrientation_Horizontal ? this.m_HintBlockDestCoordinate - this.m_pHintBlock.getGPosition().x : this.m_HintBlockDestCoordinate - this.m_pHintBlock.getGPosition().y);
         var gpDest = this.m_pHintBlock.getGPosition();
 
@@ -930,15 +811,11 @@ cc.Class({
             return;
         };
 
-        if (this.m_HintMode) {} else if (!GameDataManager.getInstance().getgold() > 0) {
-            cc.log("nomoney!");
-        } else {
-            cc.log("金币提示");
+        if (this.m_HintMode) {} else if (!GameDataManager.getInstance().getgold() > 0) {} else {
             this.scheduleOnce(function () {
                 this.startFindSolution();
             }, 0);
             define.money -= 50;
-            // cc.sys.localStorage.setItem("gold",define.money)
             GameDataManager.getInstance().savegold(define.money);
             this.node.emit("updatemoney");
         }
@@ -948,7 +825,6 @@ cc.Class({
         //去看视频
         // AdsManager.getInstance().showRewardedGold();
         define.money += 50;
-        // cc.sys.localStorage.setItem("gold",define.money)
         GameDataManager.getInstance().savegold(define.money);
         this.node.emit("updatemoney");
     },
@@ -1033,7 +909,6 @@ cc.Class({
     getNowTime: function getNowTime() {
         var testDate = new Date();
         //获取当前时间(从1970.1.1开始的毫秒数)
-        console.log('date ' + testDate.getTime());
         cc.log(testDate);
         return testDate.getTime();
     },
@@ -1080,7 +955,6 @@ cc.Class({
 
     //重试
     retryCallback: function retryCallback() {
-        console.log(" click retryCallback");
         this.playClick();
         cc.director.loadScene("game");
     },
@@ -1088,9 +962,7 @@ cc.Class({
     playClick: function playClick() {
         if (this.audioControl) {
             this.audioControl.playClick();
-        } else {
-            console.log("audioControl null click playClick");
-        }
+        } else {}
     },
     playMove: function playMove() {
         if (this.audioControl) {

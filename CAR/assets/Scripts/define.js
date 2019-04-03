@@ -12,12 +12,14 @@ module.exports = {
     avatarUrl:'',//头像
     nickName:'xx',//昵称
     AvatarUrl:'', 
-    money: 100,
-    flag:[0],
-    carskin:1,
+  
     kVersion_number: '1.0.6',
     APP_ID: '   ',
 
+    goal:0,
+  money: 100,
+    flag:[0],
+    carskin:1,
     //枚举 水平 垂直方向
     kOrientation_Horizontal: 0,
     kOrientation_Vertical: 1,

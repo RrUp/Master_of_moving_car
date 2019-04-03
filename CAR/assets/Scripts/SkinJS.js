@@ -4,8 +4,6 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-
-        // goldunlockButton:cc.Button,
         freeButtondefault: cc.Node,
         bottombutton: cc.Node,
         conditionLabel: cc.Label,
@@ -38,17 +36,12 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
 
     onLoad() {
-
-        cc.log("skin")
         this.audioControl = cc.find('AudioControlNode').getComponent('AudioSourceControl');
         let carskin = GameDataManager.getInstance().getcarskin();
         define.carskin = carskin;
-        cc.log(carskin)
-
         for (var i = 0; i < 6; i++) {
             let a = GameDataManager.getInstance().getskinlock(i);
             define.flag[i] = a;
-            console.log("flag", i, define.flag[i]);
         }
         // 判断——初始赋值
         for (var i = 0; i < 6; i++) {
@@ -72,22 +65,6 @@ cc.Class({
     },
     updateskin() {
         var self = this;
-        // if (define.flag[0] == 1) {
-        //     var urlPath = ("car1");
-        //     cc.loader.loadRes(urlPath, cc.SpriteFrame, function (err, spriteFrame) {
-        //         self.car[0].getComponent(cc.Sprite).spriteFrame = spriteFrame;
-        //         cc.log("1已解锁")
-
-        //     });
-        // }
-        // if (!define.flag[0] == 1) {
-        //     var urlPath = ("uncar1");
-        //     cc.loader.loadRes(urlPath, cc.SpriteFrame, function (err, spriteFrame) {
-        //         self.car[0].getComponent(cc.Sprite).spriteFrame = spriteFrame;
-        //         cc.log("1未解锁")
-
-        //     });
-        // }
         if (define.flag[1] == 1) {
             var urlPath = ("car2");
             cc.loader.loadRes(urlPath, cc.SpriteFrame, function (err, spriteFrame) {

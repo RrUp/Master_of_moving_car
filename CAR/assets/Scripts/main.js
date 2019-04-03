@@ -14,17 +14,10 @@ cc.Class({
     share_btn: cc.Button,
     moregame_btn: cc.Button,
     begin_btn: cc.Button,
-    // turntable_btn: cc.Button,
-    // checkin_btn: cc.Button,
     rank_btn: cc.Button,
     skin_btn: cc.Button,
     rankNode: cc.Node,
     skinNode: cc.Node,
-    // turntable:cc.Node,
-    // audioControl:
-    // {
-    //   default: null,
-    // },
     gold_lab: cc.Label,
     gameBox:cc.Node,
   },
@@ -32,37 +25,15 @@ cc.Class({
   // LIFE-CYCLE CALLBACKS:
 
   onLoad() {
-
-    // //首次加载游戏
-    // if(cc.sys.localStorage.getItem("first_in") == undefined){
-    //   cc.sys.localStorage.setItem("first_in", 100);
-    //   // 游戏首次加载需要初始化的操作
-
-    // }
-    // AdsManager.getInstance();
-    // ShareManager.getInstance();
-
-    // define.money = this.gold;
+    cc.log("________",GameDataManager.getInstance().getGameCompleteStars())
     this.audioControl = cc.find('AudioControlNode').getComponent('AudioSourceControl');
-    // // (" 常驻节点 赋值 ")
-    // cc.audioEngine.playMusic(this.audio,true);
-   
     this.mute = cc.find('AudioControlNode/AudioRes/audio').getComponent(cc.AudioSource);
-    // this.money= 
     let coin = GameDataManager.getInstance().getgold();
     define.money = coin;
-    console.log("----------------->>", coin);
     this.gold_lab.string = define.money;
-    // cc.log("===jinbi=", GameDataManager.getInstance().getgold());
-    // cc.log("====", this.gold)
     this.node.on("updatemoney", () => {
       this.updatemoney();
   });
-   
-
-    // cc.game.on("updatemoney",()=>{
-    //   this.updatemoney();
-    // });
   },
   updatemoney(){
     this.gold_lab.string = define.money;
@@ -72,13 +43,8 @@ cc.Class({
     this.skinNode.active = false;
      this.playAudio();
     var playerStart = GameDataManager.getInstance().getGameCompleteStars();
-    console.log("playerStart = " + playerStart)
     this.submitScoreButtonFunc(playerStart);//提交分数
   },
-  // updatemoney(){
-  //   this.gold_lab.string = define.money;
-  // },
-  //提交分数 
   submitScoreButtonFunc(score) {
     console.log(" main  提交 : " + score + " key= " + define.RankKey)
 
@@ -110,19 +76,15 @@ cc.Class({
   },
   audio_btnClick() {
     this.playClick();
-
     if (define.music == true) {
-
       define.music = false;
       this.mute.volume = 0;
       var self = this;
       var urlPath = ("mute");
       cc.loader.loadRes(urlPath, cc.SpriteFrame, function (err, spriteFrame) {
-        self.audio_btn.normalSprite = spriteFrame;//传图
-          self.audio_btn.pressedSprite = spriteFrame;//
-          self.audio_btn.hoverSprite = spriteFrame;//
-
-       
+        self.audio_btn.normalSprite = spriteFrame;
+          self.audio_btn.pressedSprite = spriteFrame;
+          self.audio_btn.hoverSprite = spriteFrame; 
       });
     } else {
       define.music = true;
@@ -130,12 +92,9 @@ cc.Class({
       var self = this;
       var urlPath = ("music");
       cc.loader.loadRes(urlPath, cc.SpriteFrame, function (err, spriteFrame) {
-
-  
         if (err)
           cc.log('Completed with ' + err.length + ' errors');
         else {
-          console.log('换图声音完成！' + spriteFrame._name + '  ');
           self.audio_btn.normalSprite = spriteFrame;//传图
           self.audio_btn.pressedSprite = spriteFrame;//
           self.audio_btn.hoverSprite = spriteFrame;//
@@ -150,12 +109,10 @@ cc.Class({
   },
   moregame_btnClick() {
      this.playClick();
-    ShareManager.getInstance().NavigateTo7cGameBox();
+    // ShareManager.getInstance().NavigateTo7cGameBox();
     this.gameBox.runAction(cc.moveBy(0.5,cc.v2(0,0)));
     this.box=cc.find("Canvas/gameBox").getComponent("exported-GameBoxInterface");
-    cc.log("this.box",this.box)
     this.box.show();
-    cc.log("gamebox")
   },
   begin_btnClick() {
     this.playClick();
@@ -163,7 +120,6 @@ cc.Class({
   },
   share_btnClick() {
     this.playClick();  
-    cc.log("share");
     this.main = cc.find('Canvas/main');
     // this.main.active = false;
     var text = GameDataManager.getInstance().getTextById(17)

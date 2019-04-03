@@ -124,10 +124,6 @@ var GameDataManager = cc.Class({
     },
     //获取关卡数据？？？？
     getStageData: function getStageData(packages, stage) {
-        cc.log("this.m_PackageStageCount[packages]:", this.m_PackageStageCount[packages]);
-        cc.log("this.m_PackageDatas[packages].m_subPackageDatas.length;", this.m_PackageDatas[packages].m_subPackageDatas.length);
-
-        cc.log("this.m_PackageDatas[packages].m_subPackageDatas[stage]", this.m_PackageDatas[packages].m_subPackageDatas[stage]);
 
         if (packages > 10) {
             //为什么减一次10？？？？？？？？？？
@@ -164,12 +160,28 @@ var GameDataManager = cc.Class({
         }
         return parseInt(val);
     },
+    //增加goals
+    addGoals: function addGoals() {
+        var score = this.getGoals() + 1;
+        define.goal = score;
+        var key = this.gameName + "goals2";
+        cc.sys.localStorage.setItem(key, score);
+    },
+    //获取goals
+    getGoals: function getGoals() {
+        var key = this.gameName + "goals2";
+        var val = cc.sys.localStorage.getItem(key);
+        if (val == null || val.length == 0) {
+            val = 0;
+        }
+        return parseInt(val);
+    },
     //金币
     savegold: function savegold(money) {
         var key = "gold";
 
         cc.sys.localStorage.setItem(key, money);
-        cc.log("money", money);
+        console.log("当前金币", money);
     },
     getgold: function getgold() {
         var key = "gold";
@@ -240,31 +252,7 @@ var GameDataManager = cc.Class({
         }
         return startNum;
     },
-    //增加goals
-    addGoals: function addGoals() {
-        var key = this.gameName + "goals2";
-        if (CC_WECHATGAME) {
-            window.wx.postMessage({
-                messageType: 3,
-                MAIN_MENU_NUM: define.RankKey,
-                score: 0
-                // score: this.getGoals() + 1,
-            });
-        } else {
-            console.log("fail 提交得分 : " + goals);
-        }
 
-        cc.sys.localStorage.setItem(key, this.getGoals() + 1);
-    },
-    //获取goals
-    getGoals: function getGoals() {
-        var key = this.gameName + "goals2";
-        var val = cc.sys.localStorage.getItem(key);
-        if (val == null || val.length == 0) {
-            val = 0;
-        }
-        return parseInt(val);
-    },
     //记录当前页面（难度latestpackage）
     saveLatestPackage: function saveLatestPackage(packages) {
         var key = this.gameName + "latestPackage";
@@ -292,7 +280,7 @@ var GameDataManager = cc.Class({
                 console.log(" err=" + err);
             } else {
                 //这里获取res内容就是json里的内容
-                console.log("init " + pszFileName + "  res.StageCount=" + res.json.StageCount);
+                // console.log("init " + pszFileName + "  res.StageCount=" + res.json.StageCount);
 
                 GameDataManager.getInstance().parePackageData(res.json);
             }

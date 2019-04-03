@@ -8,9 +8,17 @@
   "design-resolution-height": 640,
   "design-resolution-width": 960,
   "excluded-modules": [
+    "Dynamic Atlas",
     "ParticleSystem",
     "TiledMap",
-    "Physics"
+    "Spine Skeleton",
+    "DragonBones",
+    "RichText",
+    "MotionStreak",
+    "EditBox",
+    "Collider",
+    "Physics",
+    "NodePool"
   ],
   "facebook": {
     "appID": "",

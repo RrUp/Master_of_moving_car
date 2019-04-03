@@ -1,7 +1,7 @@
 {
   "__type__": "cc.SpriteFrame",
   "content": {
-    "name": "other_btn_bg",
+    "name": "othergame_btn_bg",
     "texture": "90093659-a6f6-4c13-ac77-a32921c1957d",
     "atlas": "",
     "rect": [

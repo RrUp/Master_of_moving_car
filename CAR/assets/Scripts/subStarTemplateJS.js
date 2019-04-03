@@ -49,11 +49,9 @@ cc.Class({
             });
             if (data.startNum > 0) {
 
-                urlPath = 'btn_stagePlayed'//played关卡btn图片路径
-                cc.log("背景图played", urlPath)
+                urlPath = 'btn_stagePlayed'
             } else {
                 urlPath = 'btn_stagePlaying'
-                cc.log("背景图playing", urlPath)
             }
             cc.loader.loadRes(urlPath, cc.SpriteFrame, function (err, res) {
                 if (err) cc.log('Completed with' + err.length + 'errors');
@@ -61,7 +59,6 @@ cc.Class({
                     self.stageBtn.normalSprite = res;
                     self.stageBtn.pressedSprite = res;
                     self.stageBtn.hoverSprite = res;
-                    cc.log("传入解锁")
                 }
             });//传图
 

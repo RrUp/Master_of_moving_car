@@ -160,7 +160,7 @@ var ShareManager = cc.Class({
             } else {
                 titleText = '求助 遇到困难了 快来帮帮我';
             }
-            wx.shareAppMessage({
+            wx.shareAppMessage({ //主动拉起转发，进入选择通讯录界面
                 title: titleText,
                 imageUrl: pic_url,
                 success: function success(res) {
