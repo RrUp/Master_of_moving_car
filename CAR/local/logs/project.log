@@ -1,89 +1,152 @@
-2019-04-01T10:15:47.139Z - normal: Load ~/.CocosCreator/settings.json
-2019-04-01T10:15:47.233Z - normal: Initializing Asset Database
-2019-04-01T10:15:47.257Z - normal: checking language setting...
-2019-04-01T10:15:47.257Z - normal: Language: zh
-2019-04-01T10:15:48.636Z - success: preview server running at http://localhost:7457
-2019-04-01T10:15:48.642Z - success: protocol editor-framework registered
-2019-04-01T10:15:48.642Z - success: protocol app registered
-2019-04-01T10:15:48.643Z - success: protocol theme registered
-2019-04-01T10:15:48.643Z - success: protocol packages registered
-2019-04-01T10:15:48.643Z - success: protocol uuid registerred
-2019-04-01T10:15:48.643Z - success: protocol db registerred
-2019-04-01T10:15:48.643Z - success: protocol thumbnail registerred
-2019-04-01T10:15:48.643Z - success: protocol unpack registerred
-2019-04-01T10:15:48.643Z - success: protocol disable-commonjs registerred
-2019-04-01T10:15:48.747Z - normal: connected!
-2019-04-01T10:15:48.749Z - normal: Check project /Users/7cgames/Desktop/Master_of_moving_car/CAR
-2019-04-01T10:15:48.750Z - normal: Initializing project /Users/7cgames/Desktop/Master_of_moving_car/CAR
-2019-04-01T10:15:49.914Z - normal: Initializing Cocos2d
-2019-04-01T10:15:51.558Z - normal: Initializing engine extends
-2019-04-01T10:15:51.634Z - success: asset-db-debugger loaded
-2019-04-01T10:15:51.639Z - success: baidu-adapter loaded
-2019-04-01T10:15:51.645Z - success: color-picker loaded
-2019-04-01T10:15:51.782Z - success: fb-audience-network loaded
-2019-04-01T10:15:51.850Z - success: fb-live-stream loaded
-2019-04-01T10:15:51.854Z - success: google-play-instant loaded
-2019-04-01T10:15:51.884Z - success: huawei-runtime loaded
-2019-04-01T10:15:51.885Z - success: jsb-adapter loaded
-2019-04-01T10:15:51.906Z - success: oppo-runtime loaded
-2019-04-01T10:15:51.937Z - success: package-manager loaded
-2019-04-01T10:15:52.166Z - success: qqplay-adapter loaded
-2019-04-01T10:15:52.175Z - success: runtime-dev-tools loaded
-2019-04-01T10:15:52.192Z - success: sdkbox loaded
-2019-04-01T10:15:52.197Z - success: tester loaded
-2019-04-01T10:15:52.202Z - success: ui-grid loaded
-2019-04-01T10:15:52.228Z - success: ui-kit-preview-extra loaded
-2019-04-01T10:15:52.231Z - success: ui-kit-preview loaded
-2019-04-01T10:15:52.234Z - success: ui-kit loaded
-2019-04-01T10:15:52.237Z - success: ui-tree loaded
-2019-04-01T10:15:52.262Z - success: vivo-runtime loaded
-2019-04-01T10:15:52.265Z - success: weapp-adapter loaded
-2019-04-01T10:15:52.308Z - success: assets loaded
-2019-04-01T10:15:52.312Z - success: builder loaded
-2019-04-01T10:15:52.607Z - success: cocos-services loaded
-2019-04-01T10:15:52.612Z - success: console loaded
-2019-04-01T10:15:52.646Z - success: fb-instant-games loaded
-2019-04-01T10:15:52.661Z - success: google-instant-games loaded
-2019-04-01T10:15:52.667Z - success: hierarchy loaded
-2019-04-01T10:15:52.671Z - success: inspector loaded
-2019-04-01T10:15:52.672Z - success: keystore loaded
-2019-04-01T10:15:52.678Z - success: node-library loaded
-2019-04-01T10:15:52.679Z - success: package-asset loaded
-2019-04-01T10:15:52.681Z - success: preferences loaded
-2019-04-01T10:15:52.684Z - success: project-exporter loaded
-2019-04-01T10:15:52.690Z - success: project-importer loaded
-2019-04-01T10:15:52.693Z - success: project-settings loaded
-2019-04-01T10:15:52.698Z - success: scene loaded
-2019-04-01T10:15:52.700Z - success: simulator-debugger loaded
-2019-04-01T10:15:52.702Z - success: sprite-editor loaded
-2019-04-01T10:15:52.707Z - success: store loaded
-2019-04-01T10:15:52.714Z - success: timeline loaded
-2019-04-01T10:15:54.894Z - info: Cocos Services load base data!
-2019-04-01T10:15:58.407Z - normal: Loading packages
-2019-04-01T10:15:58.413Z - normal: Watching packages
-2019-04-01T10:15:58.574Z - normal: Run Application
-2019-04-01T10:16:05.186Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
-2019-04-01T10:16:05.187Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
-2019-04-01T10:16:05.188Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
-2019-04-01T10:16:05.188Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
-2019-04-01T10:16:05.203Z - warn: Should not specify class name RankJS for Component which defines in project.
-2019-04-01T10:16:05.212Z - warn: Can not instantiate CCClass 'undefined' with arguments.
-2019-04-01T10:16:05.213Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
-2019-04-01T10:33:05.134Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
-2019-04-01T10:33:05.145Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
-2019-04-01T10:33:05.147Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
-2019-04-01T10:33:05.148Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
-2019-04-01T10:33:05.157Z - warn: Should not specify class name RankJS for Component which defines in project.
-2019-04-01T10:33:05.166Z - warn: Can not instantiate CCClass 'undefined' with arguments.
-2019-04-01T10:33:05.167Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
-2019-04-01T10:36:00.837Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
-2019-04-01T10:36:00.863Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
-2019-04-01T10:36:00.863Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
-2019-04-01T10:36:00.864Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
-2019-04-01T10:36:00.883Z - warn: Should not specify class name RankJS for Component which defines in project.
-2019-04-01T10:36:00.914Z - warn: Can not instantiate CCClass 'undefined' with arguments.
-2019-04-01T10:36:00.915Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
-2019-04-01T10:38:25.065Z - normal: Start building with options : {
+2019-04-03T01:02:17.988Z - normal: Load ~/.CocosCreator/settings.json
+2019-04-03T01:02:18.153Z - normal: Initializing Asset Database
+2019-04-03T01:02:18.179Z - normal: checking language setting...
+2019-04-03T01:02:18.179Z - normal: Language: zh
+2019-04-03T01:02:21.825Z - success: preview server running at http://localhost:7456
+2019-04-03T01:02:21.873Z - success: protocol editor-framework registered
+2019-04-03T01:02:21.873Z - success: protocol app registered
+2019-04-03T01:02:21.873Z - success: protocol theme registered
+2019-04-03T01:02:21.873Z - success: protocol packages registered
+2019-04-03T01:02:21.873Z - success: protocol uuid registerred
+2019-04-03T01:02:21.873Z - success: protocol db registerred
+2019-04-03T01:02:21.873Z - success: protocol thumbnail registerred
+2019-04-03T01:02:21.873Z - success: protocol unpack registerred
+2019-04-03T01:02:21.874Z - success: protocol disable-commonjs registerred
+2019-04-03T01:02:22.004Z - normal: connected!
+2019-04-03T01:02:22.005Z - normal: Check project /Users/7cgames/Desktop/Master_of_moving_car/CAR
+2019-04-03T01:02:22.007Z - normal: Initializing project /Users/7cgames/Desktop/Master_of_moving_car/CAR
+2019-04-03T01:02:23.262Z - normal: Initializing Cocos2d
+2019-04-03T01:02:25.214Z - normal: Initializing engine extends
+2019-04-03T01:02:25.329Z - success: asset-db-debugger loaded
+2019-04-03T01:02:25.343Z - success: baidu-adapter loaded
+2019-04-03T01:02:25.349Z - success: color-picker loaded
+2019-04-03T01:02:25.623Z - success: fb-audience-network loaded
+2019-04-03T01:02:27.551Z - success: fb-live-stream loaded
+2019-04-03T01:02:27.583Z - success: google-play-instant loaded
+2019-04-03T01:02:27.625Z - success: huawei-runtime loaded
+2019-04-03T01:02:27.655Z - success: jsb-adapter loaded
+2019-04-03T01:02:27.758Z - success: oppo-runtime loaded
+2019-04-03T01:02:27.879Z - success: package-manager loaded
+2019-04-03T01:02:29.119Z - success: qqplay-adapter loaded
+2019-04-03T01:02:29.131Z - success: runtime-dev-tools loaded
+2019-04-03T01:02:29.164Z - success: sdkbox loaded
+2019-04-03T01:02:29.189Z - success: tester loaded
+2019-04-03T01:02:29.200Z - success: ui-grid loaded
+2019-04-03T01:02:29.224Z - success: ui-kit-preview-extra loaded
+2019-04-03T01:02:29.244Z - success: ui-kit-preview loaded
+2019-04-03T01:02:29.251Z - success: ui-kit loaded
+2019-04-03T01:02:29.264Z - success: ui-tree loaded
+2019-04-03T01:02:29.307Z - success: vivo-runtime loaded
+2019-04-03T01:02:29.310Z - success: weapp-adapter loaded
+2019-04-03T01:02:29.366Z - success: assets loaded
+2019-04-03T01:02:29.375Z - success: builder loaded
+2019-04-03T01:02:30.235Z - success: cocos-services loaded
+2019-04-03T01:02:30.256Z - success: console loaded
+2019-04-03T01:02:30.288Z - success: fb-instant-games loaded
+2019-04-03T01:02:30.291Z - success: google-instant-games loaded
+2019-04-03T01:02:30.307Z - success: hierarchy loaded
+2019-04-03T01:02:30.317Z - success: inspector loaded
+2019-04-03T01:02:30.327Z - success: keystore loaded
+2019-04-03T01:02:30.338Z - success: node-library loaded
+2019-04-03T01:02:30.339Z - success: package-asset loaded
+2019-04-03T01:02:30.341Z - success: preferences loaded
+2019-04-03T01:02:30.349Z - success: project-exporter loaded
+2019-04-03T01:02:30.359Z - success: project-importer loaded
+2019-04-03T01:02:30.367Z - success: project-settings loaded
+2019-04-03T01:02:30.380Z - success: scene loaded
+2019-04-03T01:02:30.382Z - success: simulator-debugger loaded
+2019-04-03T01:02:30.384Z - success: sprite-editor loaded
+2019-04-03T01:02:30.418Z - success: store loaded
+2019-04-03T01:02:30.429Z - success: timeline loaded
+2019-04-03T01:02:34.023Z - normal: Loading packages
+2019-04-03T01:02:34.069Z - normal: Watching packages
+2019-04-03T01:02:34.199Z - normal: Run Application
+2019-04-03T01:02:34.305Z - info: Cocos Services load base data!
+2019-04-03T01:02:44.008Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-03T01:02:44.008Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-03T01:02:44.010Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-03T01:02:44.010Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-03T01:02:44.023Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-03T01:02:44.032Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-03T01:02:44.034Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-03T01:24:45.603Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-03T01:24:45.626Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-03T01:24:45.626Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-03T01:24:45.627Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-03T01:24:45.627Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-03T01:24:45.638Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-03T01:24:45.640Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-03T01:26:56.090Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-03T01:26:56.092Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-03T01:26:56.412Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-03T01:26:56.413Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-03T01:26:56.413Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-03T01:26:56.413Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-03T01:26:56.413Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-03T01:28:17.578Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-03T01:28:17.594Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-03T01:28:17.594Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-03T01:28:17.594Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-03T01:28:17.596Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-03T01:28:17.596Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-03T01:28:17.596Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-03T01:29:04.992Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-03T01:29:04.992Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-03T01:29:04.993Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-03T01:29:04.993Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-03T01:29:05.002Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-03T01:29:05.005Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-03T01:29:05.005Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-03T01:31:31.120Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-03T01:31:31.138Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-03T01:31:31.139Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-03T01:31:31.140Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-03T01:31:31.140Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-03T01:31:31.140Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-03T01:31:31.140Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-03T01:31:36.802Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-03T01:31:36.802Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-03T01:31:36.803Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-03T01:31:36.803Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-03T01:31:36.813Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-03T01:31:36.816Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-03T01:31:36.816Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-03T01:31:42.595Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-03T01:31:42.595Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-03T01:31:42.595Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-03T01:31:42.596Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-03T01:31:42.603Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-03T01:31:42.605Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-03T01:31:42.606Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-03T01:32:31.119Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-03T01:32:31.119Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-03T01:32:31.121Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-03T01:32:31.122Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-03T01:32:31.131Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-03T01:32:31.134Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-03T01:32:31.137Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-03T01:34:27.048Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-03T01:34:27.049Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-03T01:34:27.050Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-03T01:34:27.050Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-03T01:34:27.058Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-03T01:34:27.063Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-03T01:34:27.064Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-03T01:38:41.059Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-03T01:38:41.074Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-03T01:38:41.074Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-03T01:38:41.075Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-03T01:38:41.075Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-03T01:38:41.075Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-03T01:38:41.076Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-03T02:03:51.659Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-03T02:03:51.682Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-03T02:03:51.682Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-03T02:03:51.682Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-03T02:03:51.832Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-03T02:03:51.832Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-03T02:03:51.835Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-03T02:04:21.531Z - normal: Start building with options : {
   "actualPlatform": "wechatgame",
   "android-instant": {
     "REMOTE_SERVER_ROOT": "",
@@ -103,215 +166,7 @@
     "subContext": ""
   },
   "buildPath": "/Users/7cgames/Desktop/Master_of_moving_car",
-  "debug": false,
-  "dest": "/Users/7cgames/Desktop/Master_of_moving_car/wechatgame",
-  "embedWebDebugger": false,
-  "encryptJs": true,
-  "excludeScenes": [],
-  "excludedModules": [],
-  "fb-instant-games": {},
-  "includeSDKBox": false,
-  "inlineSpriteFrames": true,
-  "inlineSpriteFrames_native": true,
-  "md5Cache": false,
-  "mergeStartScene": false,
-  "optimizeHotUpdate": false,
-  "orientation": {
-    "landscapeLeft": true,
-    "landscapeRight": true,
-    "portrait": false,
-    "upsideDown": false
-  },
-  "packageName": "org.cocos2d.CAR",
-  "platform": "wechatgame",
-  "previewHeight": "720",
-  "previewWidth": "1280",
-  "qqplay": {
-    "REMOTE_SERVER_ROOT": "",
-    "orientation": "portrait",
-    "zip": false
-  },
-  "scenes": [
-    "0d9abb2f-8a01-4c5a-b0fb-453c4cc2170e",
-    "ced5f993-1674-4443-9160-26b7059d628e",
-    "bfbf8a0c-6a55-43d2-86b8-c436ab5c50c3",
-    "cec502e6-6932-4ae0-bac4-6d742f717410",
-    "a43eae38-e844-4285-86b0-6dfaf3cdc003"
-  ],
-  "sourceMaps": false,
-  "startScene": "0d9abb2f-8a01-4c5a-b0fb-453c4cc2170e",
-  "template": "link",
-  "title": "CAR",
-  "useDebugKeystore": true,
-  "vsVersion": "auto",
-  "webOrientation": "auto",
-  "wechatgame": {
-    "REMOTE_SERVER_ROOT": "",
-    "appid": "wx6ac3f5090a6b99c5",
-    "orientation": "portrait",
-    "subContext": ""
-  },
-  "xxteaKey": "5396257e-6229-4e",
-  "zipCompressJs": true,
-  "project": "/Users/7cgames/Desktop/Master_of_moving_car/CAR",
-  "projectName": "CAR",
-  "debugBuildWorker": false
-}
-2019-04-01T10:38:25.081Z - normal: Building /Users/7cgames/Desktop/Master_of_moving_car/CAR
-2019-04-01T10:38:25.081Z - normal: Destination /Users/7cgames/Desktop/Master_of_moving_car/wechatgame
-2019-04-01T10:38:25.413Z - normal: Delete /Users/7cgames/Desktop/Master_of_moving_car/wechatgame/subpackages/**/*,/Users/7cgames/Desktop/Master_of_moving_car/wechatgame/**/*
-2019-04-01T10:38:29.005Z - normal: Start building assets
-2019-04-01T10:38:29.006Z - normal: Start spawn build-worker
-2019-04-01T10:38:29.702Z - normal: Finish spawn build-worker
-2019-04-01T10:38:29.702Z - normal: Start init build-worker
-2019-04-01T10:38:33.094Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
-2019-04-01T10:38:33.103Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
-2019-04-01T10:38:33.103Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
-2019-04-01T10:38:33.103Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
-2019-04-01T10:38:33.139Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
-2019-04-01T10:38:33.156Z - normal: Finish init build-worker
-2019-04-01T10:38:33.157Z - normal: Start build-assets in worker
-2019-04-01T10:38:36.244Z - normal: Finish build-assets in worker
-2019-04-01T10:38:36.246Z - normal: Finish building assets
-2019-04-01T10:38:36.319Z - normal: Start building plugin scripts
-2019-04-01T10:38:36.392Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
-2019-04-01T10:38:37.682Z - normal: Built to "/Users/7cgames/Desktop/Master_of_moving_car/wechatgame" successfully
-2019-04-01T10:38:45.681Z - normal: Initializing...
-
-2019-04-01T10:38:45.705Z - normal: idePortFile: /Users/7cgames/Library/Application Support/微信web开发者工具/Default/.ide
-
-2019-04-01T10:38:45.739Z - normal: starting ide...
-
-2019-04-01T10:39:03.266Z - normal: IDE server has started, listening on http://127.0.0.1:52366
-
-2019-04-01T10:39:03.523Z - normal: initialization finished
-
-2019-04-01T10:39:04.698Z - normal: open IDE success
-
-2019-04-01T10:46:30.023Z - normal: Start building with options : {
-  "actualPlatform": "wechatgame",
-  "android-instant": {
-    "REMOTE_SERVER_ROOT": "",
-    "host": "",
-    "pathPattern": "",
-    "recordPath": "",
-    "scheme": "https",
-    "skipRecord": false
-  },
-  "apiLevel": "",
-  "appABIs": [],
-  "appBundle": false,
-  "baidugame": {
-    "REMOTE_SERVER_ROOT": "",
-    "appid": "testappid",
-    "orientation": "portrait",
-    "subContext": ""
-  },
-  "buildPath": "/Users/7cgames/Desktop/Master_of_moving_car",
-  "debug": false,
-  "dest": "/Users/7cgames/Desktop/Master_of_moving_car/wechatgame",
-  "embedWebDebugger": false,
-  "encryptJs": true,
-  "excludeScenes": [],
-  "excludedModules": [],
-  "fb-instant-games": {},
-  "includeSDKBox": false,
-  "inlineSpriteFrames": true,
-  "inlineSpriteFrames_native": true,
-  "md5Cache": false,
-  "mergeStartScene": false,
-  "optimizeHotUpdate": false,
-  "orientation": {
-    "landscapeLeft": true,
-    "landscapeRight": true,
-    "portrait": false,
-    "upsideDown": false
-  },
-  "packageName": "org.cocos2d.CAR",
-  "platform": "wechatgame",
-  "previewHeight": "720",
-  "previewWidth": "1280",
-  "qqplay": {
-    "REMOTE_SERVER_ROOT": "",
-    "orientation": "portrait",
-    "zip": false
-  },
-  "scenes": [
-    "0d9abb2f-8a01-4c5a-b0fb-453c4cc2170e",
-    "ced5f993-1674-4443-9160-26b7059d628e",
-    "bfbf8a0c-6a55-43d2-86b8-c436ab5c50c3",
-    "cec502e6-6932-4ae0-bac4-6d742f717410",
-    "a43eae38-e844-4285-86b0-6dfaf3cdc003"
-  ],
-  "sourceMaps": false,
-  "startScene": "0d9abb2f-8a01-4c5a-b0fb-453c4cc2170e",
-  "template": "link",
-  "title": "CAR",
-  "useDebugKeystore": true,
-  "vsVersion": "auto",
-  "webOrientation": "auto",
-  "wechatgame": {
-    "REMOTE_SERVER_ROOT": "",
-    "appid": "wx6ac3f5090a6b99c5",
-    "orientation": "portrait",
-    "subContext": ""
-  },
-  "xxteaKey": "5396257e-6229-4e",
-  "zipCompressJs": true,
-  "project": "/Users/7cgames/Desktop/Master_of_moving_car/CAR",
-  "projectName": "CAR",
-  "debugBuildWorker": false
-}
-2019-04-01T10:46:30.050Z - normal: Building /Users/7cgames/Desktop/Master_of_moving_car/CAR
-2019-04-01T10:46:30.050Z - normal: Destination /Users/7cgames/Desktop/Master_of_moving_car/wechatgame
-2019-04-01T10:46:30.052Z - normal: Delete /Users/7cgames/Desktop/Master_of_moving_car/wechatgame/subpackages/**/*,/Users/7cgames/Desktop/Master_of_moving_car/wechatgame/**/*
-2019-04-01T10:46:35.415Z - normal: Start building assets
-2019-04-01T10:46:35.415Z - normal: Start spawn build-worker
-2019-04-01T10:46:36.099Z - normal: Finish spawn build-worker
-2019-04-01T10:46:36.099Z - normal: Start init build-worker
-2019-04-01T10:46:41.405Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
-2019-04-01T10:46:41.414Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
-2019-04-01T10:46:41.414Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
-2019-04-01T10:46:41.415Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
-2019-04-01T10:46:41.449Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
-2019-04-01T10:46:41.494Z - normal: Finish init build-worker
-2019-04-01T10:46:41.494Z - normal: Start build-assets in worker
-2019-04-01T10:46:44.115Z - normal: Finish build-assets in worker
-2019-04-01T10:46:44.118Z - normal: Finish building assets
-2019-04-01T10:46:44.163Z - normal: Start building plugin scripts
-2019-04-01T10:46:44.214Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
-2019-04-01T10:46:45.425Z - normal: Built to "/Users/7cgames/Desktop/Master_of_moving_car/wechatgame" successfully
-2019-04-01T10:47:12.792Z - normal: Initializing...
-
-2019-04-01T10:47:12.839Z - normal: idePortFile: /Users/7cgames/Library/Application Support/微信web开发者工具/Default/.ide
-
-2019-04-01T10:47:12.918Z - normal: IDE server has started, listening on http://127.0.0.1:52366
-
-2019-04-01T10:47:12.918Z - normal: initialization finished
-
-2019-04-01T10:47:13.064Z - normal: open IDE success
-
-2019-04-01T10:53:03.041Z - normal: Start building with options : {
-  "actualPlatform": "wechatgame",
-  "android-instant": {
-    "REMOTE_SERVER_ROOT": "",
-    "host": "",
-    "pathPattern": "",
-    "recordPath": "",
-    "scheme": "https",
-    "skipRecord": false
-  },
-  "apiLevel": "",
-  "appABIs": [],
-  "appBundle": false,
-  "baidugame": {
-    "REMOTE_SERVER_ROOT": "",
-    "appid": "testappid",
-    "orientation": "portrait",
-    "subContext": ""
-  },
-  "buildPath": "/Users/7cgames/Desktop/Master_of_moving_car",
-  "debug": false,
+  "debug": true,
   "dest": "/Users/7cgames/Desktop/Master_of_moving_car/wechatgame",
   "embedWebDebugger": false,
   "encryptJs": true,
@@ -359,9 +214,9 @@
   "webOrientation": "auto",
   "wechatgame": {
     "REMOTE_SERVER_ROOT": "",
-    "appid": "wx6ac3f5090a6b99c5",
+    "appid": "",
     "orientation": "portrait",
-    "subContext": ""
+    "subContext": "cargame"
   },
   "xxteaKey": "5396257e-6229-4e",
   "zipCompressJs": true,
@@ -369,31 +224,630 @@
   "projectName": "CAR",
   "debugBuildWorker": false
 }
-2019-04-01T10:53:03.045Z - normal: Building /Users/7cgames/Desktop/Master_of_moving_car/CAR
-2019-04-01T10:53:03.045Z - normal: Destination /Users/7cgames/Desktop/Master_of_moving_car/wechatgame
-2019-04-01T10:53:03.046Z - normal: Delete /Users/7cgames/Desktop/Master_of_moving_car/wechatgame/subpackages/**/*,/Users/7cgames/Desktop/Master_of_moving_car/wechatgame/**/*
-2019-04-01T10:54:01.812Z - normal: Start building assets
-2019-04-01T10:54:01.814Z - normal: Start spawn build-worker
-2019-04-01T10:54:02.466Z - normal: Finish spawn build-worker
-2019-04-01T10:54:02.466Z - normal: Start init build-worker
-2019-04-01T10:54:05.661Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
-2019-04-01T10:54:05.661Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
-2019-04-01T10:54:05.663Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
-2019-04-01T10:54:05.665Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
-2019-04-01T10:54:05.693Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
-2019-04-01T10:54:05.703Z - normal: Finish init build-worker
-2019-04-01T10:54:05.703Z - normal: Start build-assets in worker
-2019-04-01T10:54:06.694Z - normal: Finish build-assets in worker
-2019-04-01T10:54:06.696Z - normal: Finish building assets
-2019-04-01T10:54:06.724Z - normal: Start building plugin scripts
-2019-04-01T10:54:06.770Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
-2019-04-01T10:54:07.947Z - normal: Built to "/Users/7cgames/Desktop/Master_of_moving_car/wechatgame" successfully
-2019-04-01T10:55:41.749Z - normal: Initializing...
+2019-04-03T02:04:21.562Z - normal: Building /Users/7cgames/Desktop/Master_of_moving_car/CAR
+2019-04-03T02:04:21.562Z - normal: Destination /Users/7cgames/Desktop/Master_of_moving_car/wechatgame
+2019-04-03T02:04:21.886Z - normal: Delete /Users/7cgames/Desktop/Master_of_moving_car/wechatgame/subpackages/**/*,/Users/7cgames/Desktop/Master_of_moving_car/wechatgame/**/*,!/Users/7cgames/Desktop/Master_of_moving_car/wechatgame/cargame,!/Users/7cgames/Desktop/Master_of_moving_car/wechatgame/cargame/**/*
+2019-04-03T02:04:25.169Z - normal: Start building assets
+2019-04-03T02:04:25.170Z - normal: Start spawn build-worker
+2019-04-03T02:04:25.909Z - normal: Finish spawn build-worker
+2019-04-03T02:04:25.909Z - normal: Start init build-worker
+2019-04-03T02:04:30.321Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-03T02:04:30.338Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-03T02:04:30.339Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-03T02:04:30.339Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-03T02:04:30.393Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-03T02:04:30.416Z - normal: Finish init build-worker
+2019-04-03T02:04:30.416Z - normal: Start build-assets in worker
+2019-04-03T02:04:33.040Z - normal: Finish build-assets in worker
+2019-04-03T02:04:33.042Z - normal: Finish building assets
+2019-04-03T02:04:33.105Z - normal: Start building plugin scripts
+2019-04-03T02:04:33.144Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2019-04-03T02:04:34.445Z - normal: Built to "/Users/7cgames/Desktop/Master_of_moving_car/wechatgame" successfully
+2019-04-03T02:04:40.387Z - normal: Initializing...
 
-2019-04-01T10:55:41.754Z - normal: idePortFile: /Users/7cgames/Library/Application Support/微信web开发者工具/Default/.ide
+2019-04-03T02:04:40.457Z - normal: idePortFile: /Users/7cgames/Library/Application Support/微信web开发者工具/Default/.ide
 
-2019-04-01T10:55:41.771Z - normal: IDE server has started, listening on http://127.0.0.1:52366
-initialization finished
+2019-04-03T02:04:40.488Z - normal: starting ide...
 
-2019-04-01T10:55:41.922Z - normal: open IDE success
+2019-04-03T02:04:56.850Z - normal: IDE server has started, listening on http://127.0.0.1:13172
+
+2019-04-03T02:04:56.985Z - normal: initialization finished
+
+2019-04-03T02:04:59.052Z - normal: open IDE success
+
+2019-04-03T02:06:13.669Z - normal: Initializing...
+
+2019-04-03T02:06:13.727Z - normal: idePortFile: /Users/7cgames/Library/Application Support/微信web开发者工具/Default/.ide
+
+2019-04-03T02:06:13.817Z - normal: IDE server has started, listening on http://127.0.0.1:13172
+
+2019-04-03T02:06:13.817Z - normal: initialization finished
+
+2019-04-03T02:06:13.960Z - normal: open IDE success
+
+2019-04-03T02:08:53.141Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-03T02:08:53.204Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-03T02:08:53.205Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-03T02:08:53.206Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-03T02:08:53.437Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-03T02:08:53.482Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-03T02:08:53.484Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-03T02:08:58.094Z - normal: Start building with options : {
+  "actualPlatform": "wechatgame",
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "apiLevel": "",
+  "appABIs": [],
+  "appBundle": false,
+  "baidugame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "testappid",
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "buildPath": "/Users/7cgames/Desktop/Master_of_moving_car",
+  "debug": true,
+  "dest": "/Users/7cgames/Desktop/Master_of_moving_car/wechatgame",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [
+    "ParticleSystem",
+    "TiledMap",
+    "Physics"
+  ],
+  "fb-instant-games": {},
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.CAR",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait",
+    "zip": false
+  },
+  "scenes": [
+    "0d9abb2f-8a01-4c5a-b0fb-453c4cc2170e",
+    "ced5f993-1674-4443-9160-26b7059d628e",
+    "bfbf8a0c-6a55-43d2-86b8-c436ab5c50c3",
+    "cec502e6-6932-4ae0-bac4-6d742f717410",
+    "a43eae38-e844-4285-86b0-6dfaf3cdc003"
+  ],
+  "sourceMaps": false,
+  "startScene": "0d9abb2f-8a01-4c5a-b0fb-453c4cc2170e",
+  "template": "link",
+  "title": "CAR",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "",
+    "orientation": "portrait",
+    "subContext": "cargame"
+  },
+  "xxteaKey": "5396257e-6229-4e",
+  "zipCompressJs": true,
+  "project": "/Users/7cgames/Desktop/Master_of_moving_car/CAR",
+  "projectName": "CAR",
+  "debugBuildWorker": false
+}
+2019-04-03T02:08:58.097Z - normal: Building /Users/7cgames/Desktop/Master_of_moving_car/CAR
+2019-04-03T02:08:58.097Z - normal: Destination /Users/7cgames/Desktop/Master_of_moving_car/wechatgame
+2019-04-03T02:08:58.099Z - normal: Delete /Users/7cgames/Desktop/Master_of_moving_car/wechatgame/subpackages/**/*,/Users/7cgames/Desktop/Master_of_moving_car/wechatgame/**/*,!/Users/7cgames/Desktop/Master_of_moving_car/wechatgame/cargame,!/Users/7cgames/Desktop/Master_of_moving_car/wechatgame/cargame/**/*
+2019-04-03T02:09:01.855Z - normal: Start building assets
+2019-04-03T02:09:01.855Z - normal: Start spawn build-worker
+2019-04-03T02:09:02.476Z - normal: Finish spawn build-worker
+2019-04-03T02:09:02.476Z - normal: Start init build-worker
+2019-04-03T02:09:06.855Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-03T02:09:06.855Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-03T02:09:06.856Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-03T02:09:06.856Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-03T02:09:06.879Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-03T02:09:06.887Z - normal: Finish init build-worker
+2019-04-03T02:09:06.888Z - normal: Start build-assets in worker
+2019-04-03T02:09:09.127Z - normal: Finish build-assets in worker
+2019-04-03T02:09:09.130Z - normal: Finish building assets
+2019-04-03T02:09:09.213Z - normal: Start building plugin scripts
+2019-04-03T02:09:09.243Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2019-04-03T02:09:10.276Z - normal: Built to "/Users/7cgames/Desktop/Master_of_moving_car/wechatgame" successfully
+2019-04-03T02:09:36.865Z - normal: Initializing...
+
+2019-04-03T02:09:36.870Z - normal: idePortFile: /Users/7cgames/Library/Application Support/微信web开发者工具/Default/.ide
+
+2019-04-03T02:09:36.939Z - normal: starting ide...
+
+2019-04-03T02:09:42.999Z - normal: IDE server has started, listening on http://127.0.0.1:44008
+
+2019-04-03T02:09:43.039Z - normal: initialization finished
+
+2019-04-03T02:09:43.452Z - normal: open IDE success
+
+2019-04-03T02:11:50.843Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-03T02:11:50.855Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-03T02:11:50.855Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-03T02:11:50.856Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-03T02:11:50.980Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-03T02:11:50.980Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-03T02:11:50.980Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-03T02:16:11.983Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-03T02:16:11.984Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-03T02:16:11.998Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-03T02:16:11.999Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-03T02:16:11.999Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-03T02:16:11.999Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-03T02:16:11.999Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-03T02:16:25.314Z - normal: Start building with options : {
+  "actualPlatform": "wechatgame",
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "apiLevel": "",
+  "appABIs": [],
+  "appBundle": false,
+  "baidugame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "testappid",
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "buildPath": "/Users/7cgames/Desktop/Master_of_moving_car",
+  "debug": true,
+  "dest": "/Users/7cgames/Desktop/Master_of_moving_car/wechatgame",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [
+    "ParticleSystem",
+    "TiledMap",
+    "Physics"
+  ],
+  "fb-instant-games": {},
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.CAR",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait",
+    "zip": false
+  },
+  "scenes": [
+    "0d9abb2f-8a01-4c5a-b0fb-453c4cc2170e",
+    "ced5f993-1674-4443-9160-26b7059d628e",
+    "bfbf8a0c-6a55-43d2-86b8-c436ab5c50c3",
+    "cec502e6-6932-4ae0-bac4-6d742f717410",
+    "a43eae38-e844-4285-86b0-6dfaf3cdc003"
+  ],
+  "sourceMaps": false,
+  "startScene": "0d9abb2f-8a01-4c5a-b0fb-453c4cc2170e",
+  "template": "link",
+  "title": "CAR",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "",
+    "orientation": "portrait",
+    "subContext": "cargame"
+  },
+  "xxteaKey": "5396257e-6229-4e",
+  "zipCompressJs": true,
+  "project": "/Users/7cgames/Desktop/Master_of_moving_car/CAR",
+  "projectName": "CAR",
+  "debugBuildWorker": false
+}
+2019-04-03T02:16:25.334Z - normal: Building /Users/7cgames/Desktop/Master_of_moving_car/CAR
+2019-04-03T02:16:25.335Z - normal: Destination /Users/7cgames/Desktop/Master_of_moving_car/wechatgame
+2019-04-03T02:16:25.336Z - normal: Delete /Users/7cgames/Desktop/Master_of_moving_car/wechatgame/subpackages/**/*,/Users/7cgames/Desktop/Master_of_moving_car/wechatgame/**/*,!/Users/7cgames/Desktop/Master_of_moving_car/wechatgame/cargame,!/Users/7cgames/Desktop/Master_of_moving_car/wechatgame/cargame/**/*
+2019-04-03T02:16:29.638Z - normal: Start building assets
+2019-04-03T02:16:29.638Z - normal: Start spawn build-worker
+2019-04-03T02:16:30.287Z - normal: Finish spawn build-worker
+2019-04-03T02:16:30.287Z - normal: Start init build-worker
+2019-04-03T02:16:35.025Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-03T02:16:35.026Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-03T02:16:35.027Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-03T02:16:35.027Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-03T02:16:35.071Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-03T02:16:35.079Z - normal: Finish init build-worker
+2019-04-03T02:16:35.079Z - normal: Start build-assets in worker
+2019-04-03T02:16:37.263Z - normal: Finish build-assets in worker
+2019-04-03T02:16:37.266Z - normal: Finish building assets
+2019-04-03T02:16:37.307Z - normal: Start building plugin scripts
+2019-04-03T02:16:37.338Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2019-04-03T02:16:38.471Z - normal: Built to "/Users/7cgames/Desktop/Master_of_moving_car/wechatgame" successfully
+2019-04-03T02:16:42.381Z - normal: Initializing...
+
+2019-04-03T02:16:42.386Z - normal: idePortFile: /Users/7cgames/Library/Application Support/微信web开发者工具/Default/.ide
+
+2019-04-03T02:16:42.423Z - normal: IDE server has started, listening on http://127.0.0.1:44008
+
+2019-04-03T02:16:42.423Z - normal: initialization finished
+
+2019-04-03T02:16:42.575Z - normal: open IDE success
+
+2019-04-03T02:19:54.598Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-03T02:19:54.612Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-03T02:19:54.612Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-03T02:19:54.613Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-03T02:19:54.613Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-03T02:19:54.613Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-03T02:19:54.613Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-03T02:20:22.686Z - normal: Start building with options : {
+  "actualPlatform": "wechatgame",
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "apiLevel": "",
+  "appABIs": [],
+  "appBundle": false,
+  "baidugame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "testappid",
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "buildPath": "/Users/7cgames/Desktop/Master_of_moving_car",
+  "debug": true,
+  "dest": "/Users/7cgames/Desktop/Master_of_moving_car/wechatgame",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [
+    "ParticleSystem",
+    "TiledMap",
+    "Physics"
+  ],
+  "fb-instant-games": {},
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.CAR",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait",
+    "zip": false
+  },
+  "scenes": [
+    "0d9abb2f-8a01-4c5a-b0fb-453c4cc2170e",
+    "ced5f993-1674-4443-9160-26b7059d628e",
+    "bfbf8a0c-6a55-43d2-86b8-c436ab5c50c3",
+    "cec502e6-6932-4ae0-bac4-6d742f717410",
+    "a43eae38-e844-4285-86b0-6dfaf3cdc003"
+  ],
+  "sourceMaps": false,
+  "startScene": "0d9abb2f-8a01-4c5a-b0fb-453c4cc2170e",
+  "template": "link",
+  "title": "CAR",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "",
+    "orientation": "portrait",
+    "subContext": "cargame"
+  },
+  "xxteaKey": "5396257e-6229-4e",
+  "zipCompressJs": true,
+  "project": "/Users/7cgames/Desktop/Master_of_moving_car/CAR",
+  "projectName": "CAR",
+  "debugBuildWorker": false
+}
+2019-04-03T02:20:22.689Z - normal: Building /Users/7cgames/Desktop/Master_of_moving_car/CAR
+2019-04-03T02:20:22.689Z - normal: Destination /Users/7cgames/Desktop/Master_of_moving_car/wechatgame
+2019-04-03T02:20:22.690Z - normal: Delete /Users/7cgames/Desktop/Master_of_moving_car/wechatgame/subpackages/**/*,/Users/7cgames/Desktop/Master_of_moving_car/wechatgame/**/*,!/Users/7cgames/Desktop/Master_of_moving_car/wechatgame/cargame,!/Users/7cgames/Desktop/Master_of_moving_car/wechatgame/cargame/**/*
+2019-04-03T02:20:25.793Z - normal: Start building assets
+2019-04-03T02:20:25.793Z - normal: Start spawn build-worker
+2019-04-03T02:20:26.454Z - normal: Finish spawn build-worker
+2019-04-03T02:20:26.454Z - normal: Start init build-worker
+2019-04-03T02:20:29.422Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-03T02:20:29.424Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-03T02:20:29.424Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-03T02:20:29.424Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-03T02:20:29.449Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-03T02:20:29.456Z - normal: Finish init build-worker
+2019-04-03T02:20:29.456Z - normal: Start build-assets in worker
+2019-04-03T02:20:31.371Z - normal: Finish build-assets in worker
+2019-04-03T02:20:31.373Z - normal: Finish building assets
+2019-04-03T02:20:31.415Z - normal: Start building plugin scripts
+2019-04-03T02:20:31.448Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2019-04-03T02:20:32.626Z - normal: Built to "/Users/7cgames/Desktop/Master_of_moving_car/wechatgame" successfully
+2019-04-03T02:20:36.768Z - normal: Initializing...
+
+2019-04-03T02:20:36.774Z - normal: idePortFile: /Users/7cgames/Library/Application Support/微信web开发者工具/Default/.ide
+
+2019-04-03T02:20:36.809Z - normal: IDE server has started, listening on http://127.0.0.1:44008
+
+2019-04-03T02:20:36.809Z - normal: initialization finished
+
+2019-04-03T02:20:36.997Z - normal: open IDE success
+
+2019-04-03T02:23:40.975Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-03T02:23:40.976Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-03T02:23:40.976Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-03T02:23:40.977Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-03T02:23:40.981Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-03T02:23:40.984Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-03T02:23:40.985Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-03T02:23:45.698Z - normal: Start building with options : {
+  "actualPlatform": "wechatgame",
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "apiLevel": "",
+  "appABIs": [],
+  "appBundle": false,
+  "baidugame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "testappid",
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "buildPath": "/Users/7cgames/Desktop/Master_of_moving_car",
+  "debug": true,
+  "dest": "/Users/7cgames/Desktop/Master_of_moving_car/wechatgame",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [
+    "ParticleSystem",
+    "TiledMap",
+    "Physics"
+  ],
+  "fb-instant-games": {},
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.CAR",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait",
+    "zip": false
+  },
+  "scenes": [
+    "0d9abb2f-8a01-4c5a-b0fb-453c4cc2170e",
+    "ced5f993-1674-4443-9160-26b7059d628e",
+    "bfbf8a0c-6a55-43d2-86b8-c436ab5c50c3",
+    "cec502e6-6932-4ae0-bac4-6d742f717410",
+    "a43eae38-e844-4285-86b0-6dfaf3cdc003"
+  ],
+  "sourceMaps": false,
+  "startScene": "0d9abb2f-8a01-4c5a-b0fb-453c4cc2170e",
+  "template": "link",
+  "title": "CAR",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "",
+    "orientation": "portrait",
+    "subContext": "cargame"
+  },
+  "xxteaKey": "5396257e-6229-4e",
+  "zipCompressJs": true,
+  "project": "/Users/7cgames/Desktop/Master_of_moving_car/CAR",
+  "projectName": "CAR",
+  "debugBuildWorker": false
+}
+2019-04-03T02:23:45.701Z - normal: Building /Users/7cgames/Desktop/Master_of_moving_car/CAR
+2019-04-03T02:23:45.701Z - normal: Destination /Users/7cgames/Desktop/Master_of_moving_car/wechatgame
+2019-04-03T02:23:45.702Z - normal: Delete /Users/7cgames/Desktop/Master_of_moving_car/wechatgame/subpackages/**/*,/Users/7cgames/Desktop/Master_of_moving_car/wechatgame/**/*,!/Users/7cgames/Desktop/Master_of_moving_car/wechatgame/cargame,!/Users/7cgames/Desktop/Master_of_moving_car/wechatgame/cargame/**/*
+2019-04-03T02:23:48.395Z - normal: Start building assets
+2019-04-03T02:23:48.395Z - normal: Start spawn build-worker
+2019-04-03T02:23:49.069Z - normal: Finish spawn build-worker
+2019-04-03T02:23:49.069Z - normal: Start init build-worker
+2019-04-03T02:23:52.073Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-03T02:23:52.074Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-03T02:23:52.075Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-03T02:23:52.075Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-03T02:23:52.101Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-03T02:23:52.108Z - normal: Finish init build-worker
+2019-04-03T02:23:52.108Z - normal: Start build-assets in worker
+2019-04-03T02:23:53.073Z - normal: Finish build-assets in worker
+2019-04-03T02:23:53.076Z - normal: Finish building assets
+2019-04-03T02:23:53.101Z - normal: Start building plugin scripts
+2019-04-03T02:23:53.127Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2019-04-03T02:23:54.105Z - normal: Built to "/Users/7cgames/Desktop/Master_of_moving_car/wechatgame" successfully
+2019-04-03T02:24:04.609Z - normal: Initializing...
+
+2019-04-03T02:24:04.615Z - normal: idePortFile: /Users/7cgames/Library/Application Support/微信web开发者工具/Default/.ide
+
+2019-04-03T02:24:04.632Z - normal: IDE server has started, listening on http://127.0.0.1:44008
+
+2019-04-03T02:24:04.633Z - normal: initialization finished
+
+2019-04-03T02:24:04.779Z - normal: open IDE success
+
+2019-04-03T02:26:50.209Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-03T02:26:50.211Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-03T02:26:50.211Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-03T02:26:50.211Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-03T02:26:50.221Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-03T02:26:50.223Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-03T02:26:50.225Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-03T02:27:50.020Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-03T02:27:50.037Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-03T02:27:50.037Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-03T02:27:50.038Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-03T02:27:50.038Z - warn: Should not specify class name RankJS for Component which defines in project.
+2019-04-03T02:27:50.038Z - warn: Can not instantiate CCClass 'undefined' with arguments.
+2019-04-03T02:27:50.038Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-03T02:27:53.337Z - normal: Start building with options : {
+  "actualPlatform": "wechatgame",
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "apiLevel": "",
+  "appABIs": [],
+  "appBundle": false,
+  "baidugame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "testappid",
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "buildPath": "/Users/7cgames/Desktop/Master_of_moving_car",
+  "debug": true,
+  "dest": "/Users/7cgames/Desktop/Master_of_moving_car/wechatgame",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [
+    "ParticleSystem",
+    "TiledMap",
+    "Physics"
+  ],
+  "fb-instant-games": {},
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.CAR",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait",
+    "zip": false
+  },
+  "scenes": [
+    "0d9abb2f-8a01-4c5a-b0fb-453c4cc2170e",
+    "ced5f993-1674-4443-9160-26b7059d628e",
+    "bfbf8a0c-6a55-43d2-86b8-c436ab5c50c3",
+    "cec502e6-6932-4ae0-bac4-6d742f717410",
+    "a43eae38-e844-4285-86b0-6dfaf3cdc003"
+  ],
+  "sourceMaps": false,
+  "startScene": "0d9abb2f-8a01-4c5a-b0fb-453c4cc2170e",
+  "template": "link",
+  "title": "CAR",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "",
+    "orientation": "portrait",
+    "subContext": "cargame"
+  },
+  "xxteaKey": "5396257e-6229-4e",
+  "zipCompressJs": true,
+  "project": "/Users/7cgames/Desktop/Master_of_moving_car/CAR",
+  "projectName": "CAR",
+  "debugBuildWorker": false
+}
+2019-04-03T02:27:53.339Z - normal: Building /Users/7cgames/Desktop/Master_of_moving_car/CAR
+2019-04-03T02:27:53.339Z - normal: Destination /Users/7cgames/Desktop/Master_of_moving_car/wechatgame
+2019-04-03T02:27:53.340Z - normal: Delete /Users/7cgames/Desktop/Master_of_moving_car/wechatgame/subpackages/**/*,/Users/7cgames/Desktop/Master_of_moving_car/wechatgame/**/*,!/Users/7cgames/Desktop/Master_of_moving_car/wechatgame/cargame,!/Users/7cgames/Desktop/Master_of_moving_car/wechatgame/cargame/**/*
+2019-04-03T02:27:56.927Z - normal: Start building assets
+2019-04-03T02:27:56.948Z - normal: Start spawn build-worker
+2019-04-03T02:27:57.605Z - normal: Finish spawn build-worker
+2019-04-03T02:27:57.606Z - normal: Start init build-worker
+2019-04-03T02:28:03.422Z - warn: Can not serialize 'CCClass.m_BlockData' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_BlockData' to 'false'.
+2019-04-03T02:28:03.504Z - warn: Can not serialize 'CCClass.m_subPackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'CCClass.m_subPackageDatas' to 'false'.
+2019-04-03T02:28:03.505Z - warn: Can not serialize 'GameDataManagerJS.m_PackageDatas' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_PackageDatas' to 'false'.
+2019-04-03T02:28:03.505Z - warn: Can not serialize 'GameDataManagerJS.m_gameBoxInfoList' because the specified type is anonymous, please provide a class name or set the 'serializable' attribute of 'GameDataManagerJS.m_gameBoxInfoList' to 'false'.
+2019-04-03T02:28:03.506Z - warn: The 'type' attribute of 'gameplay.m_pHintBlock' is undefined when loading script
+2019-04-03T02:28:03.506Z - normal: Finish init build-worker
+2019-04-03T02:28:03.506Z - normal: Start build-assets in worker
+2019-04-03T02:28:10.706Z - normal: Finish build-assets in worker
+2019-04-03T02:28:10.709Z - normal: Finish building assets
+2019-04-03T02:28:10.743Z - normal: Start building plugin scripts
+2019-04-03T02:28:10.788Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2019-04-03T02:28:11.977Z - normal: Built to "/Users/7cgames/Desktop/Master_of_moving_car/wechatgame" successfully
+2019-04-03T02:28:14.808Z - normal: Initializing...
+
+2019-04-03T02:28:14.813Z - normal: idePortFile: /Users/7cgames/Library/Application Support/微信web开发者工具/Default/.ide
+
+2019-04-03T02:28:14.849Z - normal: IDE server has started, listening on http://127.0.0.1:44008
+
+2019-04-03T02:28:14.850Z - normal: initialization finished
+
+2019-04-03T02:28:15.055Z - normal: open IDE success
 

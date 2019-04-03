@@ -15,11 +15,14 @@ cc._RF.push(module, '8387b/efCRElZuHF6/rLnFY', 'define', __filename);
 //  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/life-cycle-callbacks.html
 
 module.exports = {
+    avatarUrl: '', //头像
+    nickName: 'xx', //昵称
+    AvatarUrl: '',
     money: 100,
     flag: [0],
     carskin: 1,
     kVersion_number: '1.0.6',
-    APP_ID: 'wx28e2908e1d0001e1',
+    APP_ID: '   ',
 
     //枚举 水平 垂直方向
     kOrientation_Horizontal: 0,

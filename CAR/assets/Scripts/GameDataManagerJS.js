@@ -259,7 +259,20 @@ getGameCompleteStars: function () {
 //增加goals
 addGoals: function () {
     let key = this.gameName + "goals2";
+    if (CC_WECHATGAME) {
+        window.wx.postMessage({
+            messageType: 3,
+            MAIN_MENU_NUM: define.RankKey,
+            score: 0,
+            // score: this.getGoals() + 1,
+        });
+    } else {
+        console.log("fail 提交得分 : " + goals)
+    }
+    
     cc.sys.localStorage.setItem(key, this.getGoals() + 1);
+
+
 },
 //获取goals
 getGoals: function () {

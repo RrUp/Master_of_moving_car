@@ -40,9 +40,9 @@
   "webOrientation": "auto",
   "wechatgame": {
     "REMOTE_SERVER_ROOT": "",
-    "appid": "wx6ac3f5090a6b99c5",
+    "appid": "",
     "orientation": "portrait",
-    "subContext": ""
+    "subContext": "cargame"
   },
   "xxteaKey": "5396257e-6229-4e",
   "zipCompressJs": true

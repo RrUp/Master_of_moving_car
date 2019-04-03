@@ -6,7 +6,7 @@ cc._RF.push(module, '28568izkI1BUKVTJHdhwRxx', 'RankJS', __filename);
 
 var define = require("define");
 var AdsManager = require("AdsManagerJS");
-
+var GameDataManager = require("GameDataManagerJS");
 cc.Class({
     extends: cc.Component,
     name: "RankJS",
@@ -14,61 +14,71 @@ cc.Class({
         groupFriendButton: cc.Button,
         // friendButton: cc.Node,
         rankingScrollView: cc.Sprite, //显示排行榜
-
         mainNode: cc.Node
     },
 
     // LIFE-CYCLE CALLBACKS:
 
     onLoad: function onLoad() {
-        var self = this;
-        var canvas = self.mainNode;
-        canvas.on(cc.Node.EventType.TOUCH_START, function (event) {
-            event.stopPropagation();
-        }, self.node);
-        canvas.on(cc.Node.EventType.TOUCH_MOVE, function (event) {
-            event.stopPropagation();
-        }, self.node);
-        canvas.on(cc.Node.EventType.TOUCH_END, function (event) {
-            event.stopPropagation();
-        }, self.node);
+        // var self = this;
+        // var canvas = self.mainNode
+        // canvas.on(cc.Node.EventType.TOUCH_START, function (event) {
+        //     event.stopPropagation();
+        // }, self.node);
+        // canvas.on(cc.Node.EventType.TOUCH_MOVE, function (event) {
+        //     event.stopPropagation();
+        // }, self.node);
+        // canvas.on(cc.Node.EventType.TOUCH_END, function (event) {
+        //     event.stopPropagation();
+        // }, self.node);
+        // this.friendButtonFunc();
     },
     start: function start() {
-        if (CC_WECHATGAME) {
-            window.wx.showShareMenu({ withShareTicket: true }); //设置分享按钮，方便获取群id展示群排行榜
-            this.tex = new cc.Texture2D();
-            console.log("rankingScrollView setContentSize " + cc.director.getVisibleSize());
-            var k = 0.5;
-            //    this.rankingScrollView.node.setContentSize(cc.director.getVisibleSize());
-            // window.wx.postMessage({
-            //     messageType: 1,
-            //     MAIN_MENU_NUM: define.RankKey
-            // });
-        }
-        this.groupFriendButton.getComponentInChildren(cc.Label).string = '群排行';
-        cc.log("+========", this.groupFriendButton.getComponentInChildren(cc.Label).string);
+        // if (CC_WECHATGAME) {
+        //     window.wx.showShareMenu({ withShareTicket: true });//设置分享按钮，方便获取群id展示群排行榜
+        //     this.tex = new cc.Texture2D();
+        //     console.log("rankingScrollView setContentSize " + cc.director.getVisibleSize());
+        //     var k = 0.5;
+        //     //    this.rankingScrollView.node.setContentSize(cc.director.getVisibleSize());
+        //     // window.wx.postMessage({
+        //     //     messageType: 1,
+        //     //     MAIN_MENU_NUM: define.RankKey
+        //     // });
+        // }
+        // this.groupFriendButton.getComponentInChildren(cc.Label).string = '群排行'
+        // cc.log("+========", this.groupFriendButton.getComponentInChildren(cc.Label).string)
         //GameDataManager.getInstance().getTextById(14);
     },
     friendButtonFunc: function friendButtonFunc(event) {
-        console.log(" show 好友排行榜数据 ");
-        AdsManager.getInstance().hideBannerAD();
         if (CC_WECHATGAME) {
-            if (window.wx.postMessage && wx.getOpenDataContext) {
-                this.mainNode.active = true;
-                // 发消息给子域
-                window.wx.postMessage({
-                    messageType: 1,
-                    MAIN_MENU_NUM: define.RankKey
-                });
-            } else {
-                wx.showModal({
-                    title: '提示',
-                    content: '当前微信版本过低，好友排行榜，无法使用该功能，请升级到最新微信版本后重试。'
-                });
-            }
+            // 发消息给子域
+            window.wx.postMessage({
+                messageType: 1,
+                MAIN_MENU_NUM: define.RankKey
+            });
         } else {
-            console.log("不支持 获取好友排行榜数据。x1");
+            cc.log("获取好友排行榜数据。define.RankKey");
         }
+        // console.log(" show 好友排行榜数据 ");
+        // AdsManager.getInstance().hideBannerAD();
+        // if (CC_WECHATGAME) {
+        //     if (window.wx.postMessage&&wx.getOpenDataContext) {
+        //         this.mainNode.active = true;
+        //         // 发消息给子域
+        //         window.wx.postMessage({
+        //             messageType: 1,
+        //             MAIN_MENU_NUM: define.RankKey
+        //         });
+        //     } else {
+        //         wx.showModal({
+        //             title: '提示',
+        //             content: '当前微信版本过低，好友排行榜，无法使用该功能，请升级到最新微信版本后重试。'
+        //         });
+        //     }
+
+        // } else {
+        //     console.log("不支持 获取好友排行榜数据。define.RankKey");
+        // }
     },
 
 
@@ -89,7 +99,7 @@ cc.Class({
                 }
             });
         } else {
-            console.log("不支持 获取群排行榜数据。x1");
+            console.log("不支持 获取群排行榜数据。define.RankKey");
         }
     },
 
@@ -100,19 +110,21 @@ cc.Class({
                 MAIN_MENU_NUM: define.RankKey
             });
         } else {
-            console.log("获取横向展示排行榜数据。x1");
+            console.log("获取横向展示排行榜数据。define.RankKey");
         }
     },
 
-    submitScoreButtonFunc: function submitScoreButtonFunc(score) {
+    submitScoreButtonFunc: function submitScoreButtonFunc() {
+        var goals = GameDataManager.getInstance().getGoals();
+        console.log("得分 : " + goals);
         if (CC_WECHATGAME) {
             window.wx.postMessage({
                 messageType: 3,
                 MAIN_MENU_NUM: define.RankKey,
-                score: score
+                score: goals
             });
         } else {
-            console.log("fail 提交得分 : " + score);
+            console.log("fail 提交得分 : " + goals);
         }
     },
     update: function update(dt) {

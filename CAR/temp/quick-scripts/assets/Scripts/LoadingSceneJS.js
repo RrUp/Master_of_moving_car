@@ -6,62 +6,371 @@ cc._RF.push(module, '237daPWmClBtJ5NwTNcz49u', 'LoadingSceneJS', __filename);
 
 var GameDataManager = require("GameDataManagerJS");
 var define = require("define");
+var point = 0;
+var isLoading = false;
+var isAuthorization = false;
 cc.Class({
     extends: cc.Component,
 
     properties: {
-        wxlog_btn: cc.Button,
+        wxlog_btn: cc.Node,
         // bg_sprite: cc.Sprite,
         loadingBar: {
             type: cc.ProgressBar,
             default: null
         },
-        loadinglab: cc.Label,
+        loadinglab: cc.Sprite,
+        loadingpercent: cc.Label,
         titlebg: cc.Sprite,
         audioControl: {
             default: null
-        }
+        },
+        testSprite: cc.SpriteFrame
+        // btnAuthorization: cc.Node,
     },
 
     onLoad: function onLoad() {
+        var _this = this;
+
         // cc.sys.localStorage.clear();
+        cc.game.on("impower", function (sure) {
+            if (sure) {
+                console.log("授权成功！");
+                _this.wxlog_btn.active = false;
+                _this.loadingBar.node.active = true;
+                _this.loadinglab.node.active = true;
+                _this.loadingpercent.node.active = true;
+                // this.wxlog_btn.active=true;
+                GameDataManager.getInstance().preLoadingdata(); //加载关卡数据(获取maxPackageCount、passCount、unlockCount)
+                // this.loadres();
+                //首次加载游戏
+                cc.log("############", GameDataManager.getInstance().getgold());
+                if (!define.getgold()) {
+                    GameDataManager.getInstance().savegold(define.money);
+                    cc.log("@@@", GameDataManager.getInstance().getgold());
+                }
+                //    }
+            } else {}
+        });
+        this.getInfo();
         this.loadingBar.progress = 0; //进度条
-        this.loadingTime = 1;
-        GameDataManager.getInstance().preLoadingdata(); //加载关卡数据(获取maxPackageCount、passCount、unlockCount)
-        this.loadres();
-        //首次加载游戏
-        cc.log("############", GameDataManager.getInstance().getgold());
-        if (!define.getgold()) {
-            GameDataManager.getInstance().savegold(define.money);
-            cc.log("@@@", GameDataManager.getInstance().getgold());
+        this.loadingBar.node.active = false;
+        this.loadinglab.node.active = false;
+        this.loadingpercent.node.active = false;
+        // this.loadingTime = 1;
+        if (!CC_WECHATGAME) {
+            console.log("授权成功！");
+            this.wxlog_btn.active = false;
+            this.loadingBar.node.active = true;
+            this.loadinglab.node.active = true;
+            this.loadingpercent.node.active = true;
+            // this.wxlog_btn.active=true;
+            GameDataManager.getInstance().preLoadingdata(); //加载关卡数据(获取maxPackageCount、passCount、unlockCount)
+            // this.loadres();
+            //首次加载游戏
+            cc.log("############", GameDataManager.getInstance().getgold());
+            if (!define.getgold()) {
+                GameDataManager.getInstance().savegold(define.money);
+                cc.log("@@@", GameDataManager.getInstance().getgold());
+            }
         }
-        //    }
-        cc.log("load123");
         // if(cc.sys.localStorage.getItem("first_in") == NaN){
         //     cc.sys.localStorage.setItem("first_in", 100);
         // 游戏首次加载需要初始化的操作
         //   }
         //   this.audioControl = cc.find('AudioControlNode').getComponent('AudioSourceControl');
         // (" 常驻节点 赋值 ")
+
+        // cc.game.addPersistRootNode(this.node);
+        // cc.director.preloadScene('main', () => {//预加载
+        // });
+
+        // if (CC_WECHATGAME) {
+        //         isAuthorization = false;//未授权状态
+        //         this.Login();//获取openid
+        // }
+        // else {//网页测试用
+        //     isAuthorization = true;
+        //     this.loadingBar.node.active=true;
+        //     define.Name = 'testUser'//require('define')
+        //     define.Avatra = this.testSprite._texture;
+        //     console.log(define.Avatra)
+        //     this.scheduleOnce(function () {
+        //         Global.server.LoginServer();
+        //     }, 1)
+        // }
+    },
+    getInfo: function getInfo() {
+        return new Promise(function (resolve, reject) {
+            if (CC_WECHATGAME) {
+                wx.getSetting({
+                    success: function success(res) {
+                        if (!res.authSetting['scope.userInfo']) {
+                            console.log('ç¨æ·è¿æ²¡ææï¼');
+                            if (wx.createUserInfoButton) {
+                                console.log("åå»ºæææé®");
+                                var button = wx.createUserInfoButton({
+                                    type: 'text',
+                                    text: '',
+                                    style: {
+                                        left: 0,
+                                        top: 0,
+                                        width: 5000,
+                                        height: 5000,
+                                        lineHeight: 40,
+                                        backgroundColor: '',
+                                        color: '',
+                                        textAlign: 'center',
+                                        fontSize: 40,
+                                        borderRadius: 10
+                                    }
+                                });
+
+                                button.onTap(function () {
+                                    console.log('åºç°æææé®ï¼');
+                                    wx.getUserInfo({
+                                        success: function success(res) {
+                                            button.hide();
+                                            define.nickName = res.userInfo.nickName;
+                                            define.avatarUrl = res.userInfo.avatarUrl;
+                                            console.log("æææå");
+                                            cc.game.emit("impower", true);
+                                            resolve();
+                                        },
+                                        fail: function fail(res) {
+                                            console.log(res);
+                                            console.log("ææå¤±è´¥");
+                                            cc.game.emit("impower", false);
+                                            reject();
+                                        }
+                                    });
+                                });
+                            } else {
+                                console.log("ä¸åå»ºæææé®");
+                                wx.authorize({
+                                    scope: 'scope.userInfo',
+                                    success: function success() {
+                                        wx.getUserInfo({
+                                            success: function success(res) {
+                                                define.nickName = res.userInfo.nickName;
+                                                define.avatarUrl = res.userInfo.avatarUrl;
+                                                // G.LoadingManager.init();
+                                                resolve();
+                                            },
+                                            fail: function fail(res) {
+                                                reject();
+                                            }
+                                        });
+                                    }
+                                });
+                            }
+                        } else {
+                            console.log('ç¨æ·å·²ç»ææï¼');
+                            wx.getUserInfo({
+                                success: function success(res) {
+                                    console.log('res', res);
+                                    define.nickName = res.userInfo.nickName;
+                                    define.avatarUrl = res.userInfo.avatarUrl;
+                                    cc.game.emit("impower", true);
+                                    // G.LoadingManager.init();
+                                    resolve();
+                                },
+                                fail: function fail(res) {
+                                    reject();
+                                }
+                            });
+                        }
+                    }
+                });
+            } else {
+                console.log('æµè§å¨æ æ³ææï¼');
+                // G.LoadingManager.init();
+                resolve();
+            }
+        });
+    },
+    Login: function Login() {
+        //拿OpenId
+        var self = this;
+        if (CC_WECHATGAME) {
+            wx.login({
+                success: function success(res1) {
+                    if (res1.code) {
+                        wx.request({
+                            //测试
+                            url: 'https://www.7cgames.cn:8070/getOpenId',
+                            //生产
+                            //url: 'https://www.7cgames.cn:8070/getOpenId',
+                            data: {
+                                gameName: 'HeadKing',
+                                appid: 'wxe7da0f34550b5d3c',
+                                secret: '134aa23603b0ab1d8177c6ef65370f40',
+                                js_code: res1.code,
+                                grant_type: 'authorization_code'
+                            },
+                            header: {
+                                "Content-Type": "application/json"
+                            },
+                            method: 'POST',
+                            success: function success(res2) {
+                                console.log('res2' + "--------------");
+                                console.log(res2);
+                                userID = res2.data.openid;
+                                if (!userID) {
+                                    // self.userID = '123';
+                                    console.log('self.userID!!!');
+                                }
+                                console.log(userID);
+                                cc.sys.localStorage.setItem('OpenId', userID);
+                                // console.log('userID' + userID)
+                                console.log('发起连接请求：' + new Date().getTime());
+                                self.wxGetUserState();
+                            },
+                            fail: function fail(res2) {
+                                console.log("openidGet Fail", res2);
+                            }
+                        });
+                    } else {
+                        console.log('登录失败！' + res1.errMsg);
+                    }
+                }
+            });
+        } else {
+            //  userID = 'oUQfI5QDgOnYS74rtdfMrBEwV0MM';
+
+        }
     },
 
-    loadres: function loadres() {
+    wxGetUserState: function wxGetUserState() {
+
         var self = this;
-        var loadingBar = this.loadingBar;
-        // var loadtext = this.loadtext;
-        // var login_button = this.login_button;
-        var jindu = 0;
-        self.is_loading = true;
-        cc.loader.onProgress = function (completedCount, totalCount, item) {
-            if (totalCount !== 0 && self.is_loading === true) {
-                jindu = completedCount / totalCount;
+        wx.getSetting({
+            fail: function fail(res) {
+                self.wxGetUserInfo();
+                console.log('fail1');
+            },
+
+            success: function success(res) {
+                if (res.authSetting['scope.userInfo']) {
+                    self.getUserInfo();
+                    self.btnAuthorization.active = false;
+                } else {
+                    self.btnAuthorization.active = true;
+                    self.wxGetUserInfo();
+                    console.log('fail2');
+                }
             }
-            loadingBar.progress = jindu;
-            // var number_jindu = parseInt(jindu * 100);
-            // loadtext.string = number_jindu + '%';
-        };
-        self.onLoadComplete();
+        });
     },
+    wxGetUserInfo: function wxGetUserInfo() {
+        var self = this;
+        //this.windowWidth
+        this.WXInfoButton = wx.createUserInfoButton({
+            type: 'text',
+            text: '',
+            style: {
+                left: 0,
+                top: 0,
+                width: 5000,
+                height: 5000,
+                lineHeight: 40,
+                backgroundColor: '',
+                color: '',
+                textAlign: 'center',
+                fontSize: 16,
+                borderRadius: 4
+            }
+        });
+        this.WXInfoButton.onTap(function (res) {
+            if (res.errMsg.indexOf('auth deny') > -1 || res.errMsg.indexOf('auth denied') > -1) {
+                // 处理用户拒绝授权的情况
+                self.guideActive();
+            } else {
+                self.setUserData(res);
+                self.WXInfoButton.hide();
+            }
+        });
+        this.WXInfoButton.show();
+    },
+    getUserInfo: function getUserInfo() {
+        var self = this;
+        console.log('get info');
+        wx.getUserInfo({
+            fail: function fail(res) {
+                if (res.errMsg.indexOf('auth deny') > -1 || res.errMsg.indexOf('auth denied') > -1) {
+                    // 处理用户拒绝授权的情况
+                    self.guideActive();
+                }
+            },
+            success: function success(res) {
+                console.log('get info success');
+                self.setUserData(res);
+            }
+        });
+    },
+
+    guideActive: function guideActive() {
+        wx.showModal({
+            title: '警告',
+            content: '拒绝授权将无法正常游戏',
+            //cancelText: '取消',
+            showCancel: false,
+            success: function success(res) {
+                if (res.confirm) {
+                    console.log('用户点击确定');
+                } else if (res.cancel) {
+                    console.log('用户点击取消');
+                }
+            }
+        });
+    },
+    setUserData: function setUserData(res) {
+        console.log('login');
+        //console.log(res.userInfo)
+        define.Name = res.userInfo.nickName;
+        define.AvatarUrl = res.userInfo.avatarUrl;
+        this.btnAuthorization.active = false;
+        this.pro.node.active = true;
+        isAuthorization = true;
+        cc.loader.load({ url: res.userInfo.avatarUrl, type: 'png' }, function (err, newSprite) {
+            define.Avatra = newSprite;
+        });
+        //Global.server.PostUserInfoByUserIdBindFun()//把获得头像数据发送给服务器
+        //**  Global.server.LoginServer(res.userInfo.nickName, res.userInfo.avatarUrl, userID);
+        // this.signature = res.signature
+        // this.encryptedData = res.encryptedData
+        // this.rawData = res.rawData
+        // this.iv = res.iv
+
+        // this.pro.node.active = true;
+    },
+    // loadres(dt) { 
+    //     if (isAuthorization) {
+    //         cc.log("——————",point)
+    //         point += dt; cc.log("+++++point",point)
+    //         this.loadingBar.progress = ((point / 3) > 1 ? 1 : point / 3);
+    //         this.loadingpercent.string = Math.floor(this.loadingBar.progress * 100) + "%";
+    //     }
+    //     var self = this;
+    //     var loadingBar = this.loadingBar;
+    //     // var loadtext = this.loadtext;
+    //     // var login_button = this.login_button;
+    //     var jindu = 0;
+    //     self.is_loading = true;
+    //     cc.loader.onProgress = function (completedCount, totalCount, item) {
+    //         if (totalCount !== 0 && self.is_loading === true) {
+    //             jindu = completedCount / totalCount;
+    //         }
+    //         loadingBar.progress = jindu;
+    //         // var number_jindu = parseInt(jindu * 100);
+    //         // loadtext.string = number_jindu + '%';
+    //         cc.log("*******",loadingBar.progress)
+    //     if(loadingBar.progress>=1){
+    //     self.onLoadComplete();};
+
+    // }
+
+    // },
     onLoadComplete: function onLoadComplete() {
         cc.director.loadScene("main");
         // this.is_loading = false;
@@ -87,31 +396,46 @@ cc.Class({
         // var nodeX = WinSize.width / DesignResolutionSize.width;
         // var nodeY = WinSize.height / DesignResolutionSize.height;
         // console.log('    nodeX=   ' + nodeX + '  nodeY=' + nodeY);
+    },
+
+
+    //进入main
+    // onEnterGame() {
+    //     console.log('loading onEnterGame!');
+    //     cc.director.loadScene("main");
+    // },
+
+    // //加载完成回调main界面 
+    // _completeCallback: function (err, texture) {
+    //     console.log('第 ' + this.completeCount + '_completeCallback ');
+    //     this.onEnterGame();     //加载main界面 
+    // },
+    update: function update(dt) {
+        if (this.loadingBar.progress >= 1 && isLoading == false) {
+            // cc.director.loadScene("main");
+            isLoading = true;
+            this.onLoadComplete();
+        }
+        // if (isAuthorization) {
+        point += dt;
+        this.loadingBar.progress = point / 3 > 1 ? 1 : point / 3;
+        this.loadingpercent.string = Math.floor(this.loadingBar.progress * 100) + "%";
+        // }
+        //     var progress = this.loadingBar.progress;
+        //     if(progress<1){
+        //         progress+=dt/this.loadingTime;
+        //     this.loadingBar.progress =  progress ;  }
+        //     else cc.director.loadScene("main");
+        //     // this.scheduleOnce(function () {
+        //     //     this.onEnterGame();
+        //     // }, 0.1);
     }
 }
-
-//进入main
-// onEnterGame() {
-//     console.log('loading onEnterGame!');
-//     cc.director.loadScene("main");
-// },
-
-// //加载完成回调main界面 
-// _completeCallback: function (err, texture) {
-//     console.log('第 ' + this.completeCount + '_completeCallback ');
-//     this.onEnterGame();     //加载main界面 
-// },
-// update (dt) {
-//     var progress = this.loadingBar.progress;
-//     if(progress<1){
-//         progress+=dt/this.loadingTime;
-//     this.loadingBar.progress =  progress ;  }
-//     else cc.director.loadScene("main");
-//     // this.scheduleOnce(function () {
-//     //     this.onEnterGame();
-//     // }, 0.1);
-
-// },
+// log_btnClick(){
+//     if(isLoading = true){
+//         cc.director.loadScene("main");
+//     }
+// }
 );
 
 cc._RF.pop();

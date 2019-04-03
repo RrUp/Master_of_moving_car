@@ -267,6 +267,8 @@ cc.Class({
                 cc.loader.loadRes(urlPath, cc.SpriteFrame, function (err, spriteFrame) {
                     self.frame[1].getComponent(cc.Sprite).spriteFrame = spriteFrame;
                 });
+                this.freeButtondefault.active = true;
+            this.bottombutton.active = false;
             }
 
         }
@@ -283,6 +285,8 @@ cc.Class({
                 cc.loader.loadRes(urlPath, cc.SpriteFrame, function (err, spriteFrame) {
                     self.frame[2].getComponent(cc.Sprite).spriteFrame = spriteFrame;
                 });
+                this.freeButtondefault.active = true;
+            this.bottombutton.active = false;
             }
         }
         else if (this.toggle4.getComponent(cc.Toggle).isChecked) {
@@ -314,6 +318,8 @@ cc.Class({
                 cc.loader.loadRes(urlPath, cc.SpriteFrame, function (err, spriteFrame) {
                     self.frame[4].getComponent(cc.Sprite).spriteFrame = spriteFrame;
                 });
+                this.freeButtondefault.active = true;
+            this.bottombutton.active = false;
             }
         }
         else if (this.toggle6.getComponent(cc.Toggle).isChecked) {
@@ -329,6 +335,8 @@ cc.Class({
                 cc.loader.loadRes(urlPath, cc.SpriteFrame, function (err, spriteFrame) {
                     self.frame[5].getComponent(cc.Sprite).spriteFrame = spriteFrame;
                 });
+                this.freeButtondefault.active = true;
+            this.bottombutton.active = false;
             }
         }
     },

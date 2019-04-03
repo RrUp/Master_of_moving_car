@@ -572,10 +572,9 @@ cc.Class({
         this.showCompleteView(winStarNum);
 
         GameDataManager.getInstance().addGoals();
-
-        var goals = GameDataManager.getInstance().getGoals();
+        // define.goals = GameDataManager.getInstance().getGoals()
         if (define.DEBUG_MODE) {
-            console.log("play counts = " + goals);
+            console.log("play counts = " + define.goals);
         }
     },
     showCompleteView: function showCompleteView(winStarNum) {
