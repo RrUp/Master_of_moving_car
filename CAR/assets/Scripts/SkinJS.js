@@ -28,8 +28,8 @@ cc.Class({
         frame: {
             default: [],
             type: [cc.Node],
-        }
-
+        },
+        carSprite: cc.Node,
 
     },
 
@@ -53,13 +53,13 @@ cc.Class({
             cc.log("flag", i, define.flag[i])
         }
         // test恢复未解锁
-            //  for (var i = 0; i < 6; i++) {
-            //     let a = GameDataManager.getInstance().getskinlock(i);
-            //     define.flag[i] = 0;
-            //     GameDataManager.getInstance().saveskinlock(i, define.flag[i]);
-            //      cc.log("test恢复未解锁");
+        //  for (var i = 0; i < 6; i++) {
+        //     let a = GameDataManager.getInstance().getskinlock(i);
+        //     define.flag[i] = 0;
+        //     GameDataManager.getInstance().saveskinlock(i, define.flag[i]);
+        //      cc.log("test恢复未解锁");
         // }
-           this.updateskin();  
+        this.updateskin();
 
 
     },
@@ -221,8 +221,18 @@ cc.Class({
             }
         }
     },
+    // togglecheck1(){
+    //     var pic_list = [];
+    //     for (var i = 0; i < 5; ++i) {
+    //         pic_list.push("car" + (i + 1))
+    //     }
+    //     var pic_url = pic_list[i];
+    //     cc.loader.loadRes(pic_url, cc.SpriteFrame, function (err, spriteFrame) {
+    //         self.carSprite.getComponent(cc.Sprite).spriteFrame = spriteFrame;
+    //     });
+    // },
     togglecheck() {
-        var self = this;var urlPath = ("frame");
+        var self = this; var urlPath = ("frame");
         if (this.toggle1.getComponent(cc.Toggle).isChecked) {
             this.playClick();
             this.freeButtondefault.active = true;
@@ -230,8 +240,16 @@ cc.Class({
             this.conditionLabel.string = "默认皮肤"
             define.carskin = 1;
             GameDataManager.getInstance().savecarskin(define.carskin);
+            var url = ("car1");
+            cc.loader.loadRes(url, cc.SpriteFrame, function (err, spriteFrame) {
+                self.carSprite.getComponent(cc.Sprite).spriteFrame = spriteFrame;
+            });
         }
         else if (this.toggle2.getComponent(cc.Toggle).isChecked) {
+            var url = ("car2");
+            cc.loader.loadRes(url, cc.SpriteFrame, function (err, spriteFrame) {
+                self.carSprite.getComponent(cc.Sprite).spriteFrame = spriteFrame;
+            });
             this.playClick();
             this.freeButtondefault.active = false;
             this.bottombutton.active = true;
@@ -240,16 +258,19 @@ cc.Class({
             if (define.flag[1] == 1) {
                 define.carskin = 2;
                 GameDataManager.getInstance().savecarskin(define.carskin);
-                
                 cc.loader.loadRes(urlPath, cc.SpriteFrame, function (err, spriteFrame) {
                     self.frame[1].getComponent(cc.Sprite).spriteFrame = spriteFrame;
                 });
                 this.freeButtondefault.active = true;
-            this.bottombutton.active = false;
+                this.bottombutton.active = false;
             }
 
         }
         else if (this.toggle3.getComponent(cc.Toggle).isChecked) {
+            var url = ("car3");
+            cc.loader.loadRes(url, cc.SpriteFrame, function (err, spriteFrame) {
+                self.carSprite.getComponent(cc.Sprite).spriteFrame = spriteFrame;
+            });
             this.playClick();
             this.freeButtondefault.active = false;
             this.bottombutton.active = true;
@@ -263,10 +284,14 @@ cc.Class({
                     self.frame[2].getComponent(cc.Sprite).spriteFrame = spriteFrame;
                 });
                 this.freeButtondefault.active = true;
-            this.bottombutton.active = false;
+                this.bottombutton.active = false;
             }
         }
         else if (this.toggle4.getComponent(cc.Toggle).isChecked) {
+            var url = ("car4");
+            cc.loader.loadRes(url, cc.SpriteFrame, function (err, spriteFrame) {
+                self.carSprite.getComponent(cc.Sprite).spriteFrame = spriteFrame;
+            });
             this.playClick();
             this.freeButtondefault.active = false;
             this.bottombutton.active = true;
@@ -283,6 +308,10 @@ cc.Class({
 
         }
         else if (this.toggle5.getComponent(cc.Toggle).isChecked) {
+            var url = ("car5");
+            cc.loader.loadRes(url, cc.SpriteFrame, function (err, spriteFrame) {
+                self.carSprite.getComponent(cc.Sprite).spriteFrame = spriteFrame;
+            });
             this.playClick();
             this.freeButtondefault.active = false;
             this.bottombutton.active = true;
@@ -296,10 +325,14 @@ cc.Class({
                     self.frame[4].getComponent(cc.Sprite).spriteFrame = spriteFrame;
                 });
                 this.freeButtondefault.active = true;
-            this.bottombutton.active = false;
+                this.bottombutton.active = false;
             }
         }
         else if (this.toggle6.getComponent(cc.Toggle).isChecked) {
+            var url = ("car6");
+            cc.loader.loadRes(url, cc.SpriteFrame, function (err, spriteFrame) {
+                self.carSprite.getComponent(cc.Sprite).spriteFrame = spriteFrame;
+            });
             this.playClick();
             this.freeButtondefault.active = false;
             this.bottombutton.active = true;
@@ -313,7 +346,7 @@ cc.Class({
                     self.frame[5].getComponent(cc.Sprite).spriteFrame = spriteFrame;
                 });
                 this.freeButtondefault.active = true;
-            this.bottombutton.active = false;
+                this.bottombutton.active = false;
             }
         }
     },

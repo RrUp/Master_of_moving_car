@@ -13,14 +13,24 @@ cc.Class({
         stageDataArr: [],
 
         curPos: cc.Vec2,
-        difficultTitle: cc.Sprite,
-        pageTeample: {
-            default: null,
-            type: cc.Prefab
+        // difficultTitle: cc.Sprite,
+        // pageTeample: {
+        //     default: null,
+        //     type: cc.Prefab,
+        // },
+        // contextPageView: cc.PageView,
+        // audioControl:
+        // {
+        //     default: null,
+        // },
+        choosestage: cc.Node,
+        count: {
+            default: [],
+            type: [cc.Node]
         },
-        contextPageView: cc.PageView,
-        audioControl: {
-            default: null
+        select: {
+            default: [],
+            type: [cc.Node]
         }
     },
 
@@ -31,9 +41,19 @@ cc.Class({
         this.content = cc.find('Canvas/DifficultPageView/view/content');
         console.log("找到了", this.content);
         this.initStageData();
+        for (var i = 0; i < 4; i++) {
+            var clickEventHandler = new cc.Component.EventHandler();
+            clickEventHandler.target = this.node;
+            clickEventHandler.component = "SelectDifficultSceneJS";
+            clickEventHandler.handler = "enterGameStageCallback";
+            clickEventHandler.customEventData = i;
+            var button = this.select[i].getComponent(cc.Button);
+            button.clickEvents.push(clickEventHandler);
+        }
     },
 
     initStageData: function initStageData() {
+        var self = this;
         var maxPackageCount = GameDataManager.getInstance().getPackageCount(); //传入4
         for (var i = 0; i < maxPackageCount; i++) {
             var passCount = GameDataManager.getInstance().getMaxUnlockedStage(i);
@@ -43,10 +63,12 @@ cc.Class({
             stageData.passCount = passCount;
             stageData.stageCount = stageCount;
             this.stageDataArr[i] = stageData;
+            self.count[i].getComponent(cc.Label).string = stageData.passCount + "/" + stageData.stageCount;
         }
-        for (var _i = 0; _i < maxPackageCount; _i++) {
-            this.addSubPage();
-        }
+
+        // for (let i = 0; i < maxPackageCount; i++) {
+        //     this.addSubPage();
+        // }
     },
     addSubPage: function addSubPage() {
         this.contextPageView.addPage(this._createPage());
@@ -72,34 +94,43 @@ cc.Class({
         return page;
     },
     start: function start() {
-        this.curPos = new cc.Vec2(0, 0);
-        this.curPos.x = GameDataManager.getInstance().getSelectLevelPos();
-        if (this.curPos.x >= 0) {
-            this.curPos.x = -375.0;
-        }
-        this.contextPageView.setContentPosition(this.curPos); //设置当前视图内容的坐标点
+        // this.curPos = new cc.Vec2(0, 0);
+        //     this.curPos.x = GameDataManager.getInstance().getSelectLevelPos();
+        //     if (this.curPos.x >= 0) {
+        //         this.curPos.x = -375.0;
+        //     }
+        //     this.contextPageView.setContentPosition(this.curPos);//设置当前视图内容的坐标点
 
-        this.scheduleOnce(function () {
+        //     this.scheduleOnce(function () {
 
-            var pagePos = GameDataManager.getInstance().getLatestPackage();
-            this.contextPageView.scrollToPage(pagePos);
-        }, 0.01);
+        //         var pagePos = GameDataManager.getInstance().getLatestPackage();
+        //         this.contextPageView.scrollToPage(pagePos);
+
+        //     }, 0.01);
     },
 
 
     enterGameStageCallback: function enterGameStageCallback(event, customEventData) {
+        GameDataManager.getInstance().saveLatestPackage(customEventData);
+        var choosestage = cc.find("Canvas/choosestage/stageScrollView/view/content");
+        choosestage.removeAllChildren();
         this.playClick();
+        cc.log("!!!!!", customEventData);
+        // this.choosestage.active=false;
         var node = event.target;
         var button = node.getComponent(cc.Button);
         var packages = customEventData;
         this.playClick();
-        this.savePageviewPos();
-        cc.director.loadScene("ChooseStageScene");
+        // this.savePageviewPos();
+        // cc.director.loadScene("ChooseStageScene");
+        this.choosestage.active = true;
+        var ChooseStageJS = cc.find("Canvas/choosestage").getComponent("ChooseStageJS");
+        ChooseStageJS.init();
     },
     //记录package，LevelPos
     savePageviewPos: function savePageviewPos() {
-        var curPage = this.contextPageView.getCurrentPageIndex();
-        this.curPos = this.contextPageView.getContentPosition();
+        // let curPage = this.contextPageView.getCurrentPageIndex();
+        // this.curPos = this.contextPageView.getContentPosition();
         GameDataManager.getInstance().saveSelectLevelPos(this.curPos.x);
     },
     // update (dt) {},

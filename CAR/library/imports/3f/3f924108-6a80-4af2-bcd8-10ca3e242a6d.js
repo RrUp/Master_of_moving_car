@@ -109,7 +109,7 @@ var ShareManager = cc.Class({
         var textstring = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
 
         var titleText;
-        var pic_url = "res/raw-assets/resources/share/sharePic4.jpg";
+        var pic_url = "resources/share/sharePic4.png";
         if (typeof FBInstant != 'undefined') {
             if (textstring.length > 1) {
                 titleText = textstring;
@@ -129,7 +129,7 @@ var ShareManager = cc.Class({
         } else if (CC_WECHATGAME) {
             var pic_list = [];
             for (var i = 0; i < 4; ++i) {
-                pic_list.push("sharePic" + (i + 1) + ".jpg");
+                pic_list.push("sharePic" + (i + 1) + ".png");
             }
             var text_list = [];
 
@@ -150,19 +150,19 @@ var ShareManager = cc.Class({
             if (textstring.length > 1) {
                 if (textstring.indexOf("sharePic") >= 0) {
                     titleText = text_list[ShareManager.show_count % text_list.length];
-                    pic_url = "res/raw-assets/resources/share/" + pic_list[ShareManager.show_count % pic_list.length];
+                    pic_url = "resources/share/" + pic_list[ShareManager.show_count % pic_list.length];
                     console.log(" ShareManager.show_count " + ShareManager.show_count);
                     console.log(" ShareManager.  " + titleText + " ," + pic_url);
                 } else {
                     titleText = textstring;
-                    pic_url = "res/raw-assets/resources/share/sharePic4.jpg";
+                    pic_url = "resources/share/sharePic4.png";
                 }
             } else {
                 titleText = '求助 遇到困难了 快来帮帮我';
             }
             wx.shareAppMessage({ //主动拉起转发，进入选择通讯录界面
                 title: titleText,
-                imageUrl: pic_url,
+                imageUrl: wxDownloader.REMOTE_SERVER_ROOT + cc.url.raw(pic_url),
                 success: function success(res) {
                     console.log("shareAppMessage成功");
                 },

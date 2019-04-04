@@ -114,13 +114,14 @@ cc.Class({
   moregame_btnClick: function moregame_btnClick() {
     this.playClick();
     // ShareManager.getInstance().NavigateTo7cGameBox();
-    this.gameBox.runAction(cc.moveBy(0.5, cc.v2(0, 0)));
-    this.box = cc.find("Canvas/gameBox").getComponent("exported-GameBoxInterface");
-    this.box.show();
+    // this.gameBox.runAction(cc.moveBy(0.5,cc.v2(0,0)));
+    // this.box=cc.find("Canvas/gameBox").getComponent("exported-GameBoxInterface");
+    // this.box.show();
   },
   begin_btnClick: function begin_btnClick() {
     this.playClick();
-    cc.director.loadScene('SelectDifficultScene');
+    // cc.director.loadScene('SelectDifficultScene');
+    cc.director.loadScene('ChooseStageScene');
   },
   share_btnClick: function share_btnClick() {
     this.playClick();

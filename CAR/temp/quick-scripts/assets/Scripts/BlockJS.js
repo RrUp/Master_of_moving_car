@@ -80,11 +80,11 @@ var Block = cc.Class({
         if (this.m_Tile >= 0) {
             var urlPath = cc.url.raw("resources/" + buf);
             var sp = this.getComponent(cc.Sprite);
-
+            cc.log("***sp", sp);
             var self = this;
             urlPath = buf;
             cc.loader.loadRes(urlPath, cc.SpriteFrame, function (err, spriteFrame) {
-                sp.spriteFrame = spriteFrame;
+                self.getComponent(cc.Sprite).spriteFrame = spriteFrame;
             });
 
             this.m_Orientation = orientation;

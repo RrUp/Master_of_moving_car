@@ -21,7 +21,7 @@ cc.Class({
         },
     },
     onLoad() {
-
+       
         if (CC_WECHATGAME) {
             cc.game.on("impower", (sure) => {
                 if (sure) {
@@ -169,17 +169,17 @@ cc.Class({
     update(dt) {
         this.updateload(dt);
     },
-    updateload(dt) {
-        if (isAuthorization) {
-            if (this.loadingBar.progress >= 1 && isLoading == false) {
-                isLoading = true;
-                this.onLoadComplete();
-            }
-            point += dt;
-            this.loadingBar.progress = ((point / 3) > 1 ? 1 : point / 3);
-            this.loadingpercent.string = Math.floor(this.loadingBar.progress * 100) + "%";
+    updateload(dt){
+        if(isAuthorization){
+        if (this.loadingBar.progress >= 1 && isLoading == false) {
+            isLoading = true;
+            this.onLoadComplete();
         }
-    },
+        point += dt;
+        this.loadingBar.progress = ((point / 3) > 1 ? 1 : point / 3);
+        this.loadingpercent.string = Math.floor(this.loadingBar.progress * 100) + "%";
+   } 
+},
     onLoadComplete() {
         cc.director.loadScene("main");
     },
