@@ -1,6 +1,6 @@
 "use strict";
 cc._RF.push(module, 'a7aceVLf3hIZLsGc+KfVpes', 'GuessYouLike');
-// NewScript/GuessYouLike.js
+// Scripts/GuessYouLike.js
 
 'use strict';
 
