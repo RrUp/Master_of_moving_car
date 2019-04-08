@@ -36,15 +36,17 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
 
     onLoad() {
+       
         this.audioControl = cc.find('AudioControlNode').getComponent('AudioSourceControl');
         let carskin = GameDataManager.getInstance().getcarskin();
+        cc.log("=======",carskin)
         define.carskin = carskin;
-        for (var i = 0; i < 6; i++) {
+        for (var i = 0; i < 12; i++) {
             let a = GameDataManager.getInstance().getskinlock(i);
             define.flag[i] = a;
         }
         // 判断——初始赋值
-        for (var i = 0; i < 6; i++) {
+        for (var i = 0; i < 12; i++) {
             if (define.flag[i] == undefined) {
                 cc.log("undefined")
                 define.flag[i] = 0;
@@ -53,7 +55,7 @@ cc.Class({
             cc.log("flag", i, define.flag[i])
         }
         // test恢复未解锁
-        //  for (var i = 0; i < 6; i++) {
+        //  for (var i = 0; i < 12; i++) {
         //     let a = GameDataManager.getInstance().getskinlock(i);
         //     define.flag[i] = 0;
         //     GameDataManager.getInstance().saveskinlock(i, define.flag[i]);
@@ -63,7 +65,7 @@ cc.Class({
 
 
     },
-    updateskin() {
+    updateskin() {                                                                                                                                                  
         var self = this;
         if (define.flag[1] == 1) {
             var urlPath = ("car2");
@@ -145,6 +147,102 @@ cc.Class({
 
             });
         }
+        if (define.flag[6] == 1) {
+            var urlPath = ("car7");
+            cc.loader.loadRes(urlPath, cc.SpriteFrame, function (err, spriteFrame) {
+                self.car[6].getComponent(cc.Sprite).spriteFrame = spriteFrame;
+                cc.log("7已解锁")
+
+            });
+        }
+        if (!define.flag[6] == 1) {
+            var urlPath = ("uncar7");
+            cc.loader.loadRes(urlPath, cc.SpriteFrame, function (err, spriteFrame) {
+                self.car[6].getComponent(cc.Sprite).spriteFrame = spriteFrame;
+                cc.log("7未解锁")
+
+            });
+        }
+        if (define.flag[7] == 1) {
+            var urlPath = ("car8");
+            cc.loader.loadRes(urlPath, cc.SpriteFrame, function (err, spriteFrame) {
+                self.car[7].getComponent(cc.Sprite).spriteFrame = spriteFrame;
+                cc.log("8已解锁")
+
+            });
+        }
+        if (!define.flag[7] == 1) {
+            var urlPath = ("uncar8");
+            cc.loader.loadRes(urlPath, cc.SpriteFrame, function (err, spriteFrame) {
+                self.car[7].getComponent(cc.Sprite).spriteFrame = spriteFrame;
+                cc.log("8未解锁")
+
+            });
+        }
+        if (define.flag[8] == 1) {
+            var urlPath = ("car9");
+            cc.loader.loadRes(urlPath, cc.SpriteFrame, function (err, spriteFrame) {
+                self.car[8].getComponent(cc.Sprite).spriteFrame = spriteFrame;
+                cc.log("9已解锁")
+
+            });
+        }
+        if (!define.flag[8] == 1) {
+            var urlPath = ("uncar9");
+            cc.loader.loadRes(urlPath, cc.SpriteFrame, function (err, spriteFrame) {
+                self.car[8].getComponent(cc.Sprite).spriteFrame = spriteFrame;
+                cc.log("9未解锁")
+
+            });
+        }
+        if (define.flag[9] == 1) {
+            var urlPath = ("car10");
+            cc.loader.loadRes(urlPath, cc.SpriteFrame, function (err, spriteFrame) {
+                self.car[9].getComponent(cc.Sprite).spriteFrame = spriteFrame;
+                cc.log("10已解锁")
+
+            });
+        }
+        if (!define.flag[9] == 1) {
+            var urlPath = ("uncar10");
+            cc.loader.loadRes(urlPath, cc.SpriteFrame, function (err, spriteFrame) {
+                self.car[9].getComponent(cc.Sprite).spriteFrame = spriteFrame;
+                cc.log("10未解锁")
+
+            });
+        }
+        if (define.flag[10] == 1) {
+            var urlPath = ("car11");
+            cc.loader.loadRes(urlPath, cc.SpriteFrame, function (err, spriteFrame) {
+                self.car[10].getComponent(cc.Sprite).spriteFrame = spriteFrame;
+                cc.log("11已解锁")
+
+            });
+        }
+        if (!define.flag[10] == 1) {
+            var urlPath = ("uncar11");
+            cc.loader.loadRes(urlPath, cc.SpriteFrame, function (err, spriteFrame) {
+                self.car[10].getComponent(cc.Sprite).spriteFrame = spriteFrame;
+                cc.log("11未解锁")
+
+            });
+        }
+        if (define.flag[11] == 1) {
+            var urlPath = ("car12");
+            cc.loader.loadRes(urlPath, cc.SpriteFrame, function (err, spriteFrame) {
+                self.car[11].getComponent(cc.Sprite).spriteFrame = spriteFrame;
+                cc.log("12已解锁")
+
+            });
+        }
+        if (!define.flag[11] == 1) {
+            var urlPath = ("uncar12");
+            cc.loader.loadRes(urlPath, cc.SpriteFrame, function (err, spriteFrame) {
+                self.car[11].getComponent(cc.Sprite).spriteFrame = spriteFrame;
+                cc.log("12未解锁")
+
+            });
+        }
     },
 
     start() {
@@ -155,7 +253,7 @@ cc.Class({
     },
 
     update(dt) {
-        this.togglecheck();
+        // this.togglecheck();
         //  this.updateskin();
     },
     goldunlockButton_Click(i) {
@@ -213,11 +311,66 @@ cc.Class({
                 GameDataManager.getInstance().saveskinlock(i, define.flag[i]);
                 this.node.emit("updateskin");
                 cc.log("=======falg", i, "=", GameDataManager.getInstance().getskinlock(i));
-                for (var i = 0; i < 6; i++) {
-                    let a = GameDataManager.getInstance().getskinlock(i);
-                    define.flag[i] = a;
-                    console.log("----------------->>", define.flag[i]);
-                }
+            }
+            if (this.toggle7.getComponent(cc.Toggle).isChecked) {
+                define.money -= 500;
+                GameDataManager.getInstance().savegold(define.money);
+
+                var i = 6;
+                define.flag[i] = 1;
+                GameDataManager.getInstance().saveskinlock(i, define.flag[i]);
+                this.node.emit("updateskin");
+                cc.log("=======falg", i, "=", GameDataManager.getInstance().getskinlock(i));
+            }
+            if (this.toggle8.getComponent(cc.Toggle).isChecked) {
+                define.money -= 500;
+                GameDataManager.getInstance().savegold(define.money);
+
+                var i = 7;
+                define.flag[i] = 1;
+                GameDataManager.getInstance().saveskinlock(i, define.flag[i]);
+                this.node.emit("updateskin");
+                cc.log("=======falg", i, "=", GameDataManager.getInstance().getskinlock(i));
+            }
+            if (this.toggle9.getComponent(cc.Toggle).isChecked) {
+                define.money -= 500;
+                GameDataManager.getInstance().savegold(define.money);
+
+                var i = 8;
+                define.flag[i] = 1;
+                GameDataManager.getInstance().saveskinlock(i, define.flag[i]);
+                this.node.emit("updateskin");
+                cc.log("=======falg", i, "=", GameDataManager.getInstance().getskinlock(i));
+            }
+            if (this.toggle10.getComponent(cc.Toggle).isChecked) {
+                define.money -= 500;
+                GameDataManager.getInstance().savegold(define.money);
+
+                var i = 9;
+                define.flag[i] = 1;
+                GameDataManager.getInstance().saveskinlock(i, define.flag[i]);
+                this.node.emit("updateskin");
+                cc.log("=======falg", i, "=", GameDataManager.getInstance().getskinlock(i));
+            }
+            if (this.toggle11.getComponent(cc.Toggle).isChecked) {
+                define.money -= 500;
+                GameDataManager.getInstance().savegold(define.money);
+
+                var i = 10;
+                define.flag[i] = 1;
+                GameDataManager.getInstance().saveskinlock(i, define.flag[i]);
+                this.node.emit("updateskin");
+                cc.log("=======falg", i, "=", GameDataManager.getInstance().getskinlock(i));
+            }
+            if (this.toggle12.getComponent(cc.Toggle).isChecked) {
+                define.money -= 500;
+                GameDataManager.getInstance().savegold(define.money);
+
+                var i = 11;
+                define.flag[i] = 1;
+                GameDataManager.getInstance().saveskinlock(i, define.flag[i]);
+                this.node.emit("updateskin");
+                cc.log("=======falg", i, "=", GameDataManager.getInstance().getskinlock(i));
             }
         }
     },
@@ -232,8 +385,11 @@ cc.Class({
     //     });
     // },
     togglecheck() {
+      
         var self = this; var urlPath = ("frame");
         if (this.toggle1.getComponent(cc.Toggle).isChecked) {
+            this.toggle7.getComponent(cc.Toggle).isChecked=false;
+            this.toggle2.getComponent(cc.Toggle).isChecked=false;
             this.playClick();
             this.freeButtondefault.active = true;
             this.bottombutton.active = false;
@@ -245,110 +401,254 @@ cc.Class({
                 self.carSprite.getComponent(cc.Sprite).spriteFrame = spriteFrame;
             });
         }
-        else if (this.toggle2.getComponent(cc.Toggle).isChecked) {
-            var url = ("car2");
-            cc.loader.loadRes(url, cc.SpriteFrame, function (err, spriteFrame) {
-                self.carSprite.getComponent(cc.Sprite).spriteFrame = spriteFrame;
-            });
-            this.playClick();
-            this.freeButtondefault.active = false;
-            this.bottombutton.active = true;
-            this.conditionLabel.string = "解锁条件：200金币"
-            this.lockbtnLabel.string = "200￥解锁"
-            if (define.flag[1] == 1) {
-                define.carskin = 2;
-                GameDataManager.getInstance().savecarskin(define.carskin);
-                cc.loader.loadRes(urlPath, cc.SpriteFrame, function (err, spriteFrame) {
-                    self.frame[1].getComponent(cc.Sprite).spriteFrame = spriteFrame;
+        else 
+            if (this.toggle2.getComponent(cc.Toggle).isChecked) {
+              
+                var url = ("car2");
+                cc.loader.loadRes(url, cc.SpriteFrame, function (err, spriteFrame) {
+                    self.carSprite.getComponent(cc.Sprite).spriteFrame = spriteFrame;
                 });
-                this.freeButtondefault.active = true;
-                this.bottombutton.active = false;
-            }
+                this.playClick();
+                this.freeButtondefault.active = false;
+                this.bottombutton.active = true;
+                this.conditionLabel.string = "解锁条件：200金币"
+                this.lockbtnLabel.string = "200￥解锁"
+                if (define.flag[1] == 1) {
+                    define.carskin = 2;
+                    GameDataManager.getInstance().savecarskin(define.carskin);
+                    cc.loader.loadRes(urlPath, cc.SpriteFrame, function (err, spriteFrame) {
+                        self.frame[1].getComponent(cc.Sprite).spriteFrame = spriteFrame;
+                    });
+                    this.freeButtondefault.active = true;
+                    this.bottombutton.active = false;
+                }
 
-        }
-        else if (this.toggle3.getComponent(cc.Toggle).isChecked) {
-            var url = ("car3");
-            cc.loader.loadRes(url, cc.SpriteFrame, function (err, spriteFrame) {
-                self.carSprite.getComponent(cc.Sprite).spriteFrame = spriteFrame;
-            });
-            this.playClick();
-            this.freeButtondefault.active = false;
-            this.bottombutton.active = true;
-            this.conditionLabel.string = "解锁条件：200金币"
-            this.lockbtnLabel.string = "200￥解锁"
-            if (define.flag[2] == 1) {
-                define.carskin = 3;
-                GameDataManager.getInstance().savecarskin(define.carskin);
-                // var urlPath = ("frame3");
-                cc.loader.loadRes(urlPath, cc.SpriteFrame, function (err, spriteFrame) {
-                    self.frame[2].getComponent(cc.Sprite).spriteFrame = spriteFrame;
-                });
-                this.freeButtondefault.active = true;
-                this.bottombutton.active = false;
             }
-        }
-        else if (this.toggle4.getComponent(cc.Toggle).isChecked) {
-            var url = ("car4");
-            cc.loader.loadRes(url, cc.SpriteFrame, function (err, spriteFrame) {
-                self.carSprite.getComponent(cc.Sprite).spriteFrame = spriteFrame;
-            });
-            this.playClick();
-            this.freeButtondefault.active = false;
-            this.bottombutton.active = true;
-            this.conditionLabel.string = "解锁条件：300金币"
-            this.lockbtnLabel.string = "300￥解锁"
-            if (define.flag[3] == 1) {
-                define.carskin = 4;
-                GameDataManager.getInstance().savecarskin(define.carskin);
-                // var urlPath = ("frame4");
-                cc.loader.loadRes(urlPath, cc.SpriteFrame, function (err, spriteFrame) {
-                    self.frame[3].getComponent(cc.Sprite).spriteFrame = spriteFrame;
-                });
-            }
+            else 
+                if (this.toggle3.getComponent(cc.Toggle).isChecked) {
+                    var url = ("car3");
+                    cc.loader.loadRes(url, cc.SpriteFrame, function (err, spriteFrame) {
+                        self.carSprite.getComponent(cc.Sprite).spriteFrame = spriteFrame;
+                    });
+                    this.playClick();
+                    this.freeButtondefault.active = false;
+                    this.bottombutton.active = true;
+                    this.conditionLabel.string = "解锁条件：200金币"
+                    this.lockbtnLabel.string = "200￥解锁"
+                    if (define.flag[2] == 1) {
+                        define.carskin = 3;
+                        GameDataManager.getInstance().savecarskin(define.carskin);
+                        // var urlPath = ("frame3");
+                        cc.loader.loadRes(urlPath, cc.SpriteFrame, function (err, spriteFrame) {
+                            self.frame[2].getComponent(cc.Sprite).spriteFrame = spriteFrame;
+                        });
+                        this.freeButtondefault.active = true;
+                        this.bottombutton.active = false;
+                    }
+                }
+                else 
+                    if (this.toggle4.getComponent(cc.Toggle).isChecked) {
+                        var url = ("car4");
+                        cc.loader.loadRes(url, cc.SpriteFrame, function (err, spriteFrame) {
+                            self.carSprite.getComponent(cc.Sprite).spriteFrame = spriteFrame;
+                        });
+                        this.playClick();
+                        this.freeButtondefault.active = false;
+                        this.bottombutton.active = true;
+                        this.conditionLabel.string = "解锁条件：300金币"
+                        this.lockbtnLabel.string = "300￥解锁"
+                        if (define.flag[3] == 1) {
+                            define.carskin = 4;
+                            GameDataManager.getInstance().savecarskin(define.carskin);
+                            // var urlPath = ("frame4");
+                            cc.loader.loadRes(urlPath, cc.SpriteFrame, function (err, spriteFrame) {
+                                self.frame[3].getComponent(cc.Sprite).spriteFrame = spriteFrame;
+                            });
+                        }
 
-        }
-        else if (this.toggle5.getComponent(cc.Toggle).isChecked) {
-            var url = ("car5");
-            cc.loader.loadRes(url, cc.SpriteFrame, function (err, spriteFrame) {
-                self.carSprite.getComponent(cc.Sprite).spriteFrame = spriteFrame;
-            });
-            this.playClick();
-            this.freeButtondefault.active = false;
-            this.bottombutton.active = true;
-            this.conditionLabel.string = "解锁条件：300金币"
-            this.lockbtnLabel.string = "300￥解锁"
-            if (define.flag[4] == 1) {
-                define.carskin = 5;
-                GameDataManager.getInstance().savecarskin(define.carskin);
-                // var urlPath = ("frame5");
-                cc.loader.loadRes(urlPath, cc.SpriteFrame, function (err, spriteFrame) {
-                    self.frame[4].getComponent(cc.Sprite).spriteFrame = spriteFrame;
-                });
-                this.freeButtondefault.active = true;
-                this.bottombutton.active = false;
-            }
-        }
-        else if (this.toggle6.getComponent(cc.Toggle).isChecked) {
-            var url = ("car6");
-            cc.loader.loadRes(url, cc.SpriteFrame, function (err, spriteFrame) {
-                self.carSprite.getComponent(cc.Sprite).spriteFrame = spriteFrame;
-            });
-            this.playClick();
-            this.freeButtondefault.active = false;
-            this.bottombutton.active = true;
-            this.conditionLabel.string = "解锁条件：500金币"
-            this.lockbtnLabel.string = "500￥解锁"
-            if (define.flag[5] == 1) {
-                define.carskin = 6;
-                GameDataManager.getInstance().savecarskin(define.carskin);
-                // var urlPath = ("frame6");
-                cc.loader.loadRes(urlPath, cc.SpriteFrame, function (err, spriteFrame) {
-                    self.frame[5].getComponent(cc.Sprite).spriteFrame = spriteFrame;
-                });
-                this.freeButtondefault.active = true;
-                this.bottombutton.active = false;
-            }
-        }
+                    }
+                    else 
+                        if (this.toggle5.getComponent(cc.Toggle).isChecked) {
+                            var url = ("car5");
+                            cc.loader.loadRes(url, cc.SpriteFrame, function (err, spriteFrame) {
+                                self.carSprite.getComponent(cc.Sprite).spriteFrame = spriteFrame;
+                            });
+                            this.playClick();
+                            this.freeButtondefault.active = false;
+                            this.bottombutton.active = true;
+                            this.conditionLabel.string = "解锁条件：300金币"
+                            this.lockbtnLabel.string = "300￥解锁"
+                            if (define.flag[4] == 1) {
+                                define.carskin = 5;
+                                GameDataManager.getInstance().savecarskin(define.carskin);
+                                // var urlPath = ("frame5");
+                                cc.loader.loadRes(urlPath, cc.SpriteFrame, function (err, spriteFrame) {
+                                    self.frame[4].getComponent(cc.Sprite).spriteFrame = spriteFrame;
+                                });
+                                this.freeButtondefault.active = true;
+                                this.bottombutton.active = false;
+                            }
+                        }
+                        else 
+
+                            if (this.toggle6.getComponent(cc.Toggle).isChecked) {
+                                var url = ("car6");
+                                cc.loader.loadRes(url, cc.SpriteFrame, function (err, spriteFrame) {
+                                    self.carSprite.getComponent(cc.Sprite).spriteFrame = spriteFrame;
+                                });
+                                this.playClick();
+                                this.freeButtondefault.active = false;
+                                this.bottombutton.active = true;
+                                this.conditionLabel.string = "解锁条件：500金币"
+                                this.lockbtnLabel.string = "500￥解锁"
+                                if (define.flag[5] == 1) {
+                                    define.carskin = 6;
+                                    GameDataManager.getInstance().savecarskin(define.carskin);
+                                    // var urlPath = ("frame6");
+                                    cc.loader.loadRes(urlPath, cc.SpriteFrame, function (err, spriteFrame) {
+                                        self.frame[5].getComponent(cc.Sprite).spriteFrame = spriteFrame;
+                                    });
+                                    this.freeButtondefault.active = true;
+                                    this.bottombutton.active = false;
+                                }
+                            }
+                        
+        
+                       
+           else if (this.toggle7.getComponent(cc.Toggle).isChecked) {
+                 var url = ("car7");
+                 cc.loader.loadRes(url, cc.SpriteFrame, function (err, spriteFrame) {
+                     self.carSprite.getComponent(cc.Sprite).spriteFrame = spriteFrame;
+                 });
+                 this.playClick();
+                 this.freeButtondefault.active = false;
+                 this.bottombutton.active = true;
+                 this.conditionLabel.string = "解锁条件：500金币"
+                 this.lockbtnLabel.string = "500￥解锁"
+                 if (define.flag[6] == 1) {
+                     define.carskin = 7;
+                     GameDataManager.getInstance().savecarskin(define.carskin);
+                     // var urlPath = ("frame6");
+                     cc.loader.loadRes(urlPath, cc.SpriteFrame, function (err, spriteFrame) {
+                         self.frame[6].getComponent(cc.Sprite).spriteFrame = spriteFrame;
+                     });
+                     this.freeButtondefault.active = true;
+                     this.bottombutton.active = false;
+                 }
+             }
+
+             else 
+                 if (this.toggle8.getComponent(cc.Toggle).isChecked) {
+                     var url = ("car8");
+                     cc.loader.loadRes(url, cc.SpriteFrame, function (err, spriteFrame) {
+                         self.carSprite.getComponent(cc.Sprite).spriteFrame = spriteFrame;
+                     });
+                     this.playClick();
+                     this.freeButtondefault.active = false;
+                     this.bottombutton.active = true;
+                     this.conditionLabel.string = "解锁条件：500金币"
+                     this.lockbtnLabel.string = "500￥解锁"
+                     if (define.flag[7] == 1) {
+                         define.carskin = 8;
+                         GameDataManager.getInstance().savecarskin(define.carskin);
+                         // var urlPath = ("frame6");
+                         cc.loader.loadRes(urlPath, cc.SpriteFrame, function (err, spriteFrame) {
+                             self.frame[7].getComponent(cc.Sprite).spriteFrame = spriteFrame;
+                         });
+                         this.freeButtondefault.active = true;
+                         this.bottombutton.active = false;
+                     }
+                 }
+                 else 
+                     if (this.toggle9.getComponent(cc.Toggle).isChecked) {
+                         var url = ("car9");
+                         cc.loader.loadRes(url, cc.SpriteFrame, function (err, spriteFrame) {
+                             self.carSprite.getComponent(cc.Sprite).spriteFrame = spriteFrame;
+                         });
+                         this.playClick();
+                         this.freeButtondefault.active = false;
+                         this.bottombutton.active = true;
+                         this.conditionLabel.string = "解锁条件：500金币"
+                         this.lockbtnLabel.string = "500￥解锁"
+                         if (define.flag[8] == 1) {
+                             define.carskin = 9;
+                             GameDataManager.getInstance().savecarskin(define.carskin);
+                             // var urlPath = ("frame6");
+                             cc.loader.loadRes(urlPath, cc.SpriteFrame, function (err, spriteFrame) {
+                                 self.frame[8].getComponent(cc.Sprite).spriteFrame = spriteFrame;
+                             });
+                             this.freeButtondefault.active = true;
+                             this.bottombutton.active = false;
+                         }
+                     }
+                     else 
+                         if (this.toggle10.getComponent(cc.Toggle).isChecked) {
+                             var url = ("car10");
+                             cc.loader.loadRes(url, cc.SpriteFrame, function (err, spriteFrame) {
+                                 self.carSprite.getComponent(cc.Sprite).spriteFrame = spriteFrame;
+                             });
+                             this.playClick();
+                             this.freeButtondefault.active = false;
+                             this.bottombutton.active = true;
+                             this.conditionLabel.string = "解锁条件：500金币"
+                             this.lockbtnLabel.string = "500￥解锁"
+                             if (define.flag[9] == 1) {
+                                 define.carskin = 10;
+                                 GameDataManager.getInstance().savecarskin(define.carskin);
+                                 // var urlPath = ("frame6");
+                                 cc.loader.loadRes(urlPath, cc.SpriteFrame, function (err, spriteFrame) {
+                                     self.frame[9].getComponent(cc.Sprite).spriteFrame = spriteFrame;
+                                 });
+                                 this.freeButtondefault.active = true;
+                                 this.bottombutton.active = false;
+                             }
+                         }
+                         else 
+                             if (this.toggle11.getComponent(cc.Toggle).isChecked) {
+                                 var url = ("car11");
+                                 cc.loader.loadRes(url, cc.SpriteFrame, function (err, spriteFrame) {
+                                     self.carSprite.getComponent(cc.Sprite).spriteFrame = spriteFrame;
+                                 });
+                                 this.playClick();
+                                 this.freeButtondefault.active = false;
+                                 this.bottombutton.active = true;
+                                 this.conditionLabel.string = "解锁条件：500金币"
+                                 this.lockbtnLabel.string = "500￥解锁"
+                                 if (define.flag[10] == 1) {
+                                     define.carskin = 11;
+                                     GameDataManager.getInstance().savecarskin(define.carskin);
+                                     // var urlPath = ("frame6");
+                                     cc.loader.loadRes(urlPath, cc.SpriteFrame, function (err, spriteFrame) {
+                                         self.frame[10].getComponent(cc.Sprite).spriteFrame = spriteFrame;
+                                     });
+                                     this.freeButtondefault.active = true;
+                                     this.bottombutton.active = false;
+                                 }
+                             }
+                             else if (this.toggle12.getComponent(cc.Toggle).isChecked) {
+                                 var url = ("car12");
+                                 cc.loader.loadRes(url, cc.SpriteFrame, function (err, spriteFrame) {
+                                     self.carSprite.getComponent(cc.Sprite).spriteFrame = spriteFrame;
+                                 });
+                                 this.playClick();
+                                 this.freeButtondefault.active = false;
+                                 this.bottombutton.active = true;
+                                 this.conditionLabel.string = "解锁条件：500金币"
+                                 this.lockbtnLabel.string = "500￥解锁"
+                                 if (define.flag[11] == 1) {
+                                     define.carskin = 12;
+                                     GameDataManager.getInstance().savecarskin(define.carskin);
+                                     // var urlPath = ("frame6");
+                                     cc.loader.loadRes(urlPath, cc.SpriteFrame, function (err, spriteFrame) {
+                                         self.frame[11].getComponent(cc.Sprite).spriteFrame = spriteFrame;
+                                     });
+                                     this.freeButtondefault.active = true;
+                                     this.bottombutton.active = false;
+                                 }
+                             }
+                         
+                      
+     
     },
     playClick: function () {
         if (this.audioControl) {

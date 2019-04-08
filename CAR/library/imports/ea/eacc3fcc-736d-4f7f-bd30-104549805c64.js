@@ -33,9 +33,31 @@ cc.Class({
   onLoad: function onLoad() {
     var _this = this;
 
-    cc.log("________", GameDataManager.getInstance().getGameCompleteStars());
+    cc.log("======first=", define.carskin);
+    define.carskin = GameDataManager.getInstance().getcarskin();
+    cc.log("=======seconed", define.carskin);
+    var DesignResolutionSize = cc.view.getDesignResolutionSize();
+    var WinSize = cc.director.getWinSize();
+    var nodeX = WinSize.width / DesignResolutionSize.width;
+    var nodeY = WinSize.height / DesignResolutionSize.height;
+
+    var visibleRect = cc.view.getVisibleSize();
+    var kWH = visibleRect.width / visibleRect.height;
+    var kMoveHight = kWH - 750 / 1334;
+    console.log("  k= " + 750 / 1334 + " kWH= " + kWH);
+    if (kMoveHight > 0) {
+      //    data.TitlePos = cc.p(width * 0.5, height * 0.9);
+    } else {
+      var offsetk = 400;
+      var begin_btn = this.begin_btn.node.getPosition();
+      begin_btn.y -= -kMoveHight * offsetk;
+      this.begin_btn.node.setPosition(begin_btn);
+      console.log("begin_btn - " + -kMoveHight * offsetk);
+    }
     this.audioControl = cc.find('AudioControlNode').getComponent('AudioSourceControl');
     this.mute = cc.find('AudioControlNode/AudioRes/audio').getComponent(cc.AudioSource);
+    var carskin = GameDataManager.getInstance().getcarskin();
+    define.carskin = carskin;
     var coin = GameDataManager.getInstance().getgold();
     define.money = coin;
     this.gold_lab.string = define.money;

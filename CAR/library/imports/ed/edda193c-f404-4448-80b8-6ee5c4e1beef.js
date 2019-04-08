@@ -10,7 +10,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 var define = require("define");
 var MyLayoutManager = require("MyLayoutManagerJS");
-var TILES = [["car0_0-", "car0_1-", "car1", "car0_2-", "car0_3-"], ["car1_0-", "car1_1-", "car2", "car1_2-", "car1_3-"], ["car2_0-", "car2_1-", "car3", "car2_2-", "car2_3-"], ["car3_0-", "car3_1-", "car4", "car3_2-", "car3_3-"], ["car2_0-", "car2_1-", "car5", "car2_2-", "car2_3-"], ["car2_0-", "car2_1-", "car6", "car2_2-", "car2_3-"]];
+var TILES = [["car0_0-", "car0_1-", "car1", "car0_2-", "car0_3-"], ["car1_0-", "car1_1-", "car2", "car1_2-", "car1_3-"], ["car2_0-", "car2_1-", "car3", "car2_2-", "car2_3-"], ["car3_0-", "car3_1-", "car4", "car3_2-", "car3_3-"], ["car2_0-", "car2_1-", "car5", "car2_2-", "car2_3-"], ["car2_0-", "car2_1-", "car6", "car2_2-", "car2_3-"], ["car0_0-", "car0_1-", "car7", "car0_2-", "car0_3-"], ["car1_0-", "car1_1-", "car8", "car1_2-", "car1_3-"], ["car2_0-", "car2_1-", "car9", "car2_2-", "car2_3-"], ["car3_0-", "car3_1-", "car10", "car3_2-", "car3_3-"], ["car2_0-", "car2_1-", "car11", "car2_2-", "car2_3-"], ["car2_0-", "car2_1-", "car12", "car2_2-", "car2_3-"]];
 
 var Block = cc.Class({
     extends: cc.Component,
@@ -72,7 +72,7 @@ var Block = cc.Class({
 
         var buf;
         if (this.m_Tile == 2) {
-            buf = TILES[define.carskin - 1][this.m_Tile] + "";
+            buf = TILES[define.getcarskin() - 1][this.m_Tile] + "";
         } else {
             buf = TILES[0][this.m_Tile] + "0";
         }

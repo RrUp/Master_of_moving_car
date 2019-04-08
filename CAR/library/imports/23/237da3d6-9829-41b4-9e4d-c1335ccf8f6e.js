@@ -28,6 +28,7 @@ cc.Class({
     onLoad: function onLoad() {
         var _this = this;
 
+        //   cc.sys.localStorage.clear();
         if (CC_WECHATGAME) {
             cc.game.on("impower", function (sure) {
                 if (sure) {
@@ -43,6 +44,10 @@ cc.Class({
                         GameDataManager.getInstance().savegold(define.money);
                         cc.log("首次加载游戏获取到当前金币(应为100)", GameDataManager.getInstance().getgold());
                     }
+                    if (!define.getcarskin()) {
+                        cc.log("第一次保存皮肤");
+                        GameDataManager.getInstance().savecarskin(define.carskin);
+                    }
                 } else {}
             });
             this.getInfo();
@@ -52,7 +57,7 @@ cc.Class({
             this.loadingpercent.node.active = false;
         } else {
             console.log("授权成功！");
-            cc.sys.localStorage.clear();
+
             isAuthorization = true;
             this.wxlog_btn.active = false;
             this.loadingBar.node.active = true;
@@ -64,18 +69,11 @@ cc.Class({
                 GameDataManager.getInstance().savegold(define.money);
                 cc.log("首次加载游戏获取到当前金币(应为100)", GameDataManager.getInstance().getgold());
             }
+            if (!define.getcarskin()) {
+                cc.log("第一次保存皮肤");
+                GameDataManager.getInstance().savecarskin(define.carskin);
+            }
         }
-
-        // if (!CC_WECHATGAME) {
-        //     this.wxlog_btn.active = false;
-        //     this.loadingBar.node.active = true;
-        //     this.loadinglab.node.active = true;
-        //     this.loadingpercent.node.active = true;
-        //     GameDataManager.getInstance().preLoadingdata();
-        //     if (!define.getgold()) {
-        //         GameDataManager.getInstance().savegold(define.money);
-        //     }
-        // }
     },
     getInfo: function getInfo() {
         return new Promise(function (resolve, reject) {
@@ -158,15 +156,15 @@ cc.Class({
     start: function start() {
         cc.director.preloadScene("main", cc.log('预加载main'));
         //适配
-        // console.log('    cc.winSize =' + cc.winSize);//以磅为单位返回WebGL视图的大小。它考虑了窗口的任何可能的旋转
-        // console.log('    cc.view.getVisibleSize() =' + cc.view.getVisibleSize());//返回正在运行的场景的可见大小
-        // console.log('    cc.view.getFrameSize() =' + cc.view.getFrameSize());//返回视图的帧大小。在本机平台上，它返回屏幕大小，因为视图是全屏视图。在Web上，它返回画布外部DOM元素的大小
-        // console.log('    cc.view.getDesignResolutionSize() =' + cc.view.getDesignResolutionSize());//返回视图的设计大小。默认分辨率大小与'getFrameSize'相同
-        // var DesignResolutionSize = cc.view.getDesignResolutionSize();
-        // var WinSize = cc.winSize;
-        // var nodeX = WinSize.width / DesignResolutionSize.width;
-        // var nodeY = WinSize.height / DesignResolutionSize.height;
-        // console.log('    nodeX=   ' + nodeX + '  nodeY=' + nodeY);
+        console.log('    cc.winSize =' + cc.winSize); //以磅为单位返回WebGL视图的大小。它考虑了窗口的任何可能的旋转
+        console.log('    cc.view.getVisibleSize() =' + cc.view.getVisibleSize()); //返回正在运行的场景的可见大小
+        console.log('    cc.view.getFrameSize() =' + cc.view.getFrameSize()); //返回视图的帧大小。在本机平台上，它返回屏幕大小，因为视图是全屏视图。在Web上，它返回画布外部DOM元素的大小
+        console.log('    cc.view.getDesignResolutionSize() =' + cc.view.getDesignResolutionSize()); //返回视图的设计大小。默认分辨率大小与'getFrameSize'相同
+        var DesignResolutionSize = cc.view.getDesignResolutionSize();
+        var WinSize = cc.winSize;
+        var nodeX = WinSize.width / DesignResolutionSize.width;
+        var nodeY = WinSize.height / DesignResolutionSize.height;
+        console.log('    nodeX=   ' + nodeX + '  nodeY=' + nodeY);
     },
     update: function update(dt) {
         this.updateload(dt);

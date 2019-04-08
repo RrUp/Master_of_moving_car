@@ -19,29 +19,51 @@ cc.Class({
     rankNode: cc.Node,
     skinNode: cc.Node,
     gold_lab: cc.Label,
-    gameBox:cc.Node,
+    gameBox: cc.Node,
   },
 
   // LIFE-CYCLE CALLBACKS:
 
   onLoad() {
-    cc.log("________",GameDataManager.getInstance().getGameCompleteStars())
+    cc.log("======first=",define.carskin)
+    define.carskin=GameDataManager.getInstance().getcarskin();
+    cc.log("=======seconed",define.carskin)
+    var DesignResolutionSize = cc.view.getDesignResolutionSize();
+    var WinSize = cc.director.getWinSize();
+    var nodeX = WinSize.width / DesignResolutionSize.width;
+    var nodeY = WinSize.height / DesignResolutionSize.height;
+
+    var visibleRect = cc.view.getVisibleSize();
+    var kWH = visibleRect.width / visibleRect.height;
+    var kMoveHight = (kWH - 750 / 1334)
+    console.log("  k= " + 750 / 1334 + " kWH= " + kWH);
+    if (kMoveHight > 0) {
+      //    data.TitlePos = cc.p(width * 0.5, height * 0.9);
+    } else {
+      var offsetk = 400;
+      var begin_btn = this.begin_btn.node.getPosition();
+      begin_btn.y -= (-kMoveHight) * offsetk;
+      this.begin_btn.node.setPosition(begin_btn);
+      console.log("begin_btn - " + (-kMoveHight) * offsetk);
+    }
     this.audioControl = cc.find('AudioControlNode').getComponent('AudioSourceControl');
     this.mute = cc.find('AudioControlNode/AudioRes/audio').getComponent(cc.AudioSource);
+    let carskin=GameDataManager.getInstance().getcarskin();
+    define.carskin=carskin;
     let coin = GameDataManager.getInstance().getgold();
     define.money = coin;
     this.gold_lab.string = define.money;
     this.node.on("updatemoney", () => {
       this.updatemoney();
-  });
+    });
   },
-  updatemoney(){
+  updatemoney() {
     this.gold_lab.string = define.money;
   },
   start() {
     this.rankNode.active = false;
     this.skinNode.active = false;
-     this.playAudio();
+    this.playAudio();
     var playerStart = GameDataManager.getInstance().getGameCompleteStars();
     this.submitScoreButtonFunc(playerStart);//提交分数
   },
@@ -65,14 +87,14 @@ cc.Class({
     this.playClick();
     //去看视频
     // AdsManager.getInstance().showmainRewardedGold();
-    define.money+=50;
+    define.money += 50;
     GameDataManager.getInstance().savegold(define.money);
-        this.node.emit("updatemoney");
+    this.node.emit("updatemoney");
   },
-  gold_btnCallback(){
- define.money+=50;
+  gold_btnCallback() {
+    define.money += 50;
     GameDataManager.getInstance().savegold(define.money);
-        this.node.emit("updatemoney");
+    this.node.emit("updatemoney");
   },
   audio_btnClick() {
     this.playClick();
@@ -83,8 +105,8 @@ cc.Class({
       var urlPath = ("mute");
       cc.loader.loadRes(urlPath, cc.SpriteFrame, function (err, spriteFrame) {
         self.audio_btn.normalSprite = spriteFrame;
-          self.audio_btn.pressedSprite = spriteFrame;
-          self.audio_btn.hoverSprite = spriteFrame; 
+        self.audio_btn.pressedSprite = spriteFrame;
+        self.audio_btn.hoverSprite = spriteFrame;
       });
     } else {
       define.music = true;
@@ -108,7 +130,7 @@ cc.Class({
     this.playClick();
   },
   moregame_btnClick() {
-     this.playClick();
+    this.playClick();
     // ShareManager.getInstance().NavigateTo7cGameBox();
     // this.gameBox.runAction(cc.moveBy(0.5,cc.v2(0,0)));
     // this.box=cc.find("Canvas/gameBox").getComponent("exported-GameBoxInterface");
@@ -120,12 +142,12 @@ cc.Class({
     cc.director.loadScene('ChooseStageScene');
   },
   share_btnClick() {
-    this.playClick();  
+    this.playClick();
     this.main = cc.find('Canvas/main');
     // this.main.active = false;
     var text = GameDataManager.getInstance().getTextById(17)
     ShareManager.getInstance().onShareGame("sharePic");
-  
+
   },
 
   rank_btnClick() {

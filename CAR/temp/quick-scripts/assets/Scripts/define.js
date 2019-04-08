@@ -88,8 +88,12 @@ module.exports = {
     var key = "gold";
     var money = cc.sys.localStorage.getItem(key);
     return parseInt(money);
+  },
+  getcarskin: function getcarskin() {
+    var key = "carskin";
+    var carskin = cc.sys.localStorage.getItem(key);
+    return parseInt(carskin);
   }
-
 };
 
 cc._RF.pop();
