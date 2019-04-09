@@ -84,6 +84,19 @@ let GameDataManager = cc.Class({
 
     start() {
     },
+    adapt(node) {
+        let height = cc.view.getVisibleSize().height;
+        let width = cc.view.getVisibleSize().width;
+        if (height / width > 1.9) {
+            node.scale = 0.8
+            node.alignWithScreen();
+        }
+        else if (height / width < 1.4) {
+            node.scale = 1.05
+            node.alignWithScreen();
+        }
+       
+    },
     getPackageCount: function () {
         return this.PACAKGE_COUNT
     },
@@ -102,7 +115,7 @@ let GameDataManager = cc.Class({
         }
         return 0
     },
-//锁的最大关卡数
+    //锁的最大关卡数
     getMaxUnlockedStage: function (packages) {
         var count = 0;
         var stageCount = this.getStageCount(packages);
@@ -117,7 +130,7 @@ let GameDataManager = cc.Class({
         }
         return stageCount - 0;
     },
-//存入新完成的关卡
+    //存入新完成的关卡
     addCompletedStageCount: function (packages) {
         let count = this.getCompletedStageCount(packages);
         if (count < this.getStageCount(packages)) {
@@ -128,284 +141,284 @@ let GameDataManager = cc.Class({
         return count;
     },
     // update (dt) {},
-//获取packages
-getCompletedStageCount: function (packages) {
-    let key = this.gameName + "package_" + packages.toString()
-    let val = cc.sys.localStorage.getItem(key)
-    if ((val == null) || (val.length == 0)) {
-        val = 0;
-    }
-    return parseInt(val)
-},
-//获取关卡数据？？？？
-getStageData: function (packages, stage) {
- 
-    if (packages > 10) {              //为什么减一次10？？？？？？？？？？
-        packages -= 10;
-    }
- if (packages >= 0 && packages < this.getPackageCount()) {
-        var StageCount = this.m_PackageDatas[packages].m_subPackageDatas.length;
-        if (StageCount == 0) {
-            this.initPackageData(packages);
+    //获取packages
+    getCompletedStageCount: function (packages) {
+        let key = this.gameName + "package_" + packages.toString()
+        let val = cc.sys.localStorage.getItem(key)
+        if ((val == null) || (val.length == 0)) {
+            val = 0;
         }
+        return parseInt(val)
+    },
+    //获取关卡数据？？？？
+    getStageData: function (packages, stage) {
 
-        if (stage >= 0 && stage < this.m_PackageStageCount[packages]) {
-            var curLevelData = this.m_PackageDatas[packages].m_subPackageDatas[stage];
-            // return this.m_PackageDatas[packages].m_subPackageDatas[stage];
-           return curLevelData;   //这样可？？？？？？？？？？？？？？
+        if (packages > 10) {              //为什么减一次10？？？？？？？？？？
+            packages -= 10;
         }
-    }
-    return null;
-},
-//记录游戏关卡数据
-saveGameState: function (packages, stage, val) {
-    if (!this.isCompleted(packages, stage)) {
-        this.addCompletedStageCount(packages);
-    }
-    let key = this.gameName + "package" + packages + "stage" + stage;
-    cc.sys.localStorage.setItem(key, val);
-},
-//获取游戏关卡数据
-getGameState: function (packages, stage) {
-    let key = this.gameName + "package" + packages + "stage" + stage;
-    var val = cc.sys.localStorage.getItem(key);
-    if ((val == null) || (val.length == 0)) {
-        val = -1;
-    }
-    return parseInt(val)
-},
-//增加goals
-addGoals: function () {
-    var score=this.getGoals()+1;
-    define.goal=score;
-    let key = this.gameName + "goals2";
-    cc.sys.localStorage.setItem(key,score);
-    
-},
-//获取goals
-getGoals: function () {
-    let key = this.gameName + "goals2";
-    var val = cc.sys.localStorage.getItem(key);
-    if ((val == null) || (val.length == 0)) {
-        val = 0;
-    }
-    return parseInt(val)
-},
-//金币
-savegold:function(money){
-    let key = "gold";
-    
-    cc.sys.localStorage.setItem(key,money);
-    console.log("当前金币",money)
-},
-getgold:function(){
-    let key = "gold";
-    var money=cc.sys.localStorage.getItem(key);
-    return parseInt(money);
- 
-},
-saveskinlock:function(i,flag){
-    let key = "skin"+i;
-    cc.sys.localStorage.setItem(key,flag);
-},
-getskinlock:function(i){
-    let key =  "skin"+i;
-    var flag=cc.sys.localStorage.getItem(key);
-    return parseInt(flag)
-    
-},
-savecarskin:function(carskin){
-    let key = "carskin";
-    cc.sys.localStorage.setItem(key,carskin);
-},
-getcarskin:function(){
-    let key = "carskin";
-    var carskin=cc.sys.localStorage.getItem(key);
-    return parseInt(carskin);
-},
-//bool关卡completed 
-isCompleted: function (packages, stage) {
-    if (packages >= 0 && packages < this.getPackageCount() && stage >= 0 && stage < this.m_PackageStageCount[packages]) {
-        var state = this.getGameState(packages, stage);
-        if (state > 0) {
-            return true;
-        } else {
-            return false;
+        if (packages >= 0 && packages < this.getPackageCount()) {
+            var StageCount = this.m_PackageDatas[packages].m_subPackageDatas.length;
+            if (StageCount == 0) {
+                this.initPackageData(packages);
+            }
+
+            if (stage >= 0 && stage < this.m_PackageStageCount[packages]) {
+                var curLevelData = this.m_PackageDatas[packages].m_subPackageDatas[stage];
+                // return this.m_PackageDatas[packages].m_subPackageDatas[stage];
+                return curLevelData;   //这样可？？？？？？？？？？？？？？
+            }
         }
-    }
-    return false;
-},
-//获取state？和getGameState有什么区别？？
-getCompleteStars: function (packages, stage) {
-
-    if (packages >= 0 && packages < this.getPackageCount() && stage >= 0 && stage < this.m_PackageStageCount[packages]) {
-        var state = this.getGameState(packages, stage);
-        return state;
-    }
-    return 0;
-},
-//返回startnum
-getPackagesCompleteStars: function (packages) {
-    var startNum = 0;
-    var tempNum = 0;
-    for (var i = 0; i < this.m_PackageStageCount[packages]; ++i) {
-        tempNum = this.getCompleteStars(packages, i)
-        if (tempNum > 0) {
-            startNum += tempNum;
+        return null;
+    },
+    //记录游戏关卡数据
+    saveGameState: function (packages, stage, val) {
+        if (!this.isCompleted(packages, stage)) {
+            this.addCompletedStageCount(packages);
         }
-    }
-    return startNum;
-},
-
-getGameCompleteStars: function () {
-    var maxPackages = this.getPackageCount()
-    var startNum = 0;
-    var tempNum = 0;
-    for (var i = 0; i < maxPackages; ++i) {
-        tempNum = this.getPackagesCompleteStars(i);
-        if (tempNum > 0) {
-            startNum += tempNum;
+        let key = this.gameName + "package" + packages + "stage" + stage;
+        cc.sys.localStorage.setItem(key, val);
+    },
+    //获取游戏关卡数据
+    getGameState: function (packages, stage) {
+        let key = this.gameName + "package" + packages + "stage" + stage;
+        var val = cc.sys.localStorage.getItem(key);
+        if ((val == null) || (val.length == 0)) {
+            val = -1;
         }
-    }
-    return startNum;
-},
+        return parseInt(val)
+    },
+    //增加goals
+    addGoals: function () {
+        var score = this.getGoals() + 1;
+        define.goal = score;
+        let key = this.gameName + "goals2";
+        cc.sys.localStorage.setItem(key, score);
 
-//记录当前页面（难度latestpackage）
-saveLatestPackage: function (packages) {
-    let key = this.gameName + "latestPackage"
-    cc.sys.localStorage.setItem(key, packages.toString());
-},
-getLatestPackage: function () {
-    let key = this.gameName + "latestPackage" // packages.toString()
-    var val = cc.sys.localStorage.getItem(key);
-    if ((val == null) || (val.length == 0)) {
-        val = 0;
-    }
-    return parseInt(val);
-},
-
-initPackageData: function (packages) {
-    let pszFileName = "resources/stageData/" + RAW_RES_PATH[packages];
-    pszFileName = "stageData/" + RAW_RES_PATH[packages];
-    //读取game data .json文件
-    var url = pszFileName, _type = cc.RawAsset;
-    //得到json文件内容
-    cc.loader.loadRes(url, _type, function (err, res) {
-        if (err) {
-            //这里获取res内容就是json里的内容
-            console.log(" err=" + err);
-
-        } else {
-            //这里获取res内容就是json里的内容
-            // console.log("init " + pszFileName + "  res.StageCount=" + res.json.StageCount);
-
-            GameDataManager.getInstance().parePackageData(res.json);
+    },
+    //获取goals
+    getGoals: function () {
+        let key = this.gameName + "goals2";
+        var val = cc.sys.localStorage.getItem(key);
+        if ((val == null) || (val.length == 0)) {
+            val = 0;
         }
-    });
-    this.m_PackageStageCount[packages] = this.MaxCustomsPass;
-},
-//解析json数据文件
-parePackageData: function (res) {
-   
-    let i = res.StageId;
+        return parseInt(val)
+    },
+    //金币
+    savegold: function (money) {
+        let key = "gold";
 
-    for (let j = 0; j < res.StageData.length; ++j) {
-        let level = res.StageData[j].level;
-        //    console.log(i+"， level=" + level);
-        this.m_PackageDatas[i].m_subPackageDatas[j] = new LevelData();
-        this.m_PackageDatas[i].m_subPackageDatas[j].minmove = res.StageData[j].minmove;
-        this.m_PackageDatas[i].m_subPackageDatas[j].count = res.StageData[j].count;
- 
-        for (let k = 0; k < res.StageData[j].count; ++k) {
-            this.m_PackageDatas[i].m_subPackageDatas[j].m_BlockData[k] = new subBlockStatusData()
-            this.m_PackageDatas[i].m_subPackageDatas[j].m_BlockData[k].coordinate = res.StageData[j].subBlockStatusData[k].coordinate;
-            this.m_PackageDatas[i].m_subPackageDatas[j].m_BlockData[k].state = res.StageData[j].subBlockStatusData[k].state;
+        cc.sys.localStorage.setItem(key, money);
+        console.log("当前金币", money)
+    },
+    getgold: function () {
+        let key = "gold";
+        var money = cc.sys.localStorage.getItem(key);
+        return parseInt(money);
+
+    },
+    saveskinlock: function (i, flag) {
+        let key = "skin" + i;
+        cc.sys.localStorage.setItem(key, flag);
+    },
+    getskinlock: function (i) {
+        let key = "skin" + i;
+        var flag = cc.sys.localStorage.getItem(key);
+        return parseInt(flag)
+
+    },
+    savecarskin: function (carskin) {
+        let key = "carskin";
+        cc.sys.localStorage.setItem(key, carskin);
+    },
+    getcarskin: function () {
+        let key = "carskin";
+        var carskin = cc.sys.localStorage.getItem(key);
+        return parseInt(carskin);
+    },
+    //bool关卡completed 
+    isCompleted: function (packages, stage) {
+        if (packages >= 0 && packages < this.getPackageCount() && stage >= 0 && stage < this.m_PackageStageCount[packages]) {
+            var state = this.getGameState(packages, stage);
+            if (state > 0) {
+                return true;
+            } else {
+                return false;
+            }
         }
-        //   console.log(i+"， res.StageData[j].count=" + res.StageData[j].count);
-    }
-    console.log(i + ", level.count=" + res.StageData.length);
-},
+        return false;
+    },
+    //获取state？和getGameState有什么区别？？
+    getCompleteStars: function (packages, stage) {
 
-getPackgeStr: function (i) {
-    if (i >= 0 && i < PACKGE_STRING.length) {
-        return PACKGE_STRING[i];
-    }
-    return 0;
-},
-// //设置游戏主题
-// setGameTheme: function (val) {
-//     // 0-3 
-//     var i = parseInt(val);
-//     let key = this.gameName + "GameTheme"
-//     cc.sys.localStorage.setItem(key, i.toString());
-// },
-// //获取当前主题，没有为0.返回主题id
-// getGameTheme: function () {
-//     let key = this.gameName + "GameTheme"
-//     var val = cc.sys.localStorage.getItem(key);
-//     if ((val == null) || (val.length == 0)) {
-//         val = 0;
-//     }
-//     return parseInt(val);
-// },
+        if (packages >= 0 && packages < this.getPackageCount() && stage >= 0 && stage < this.m_PackageStageCount[packages]) {
+            var state = this.getGameState(packages, stage);
+            return state;
+        }
+        return 0;
+    },
+    //返回startnum
+    getPackagesCompleteStars: function (packages) {
+        var startNum = 0;
+        var tempNum = 0;
+        for (var i = 0; i < this.m_PackageStageCount[packages]; ++i) {
+            tempNum = this.getCompleteStars(packages, i)
+            if (tempNum > 0) {
+                startNum += tempNum;
+            }
+        }
+        return startNum;
+    },
 
-//记录关卡id
-setGameCurLevelNum: function (levelNum) {
-    this.m_curLevelNum = levelNum;
-},
-//返回关卡id
-getGameCurLevelNum: function () {
-    return this.m_curLevelNum;
-},
+    getGameCompleteStars: function () {
+        var maxPackages = this.getPackageCount()
+        var startNum = 0;
+        var tempNum = 0;
+        for (var i = 0; i < maxPackages; ++i) {
+            tempNum = this.getPackagesCompleteStars(i);
+            if (tempNum > 0) {
+                startNum += tempNum;
+            }
+        }
+        return startNum;
+    },
 
-//记录难度选择界面LevelPos  
-saveSelectLevelPos: function (pos) {
-    let key = this.gameName + "SelectLevelPos"
-    cc.sys.localStorage.setItem(key, pos.toString());
-},
-getSelectLevelPos: function () {
-    let key = this.gameName + "SelectLevelPos"
-    var val = cc.sys.localStorage.getItem(key);
-    if ((val == null) || (val.length == 0)) {
-        val = 0;
-    }
-    return parseInt(val);
-},
+    //记录当前页面（难度latestpackage）
+    saveLatestPackage: function (packages) {
+        let key = this.gameName + "latestPackage"
+        cc.sys.localStorage.setItem(key, packages.toString());
+    },
+    getLatestPackage: function () {
+        let key = this.gameName + "latestPackage" // packages.toString()
+        var val = cc.sys.localStorage.getItem(key);
+        if ((val == null) || (val.length == 0)) {
+            val = 0;
+        }
+        return parseInt(val);
+    },
 
-//记录不同难度 关卡选择界面 滑动页面的 下标位置 (A123 B123 C123)
-setStagePageScollPos: function (pos) {
-    var curPackage = this.getLatestPackage();
+    initPackageData: function (packages) {
+        let pszFileName = "resources/stageData/" + RAW_RES_PATH[packages];
+        pszFileName = "stageData/" + RAW_RES_PATH[packages];
+        //读取game data .json文件
+        var url = pszFileName, _type = cc.RawAsset;
+        //得到json文件内容
+        cc.loader.loadRes(url, _type, function (err, res) {
+            if (err) {
+                //这里获取res内容就是json里的内容
+                console.log(" err=" + err);
 
-    let key = this.gameName + "stagePageScollPosX" + curPackage.toString();
-    cc.sys.localStorage.setItem(key, pos.x.toString());
+            } else {
+                //这里获取res内容就是json里的内容
+                // console.log("init " + pszFileName + "  res.StageCount=" + res.json.StageCount);
 
-    key = this.gameName + "stagePageScollPosY" + curPackage.toString();
-    cc.sys.localStorage.setItem(key, pos.y.toString());
-},
-getStagePageScollPos: function () {
-    var curPackage = this.getLatestPackage();
-    let key = this.gameName + "stagePageScollPosX" + curPackage.toString();
+                GameDataManager.getInstance().parePackageData(res.json);
+            }
+        });
+        this.m_PackageStageCount[packages] = this.MaxCustomsPass;
+    },
+    //解析json数据文件
+    parePackageData: function (res) {
 
-    var xVal = cc.sys.localStorage.getItem(key);
-    if ((xVal == null) || (xVal.length == 0)) {
-        xVal = 0;
-    }
-    key = this.gameName + "stagePageScollPosY" + curPackage.toString();
-    var yVal = cc.sys.localStorage.getItem(key);
-    if ((yVal == null) || (yVal.length == 0)) {
-        yVal = 0;
-    }
-    return new cc.Vec2(parseInt(xVal), parseInt(yVal));
-},
+        let i = res.StageId;
 
-preLoadingdata: function () {
+        for (let j = 0; j < res.StageData.length; ++j) {
+            let level = res.StageData[j].level;
+            //    console.log(i+"， level=" + level);
+            this.m_PackageDatas[i].m_subPackageDatas[j] = new LevelData();
+            this.m_PackageDatas[i].m_subPackageDatas[j].minmove = res.StageData[j].minmove;
+            this.m_PackageDatas[i].m_subPackageDatas[j].count = res.StageData[j].count;
 
-    let maxPackageCount = this.getPackageCount();//4个难度
-    for (let i = 0; i < maxPackageCount; i++) {
-        let passCount = this.getCompletedStageCount(i);
-        let unlockCount = this.getMaxUnlockedStage(i);//有什么区别？后边用过吗？
-    }
-},
+            for (let k = 0; k < res.StageData[j].count; ++k) {
+                this.m_PackageDatas[i].m_subPackageDatas[j].m_BlockData[k] = new subBlockStatusData()
+                this.m_PackageDatas[i].m_subPackageDatas[j].m_BlockData[k].coordinate = res.StageData[j].subBlockStatusData[k].coordinate;
+                this.m_PackageDatas[i].m_subPackageDatas[j].m_BlockData[k].state = res.StageData[j].subBlockStatusData[k].state;
+            }
+            //   console.log(i+"， res.StageData[j].count=" + res.StageData[j].count);
+        }
+        console.log(i + ", level.count=" + res.StageData.length);
+    },
+
+    getPackgeStr: function (i) {
+        if (i >= 0 && i < PACKGE_STRING.length) {
+            return PACKGE_STRING[i];
+        }
+        return 0;
+    },
+    // //设置游戏主题
+    // setGameTheme: function (val) {
+    //     // 0-3 
+    //     var i = parseInt(val);
+    //     let key = this.gameName + "GameTheme"
+    //     cc.sys.localStorage.setItem(key, i.toString());
+    // },
+    // //获取当前主题，没有为0.返回主题id
+    // getGameTheme: function () {
+    //     let key = this.gameName + "GameTheme"
+    //     var val = cc.sys.localStorage.getItem(key);
+    //     if ((val == null) || (val.length == 0)) {
+    //         val = 0;
+    //     }
+    //     return parseInt(val);
+    // },
+
+    //记录关卡id
+    setGameCurLevelNum: function (levelNum) {
+        this.m_curLevelNum = levelNum;
+    },
+    //返回关卡id
+    getGameCurLevelNum: function () {
+        return this.m_curLevelNum;
+    },
+
+    //记录难度选择界面LevelPos  
+    saveSelectLevelPos: function (pos) {
+        let key = this.gameName + "SelectLevelPos"
+        cc.sys.localStorage.setItem(key, pos.toString());
+    },
+    getSelectLevelPos: function () {
+        let key = this.gameName + "SelectLevelPos"
+        var val = cc.sys.localStorage.getItem(key);
+        if ((val == null) || (val.length == 0)) {
+            val = 0;
+        }
+        return parseInt(val);
+    },
+
+    //记录不同难度 关卡选择界面 滑动页面的 下标位置 (A123 B123 C123)
+    setStagePageScollPos: function (pos) {
+        var curPackage = this.getLatestPackage();
+
+        let key = this.gameName + "stagePageScollPosX" + curPackage.toString();
+        cc.sys.localStorage.setItem(key, pos.x.toString());
+
+        key = this.gameName + "stagePageScollPosY" + curPackage.toString();
+        cc.sys.localStorage.setItem(key, pos.y.toString());
+    },
+    getStagePageScollPos: function () {
+        var curPackage = this.getLatestPackage();
+        let key = this.gameName + "stagePageScollPosX" + curPackage.toString();
+
+        var xVal = cc.sys.localStorage.getItem(key);
+        if ((xVal == null) || (xVal.length == 0)) {
+            xVal = 0;
+        }
+        key = this.gameName + "stagePageScollPosY" + curPackage.toString();
+        var yVal = cc.sys.localStorage.getItem(key);
+        if ((yVal == null) || (yVal.length == 0)) {
+            yVal = 0;
+        }
+        return new cc.Vec2(parseInt(xVal), parseInt(yVal));
+    },
+
+    preLoadingdata: function () {
+
+        let maxPackageCount = this.getPackageCount();//4个难度
+        for (let i = 0; i < maxPackageCount; i++) {
+            let passCount = this.getCompletedStageCount(i);
+            let unlockCount = this.getMaxUnlockedStage(i);//有什么区别？后边用过吗？
+        }
+    },
     //bool第一次玩
     getIsFistPlay: function () {
 
@@ -426,7 +439,7 @@ preLoadingdata: function () {
         }
         return filePath + name;
     },
-//中英id找text
+    //中英id找text
     getTextById: function (id) {
         if ((id >= 0) && (id < languageTextList.length)) {
             var text = '';
@@ -438,11 +451,11 @@ preLoadingdata: function () {
             return text;
         }
     },
-//设置游戏场景加载的标记
+    //设置游戏场景加载的标记
     setGamePlaySceneReload: function (flag) {
         this.gamePlayScene_isReload = flag;
     },
-//初始为false
+    //初始为false
     getGamePlaySceneReload: function () {
         return this.gamePlayScene_isReload;
     },

@@ -22,6 +22,9 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
 
     onLoad() {
+        let can = cc.find("Canvas").getComponent(cc.Canvas);
+    cc.winSize.width / cc.winSize.height <= (750 / 1334).designScreen ? (can.fitHeight = false, can.fitWidth = true) : (can.fitHeight = true, can.fitWidth = false);
+    can.alignWithScreen();
         this.audioControl = cc.find('AudioControlNode').getComponent('AudioSourceControl');
     },
 

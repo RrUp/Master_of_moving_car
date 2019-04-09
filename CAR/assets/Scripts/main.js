@@ -25,9 +25,10 @@ cc.Class({
   // LIFE-CYCLE CALLBACKS:
 
   onLoad() {
-    cc.log("======first=",define.carskin)
-    define.carskin=GameDataManager.getInstance().getcarskin();
-    cc.log("=======seconed",define.carskin)
+    // GameDataManager.getInstance().adapt(this.node)
+    let can = cc.find("Canvas").getComponent(cc.Canvas);
+    cc.winSize.width / cc.winSize.height <= (750 / 1334).designScreen ? (can.fitHeight = false, can.fitWidth = true) : (can.fitHeight = true, can.fitWidth = false);
+    can.alignWithScreen();
     var DesignResolutionSize = cc.view.getDesignResolutionSize();
     var WinSize = cc.director.getWinSize();
     var nodeX = WinSize.width / DesignResolutionSize.width;
@@ -46,10 +47,21 @@ cc.Class({
       this.begin_btn.node.setPosition(begin_btn);
       console.log("begin_btn - " + (-kMoveHight) * offsetk);
     }
+    //iPhoneX适配
+    if (cc.sys.platform == cc.sys.IPHONE) {
+      var size = cc.view.getFrameSize();
+      var isIphoneX = (size.width == 2436 && size.height == 1125)
+        || (size.width == 1125 && size.height == 2436);
+      if (isIphoneX) {
+        var cvs = this.node.getComponent(cc.Canvas);
+        cvs.fitHeight = true;
+        cvs.fitWidth = true;
+      }
+    }
     this.audioControl = cc.find('AudioControlNode').getComponent('AudioSourceControl');
     this.mute = cc.find('AudioControlNode/AudioRes/audio').getComponent(cc.AudioSource);
-    let carskin=GameDataManager.getInstance().getcarskin();
-    define.carskin=carskin;
+    let carskin = GameDataManager.getInstance().getcarskin();
+    define.carskin = carskin;
     let coin = GameDataManager.getInstance().getgold();
     define.money = coin;
     this.gold_lab.string = define.money;

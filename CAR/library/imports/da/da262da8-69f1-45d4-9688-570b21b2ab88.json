@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "弹一弹",
+    "texture": "8ba23f8c-c065-4464-a950-8cb911f79743",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      120,
+      147
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      120,
+      147
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

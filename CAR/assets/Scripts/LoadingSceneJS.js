@@ -22,6 +22,10 @@ cc.Class({
     },
     onLoad() {
         //   cc.sys.localStorage.clear();
+        // GameDataManager.getInstance().adapt(this.node) 
+        let can = cc.find("Canvas").getComponent(cc.Canvas);
+        cc.winSize.width / cc.winSize.height <= (750 / 1334).designScreen ? (can.fitHeight = false, can.fitWidth = true) : (can.fitHeight = true, can.fitWidth = false);
+        can.alignWithScreen();
         if (CC_WECHATGAME) {
             cc.game.on("impower", (sure) => {
                 if (sure) {
@@ -69,7 +73,20 @@ cc.Class({
                     GameDataManager.getInstance().savecarskin(define.carskin);
                      }
         } 
-
+        //iPhoneX适配
+        // console.log("-----",cc.sys.platform)
+        // console.log("+++++",cc.sys.IPHONE)
+        if(cc.sys.isNative && cc.sys.platform == cc.sys.IPHONE){
+            console.log("***iPhoneX**")
+            var size = cc.view.getFrameSize();
+            var isIphoneX = (size.width == 2436 && size.height == 1125) 
+                   ||(size.width == 1125 && size.height == 2436);
+            if(isIphoneX){
+                var cvs = this.node.getComponent(cc.Canvas);
+                cvs.fitHeight = true;
+                cvs.fitWidth = true;
+            }
+         }
      
     },
     getInfo() {

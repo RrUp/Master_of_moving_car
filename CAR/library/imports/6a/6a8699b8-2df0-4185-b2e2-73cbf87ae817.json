@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "滑动条2",
+    "texture": "c802cce0-0fd8-44de-95f1-e98fb85f7a7f",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      11,
+      498
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      11,
+      498
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

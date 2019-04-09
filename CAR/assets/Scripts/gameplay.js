@@ -112,6 +112,11 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
 
     onLoad() {
+        // let can = cc.find("Canvas").getComponent(cc.Canvas);
+        // cc.winSize.width / cc.winSize.height <= (750 / 1334).designScreen ? (can.fitHeight = false, can.fitWidth = true) : (can.fitHeight = true, can.fitWidth = false);
+        // can.alignWithScreen();
+        // GameDataManager.getInstance().adapt(this.node);
+
         this.curDate = new Date();
         this.audioControl = cc.find('AudioControlNode').getComponent('AudioSourceControl');
         this.init();
@@ -128,6 +133,7 @@ cc.Class({
         this.m_Package = GameDataManager.getInstance().getLatestPackage();
         this.m_stage = GameDataManager.getInstance().getGameCurLevelNum();
         this.stageIdLab.string = GameDataManager.getInstance().getTextById(12) + (this.m_stage + 1);//关卡1
+
         this.m_GridironSize = MyLayoutManager.getInstance().getGridironSize();
         var visibleRect = MyLayoutManager.getInstance().getVisibleRect();
         var visibleCenter = visibleRect.origin + visibleRect.size / 2;
@@ -135,8 +141,40 @@ cc.Class({
         var kHW = visibleRect.size.height / visibleRect.size.width;
         var scaleY = visibleRect.size.height / 1334;
         var kOffsetHW = kHW / (1334 / 750.0)
-        var gameRectWidth = visibleRect.size.width - MyLayoutManager.getInstance().getHorizontalGridironPadding() * 2;// visibleRect.size.width - MyLayoutManager.getInstance().getHorizontalGridironPadding() * 2;
-        var gameRectHeight = gameRectWidth;
+        // var gameRectWidth = visibleRect.size.width - MyLayoutManager.getInstance().getHorizontalGridironPadding() * 2;// visibleRect.size.width - MyLayoutManager.getInstance().getHorizontalGridironPadding() * 2;
+       
+        var gameRectWidth = this.gameCenter.width - MyLayoutManager.getInstance().getHorizontalGridironPadding() * 2;
+         var gameRectHeight = gameRectWidth;
+         // var gameRectHeight = this.gameCenter.height - MyLayoutManager.getInstance().getHorizontalGridironPadding() * 10 * 2;
+console.log("=====kOffsetHW",kOffsetHW)
+
+            //高宽比 较小的
+            if (kOffsetHW < 0.75) {
+                //pad
+                var kOffsetRedress = 1.3
+                this.m_kOffsetScale = kOffsetHW * kOffsetRedress
+                gameRectWidth = gameRectWidth * (this.m_kOffsetScale);
+                gameRectHeight *= (this.m_kOffsetScale);
+                this.gameCenter.setScale(this.m_kOffsetScale);
+            } else
+                if (kOffsetHW < 0.9) {
+                    //pad
+                    var kOffsetRedress = 1.10
+                    this.m_kOffsetScale = kOffsetHW * kOffsetRedress
+                    gameRectWidth = gameRectWidth * (this.m_kOffsetScale);
+                    gameRectHeight *= (this.m_kOffsetScale);
+                    this.gameCenter.setScale(this.m_kOffsetScale);
+                } else if (kOffsetHW < 0.95) {
+                    //pad
+                    var kOffsetRedress = 1.04
+                    this.m_kOffsetScale = kOffsetHW * kOffsetRedress
+                    gameRectWidth = gameRectWidth * (this.m_kOffsetScale);
+                    gameRectHeight *= (this.m_kOffsetScale);
+                    this.gameCenter.setScale(this.m_kOffsetScale);
+                }
+
+                // this.gameCenter.setScale(0.5);
+
         this.m_GridironSize.width = this.m_GridironSize.height = define.GRIDIRON_WIDTH;
         this.m_GridSize.width = gameRectWidth / this.m_GridironSize.width;
         this.m_GridSize.height = gameRectHeight / this.m_GridironSize.height;
@@ -151,6 +189,17 @@ cc.Class({
             var state = curLevelData.m_BlockData[i].state;
             this.addBlock((coordinate & 0xF0) >> 4, coordinate & 0x0F, (state & 0x20) ? define.kOrientation_Horizontal : define.kOrientation_Vertical, state & 0x0F, (state & 0x10) != 0);
         }
+          //iPhoneX适配
+     if(cc.sys.isNative && cc.sys.platform == cc.sys.IPHONE){
+        var size = cc.view.getFrameSize();
+        var isIphoneX = (size.width == 2436 && size.height == 1125) 
+               ||(size.width == 1125 && size.height == 2436);
+        if(isIphoneX){
+            var cvs = this.node.getComponent(cc.Canvas);
+            cvs.fitHeight = true;
+            cvs.fitWidth = true;
+        }
+    }
     },
     addBlock(x, y, orientation, length, panda) {
         var id = 0;

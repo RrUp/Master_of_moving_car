@@ -5,10 +5,10 @@
       "main": true,
       "url": "app://editor/index.html",
       "windowType": "dockable",
-      "x": 658,
-      "y": 59,
+      "x": 438,
+      "y": 194,
       "width": 1018,
-      "height": 973,
+      "height": 790,
       "layout": {
         "children": [
           {
@@ -18,7 +18,7 @@
                 "children": [
                   "hierarchy"
                 ],
-                "height": 421.109375,
+                "height": 334.109375,
                 "type": "panel",
                 "width": 204
               },
@@ -27,12 +27,12 @@
                 "children": [
                   "assets"
                 ],
-                "height": 467.109375,
+                "height": 370.109375,
                 "type": "panel",
                 "width": 204
               }
             ],
-            "height": 890.21875,
+            "height": 706.21875,
             "type": "dock-v",
             "width": 204
           },
@@ -44,7 +44,7 @@
                   "node-library",
                   "scene"
                 ],
-                "height": 479.125,
+                "height": 380.125,
                 "type": "panel",
                 "width": 506
               },
@@ -54,12 +54,12 @@
                   "console",
                   "timeline"
                 ],
-                "height": 409.09375,
+                "height": 324.09375,
                 "type": "panel",
                 "width": 506
               }
             ],
-            "height": 890.21875,
+            "height": 706.21875,
             "type": "dock-v",
             "width": 506
           },
@@ -69,7 +69,7 @@
               "inspector",
               "cocos-services"
             ],
-            "height": 890.21875,
+            "height": 706.21875,
             "type": "panel",
             "width": 304
           }
@@ -96,8 +96,8 @@
       "height": 570
     },
     "builder": {
-      "x": 479,
-      "y": 308,
+      "x": 974,
+      "y": 165,
       "width": 654,
       "height": 563
     },

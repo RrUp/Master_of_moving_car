@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "uncar11",
+    "texture": "0558a3c3-3a22-4edd-b1d3-15f9f9fefa92",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      118,
+      106
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      118,
+      106
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

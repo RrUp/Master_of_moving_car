@@ -2,7 +2,7 @@
 cc._RF.push(module, 'f56477rpwxOVo+9OeOgtTSL', 'SelectDifficultSceneJS', __filename);
 // Scripts/SelectDifficultSceneJS.js
 
-'use strict';
+"use strict";
 
 var GameDataManager = require("GameDataManagerJS");
 cc.Class({
@@ -37,6 +37,9 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
 
     onLoad: function onLoad() {
+        var can = cc.find("Canvas").getComponent(cc.Canvas);
+        cc.winSize.width / cc.winSize.height <= (750 / 1334).designScreen ? (can.fitHeight = false, can.fitWidth = true) : (can.fitHeight = true, can.fitWidth = false);
+        can.alignWithScreen();
         this.audioControl = cc.find('AudioControlNode').getComponent('AudioSourceControl');
         this.content = cc.find('Canvas/DifficultPageView/view/content');
         console.log("找到了", this.content);
@@ -49,6 +52,16 @@ cc.Class({
             clickEventHandler.customEventData = i;
             var button = this.select[i].getComponent(cc.Button);
             button.clickEvents.push(clickEventHandler);
+            //iPhoneX适配
+            if (cc.sys.isNative && cc.sys.platform == cc.sys.IPHONE) {
+                var size = cc.view.getFrameSize();
+                var isIphoneX = size.width == 2436 && size.height == 1125 || size.width == 1125 && size.height == 2436;
+                if (isIphoneX) {
+                    var cvs = this.node.getComponent(cc.Canvas);
+                    cvs.fitHeight = true;
+                    cvs.fitWidth = true;
+                }
+            }
         }
     },
 
@@ -115,7 +128,6 @@ cc.Class({
         var choosestage = cc.find("Canvas/choosestage/stageScrollView/view/content");
         choosestage.removeAllChildren();
         this.playClick();
-        cc.log("!!!!!", customEventData);
         // this.choosestage.active=false;
         var node = event.target;
         var button = node.getComponent(cc.Button);

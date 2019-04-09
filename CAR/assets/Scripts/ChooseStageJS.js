@@ -34,8 +34,12 @@ cc.Class({
     },
 
     onLoad() {
+        let can = cc.find("Canvas").getComponent(cc.Canvas);
+    cc.winSize.width / cc.winSize.height <= (750 / 1334).designScreen ? (can.fitHeight = false, can.fitWidth = true) : (can.fitHeight = true, can.fitWidth = false);
+    can.alignWithScreen();
         this.init();
-        // this.audioControl = cc.find('AudioControlNode').getComponent('AudioSourceControl');
+        this.audioControl = cc.find('AudioControlNode').getComponent('AudioSourceControl');
+        
         // this.m_Package = GameDataManager.getInstance().getLatestPackage();
         // this.m_MaxUnlockedStageIdx = GameDataManager.getInstance().getMaxUnlockedStage(this.m_Package);
         // this.m_StageCount = GameDataManager.getInstance().getStageCount(this.m_Package);
@@ -190,12 +194,12 @@ cc.Class({
 
 
 
-    onBtnBackClicked: function () {
-        console.log('onBtnBackClicked clicked!');
-        this.playClick();
-        //    this.saveScrollPos();
-        cc.director.loadScene("SelectDifficultScene");
-    },
+    // onBtnBackClicked: function () {
+    //     console.log('onBtnBackClicked clicked!');
+    //     this.playClick();
+    //     //    this.saveScrollPos();
+    //     cc.director.loadScene("SelectDifficultScene");
+    // },
 
     playClick: function () {
         if (this.audioControl) {

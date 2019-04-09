@@ -68,6 +68,17 @@ var GameDataManager = cc.Class({
     // onLoad () {},
 
     start: function start() {},
+    adapt: function adapt(node) {
+        var height = cc.view.getVisibleSize().height;
+        var width = cc.view.getVisibleSize().width;
+        if (height / width > 1.9) {
+            node.scale = 0.8;
+            node.alignWithScreen();
+        } else if (height / width < 1.4) {
+            node.scale = 1.05;
+            node.alignWithScreen();
+        }
+    },
 
     getPackageCount: function getPackageCount() {
         return this.PACAKGE_COUNT;

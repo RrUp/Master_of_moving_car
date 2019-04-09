@@ -42,13 +42,14 @@ var MyLayoutManager = cc.Class({
     },
     //设置屏幕大小
     ctor: function () {
-        var visibleSize = cc.view.getVisibleSize();    //获得视口（可视区域）的大小  bug？？not a function
+        var visibleSize = cc.view.getVisibleSize();    //获得视口（可视区域）的大小  
         var origin = cc.view.getVisibleOrigin();     //获得可视区域的出发点坐标
-        cc.log(visibleSize);
+        cc.log("--------width------->",visibleSize.width);
         this.m_AdMobHeight = 0;
         this.m_GridironHPadding = 8;
+        cc.log("---------m_GridironHPadding------>",this.m_GridironHPadding);
         this.m_VisibleRect = new cc.Rect(origin.x, origin.y, visibleSize.width, visibleSize.height);
-        this.m_GridironSize = new cc.Size(define.GRIDIRON_WIDTH, define.GRIDIRON_WIDTH);//两个width??????
+        this.m_GridironSize = new cc.Size(define.GRIDIRON_WIDTH, define.GRIDIRON_WIDTH);
 
     },
     getVisibleRect: function () {

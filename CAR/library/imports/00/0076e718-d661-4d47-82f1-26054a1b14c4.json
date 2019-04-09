@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "icon边框",
+    "texture": "ac2e6f71-0eb7-46e3-a230-646bed130c17",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      89,
+      92
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      89,
+      92
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

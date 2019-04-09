@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "箭头",
+    "texture": "634b7ba0-8c1e-4911-b817-f660df3d36cd",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      17,
+      29
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      17,
+      29
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

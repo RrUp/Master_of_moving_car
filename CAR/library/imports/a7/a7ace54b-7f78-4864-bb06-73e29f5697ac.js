@@ -34,9 +34,7 @@ cc.Class({
         "wxc4e628aa7caa2c07", //飞刀
         "wxd9589cd7117d0873", //最囧
         "wx0af703a36035c60c", //2048六角消除数字方块//"wx40fb3563b8ac79b2",//2048
-        // "wx6616ae605010e605",//欢乐球球
-        "wx528f5a9cd16be88a" //贪吃蛇 "wxac5820bc06a3a893",//弹球弹一弹//
-        ];
+        "wx6616ae605010e605"];
 
         var localMiniGameList = cc.sys.localStorage.getItem(LOCAL_MINIGAME_LIST);
         if (localMiniGameList) {

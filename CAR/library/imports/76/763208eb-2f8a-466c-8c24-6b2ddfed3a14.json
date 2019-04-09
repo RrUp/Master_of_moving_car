@@ -1,0 +1,7 @@
+{
+  "__type__": "cc.TextAsset",
+  "_name": "appid",
+  "_objFlags": 0,
+  "_native": "",
+  "text": "\"navigateToMiniProgramAppIdList\": [\n      \n    \"wxd5a257d6ee2b8f91\", \n    \"wx515f44394eab5985\", \n    \"wxf49b0a26d9405058\", \n    \"wxea245f85c9673414\", \n    \"wx08beeb18dc512c2f\", \n    \"wxc4e628aa7caa2c07\", \n    \"wxd9589cd7117d0873\", \n    \"wx0af703a36035c60c\", \n    \"wx6616ae605010e605\"\n],\n\n\n\n{\n  \"deviceOrientation\": \"portrait\",\n  \"openDataContext\": \"cargame\",\n  \"networkTimeout\": {\n    \"request\": 5000,\n    \"connectSocket\": 5000,\n    \"uploadFile\": 5000,\n    \"downloadFile\": 5000\n  },\n \"navigateToMiniProgramAppIdList\": [\n      \n    \"wxd5a257d6ee2b8f91\", \n    \"wx515f44394eab5985\", \n    \"wxf49b0a26d9405058\", \n    \"wxea245f85c9673414\", \n    \"wx08beeb18dc512c2f\", \n    \"wxc4e628aa7caa2c07\", \n    \"wxd9589cd7117d0873\", \n    \"wx0af703a36035c60c\", \n    \"wx6616ae605010e605\"\n],\n  \n  \"subpackages\": []\n}\n"
+}
